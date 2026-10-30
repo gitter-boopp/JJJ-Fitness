@@ -1,0 +1,59 @@
+/*
+  Globale Styles für JJJ Fitness.
+
+  Tailwind CSS v4 wird hier direkt importiert. Im @theme-Block legen wir
+  unser Design-System fest: Farben, Schriften und Schatten. Aus jedem Eintrag
+  macht Tailwind automatisch Klassen, z.B. --color-accent -> "bg-accent",
+  "text-accent", "border-accent".
+
+  Wollt ihr eine Farbe ändern? Dann nur hier ändern, sie ändert sich überall.
+*/
+@import 'tailwindcss';
+
+@theme {
+  /* Farben */
+  --color-bg: #0b0b0f; /* Seitenhintergrund, fast schwarz */
+  --color-surface: #16161d; /* Karten, Boxen */
+  --color-surface-2: #1f1f28; /* Etwas heller, z.B. für Hover oder Eingabefelder */
+  --color-line: #2a2a35; /* Feine Rahmenlinien */
+  --color-text: #f5f5f7; /* Haupttext, fast weiss */
+  --color-muted: #a1a1aa; /* Nebentext, grau */
+  --color-accent: #c6ff3d; /* Neon-Lime, unsere einzige Akzentfarbe: sparsam einsetzen! */
+  --color-accent-ink: #0b0b0f; /* Textfarbe AUF der Akzentfarbe (dunkel = gut lesbar) */
+
+  /* Schriften: Space Grotesk für Überschriften, Inter für Fliesstext */
+  --font-display: 'Space Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* Leuchtender Schatten in der Akzentfarbe (für Hover-Effekte) */
+  --shadow-glow: 0 0 40px -10px rgb(198 255 61 / 0.45);
+}
+
+/* Grundeinstellungen für die ganze Seite */
+@layer base {
+  html {
+    color-scheme: dark; /* Browser-Elemente wie Scrollbars werden auch dunkel */
+    -webkit-tap-highlight-color: transparent; /* Kein blauer Kasten beim Tippen auf dem Handy */
+  }
+
+  body {
+    @apply bg-bg font-sans text-text antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-bold tracking-tight;
+    text-wrap: balance; /* Verteilt Wörter schöner auf mehrere Zeilen */
+  }
+
+  /* Sichtbarer Fokus-Rahmen für alle, die mit der Tastatur navigieren */
+  :focus-visible {
+    @apply rounded-md outline-2 outline-offset-4 outline-accent;
+  }
+
+  ::selection {
+    @apply bg-accent text-accent-ink;
+  }
+}
