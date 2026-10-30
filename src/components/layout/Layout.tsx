@@ -1,10 +1,9 @@
-import { Outlet } from 'react-router'
 import SmoothScroll from './SmoothScroll'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import PageTransition from './PageTransition'
 
 // Das Grundgerüst jeder Seite: Navigation, Inhalt, Footer.
-// <Outlet /> ist der Platz, an dem React Router die aktuelle Seite einsetzt.
 export default function Layout() {
   return (
     <SmoothScroll>
@@ -21,7 +20,8 @@ export default function Layout() {
 
       {/* Abstand oben, damit der Inhalt nicht unter der fixen Navigation verschwindet */}
       <main id="main" className="pt-20 md:pt-24">
-        <Outlet />
+        {/* Hier setzt React Router die aktuelle Seite ein, mit Übergangs-Animation */}
+        <PageTransition />
       </main>
 
       <Footer />

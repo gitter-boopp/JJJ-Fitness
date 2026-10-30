@@ -25,8 +25,34 @@
   --font-display: 'Space Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 
+  --color-muscle: #3a3a46; /* Muskeln auf der Muskel-Karte (nicht ausgewählt) */
+
   /* Leuchtender Schatten in der Akzentfarbe (für Hover-Effekte) */
   --shadow-glow: 0 0 40px -10px rgb(198 255 61 / 0.45);
+
+  /* Langsam schwebende Farbflecken im Hero -> Klasse "animate-blob" */
+  --animate-blob: blob 20s ease-in-out infinite;
+
+  @keyframes blob {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(10%, -8%) scale(1.1);
+    }
+    66% {
+      transform: translate(-8%, 8%) scale(0.95);
+    }
+  }
+}
+
+/* Feines Gitter-Muster für Hintergründe -> Klasse "bg-grid" */
+@utility bg-grid {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
 }
 
 /* Grundeinstellungen für die ganze Seite */
