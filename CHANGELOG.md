@@ -5,6 +5,37 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Etappe 4 – Trainingspläne
+
+**Datum:** 30.10.2026
+**Wer:** [Namen eintragen]
+
+### Was wir gemacht haben
+
+- **3 Pläne** in `src/data/plans.ts`:
+  - Ganzkörper 3x pro Woche (Anfänger, Tag A/B im Wechsel)
+  - Oberkörper/Unterkörper 4x pro Woche (ab ca. 3 Monaten Training)
+  - Push/Pull/Legs 3x pro Woche (Fortgeschrittene, optional 6x)
+- **Plan-Auswahl** mit drei Karten. Der gewählte Plan steht in der Adresse, z.B. `/trainingsplaene?plan=push-pull-legs`.
+- **Wochenübersicht** Mo–So mit Trainings- und Ruhetagen. Ein Klick auf einen Trainingstag öffnet ihn.
+- **Tabs pro Trainingstag** mit gleitendem Lime-Hintergrund. Die Tabs lassen sich auch mit den Pfeiltasten bedienen.
+- **Tabelle** pro Tag: Übung (mit Link zur Anleitung), Muskeln, Sätze und Wiederholungen. Auf dem Handy werden Sätze und Wiederholungen zusammengefasst («4 × 6–8»), damit nichts abgeschnitten wird.
+- **4 Tipps:** Aufwärmen, Steigern, Pausen, Technik vor Gewicht
+- **Als PDF drucken:** Der Button öffnet den Druck-Dialog. Gedruckt wird eine eigene Druckansicht in Schwarz auf Weiss mit allen Trainingstagen und leeren Spalten W1–W4 zum Eintragen der Gewichte (Trainingsprotokoll). Navigation und Footer werden beim Drucken ausgeblendet.
+
+### Entscheide und warum
+
+| Entscheid | Warum |
+| --- | --- |
+| Pläne verweisen per `slug` auf die Übungen | Jede Übung ist nur einmal beschrieben. Ändern wir eine Übung, stimmt sie automatisch in allen Plänen. |
+| Drucken mit `window.print()` statt PDF-Bibliothek | Jeder Browser kann «Als PDF sichern». Es braucht keine zusätzliche Bibliothek, und die Seite bleibt schnell. |
+| Eigene Druckansicht schwarz auf weiss | Dunkler Hintergrund würde viel Tinte verbrauchen. Auf Papier sind alle Tage untereinander praktischer als Tabs. |
+| Spalten W1–W4 im Ausdruck | So kann man den Ausdruck ins Gym mitnehmen und die Gewichte eintragen. Das hilft bei der progressiven Steigerung. |
+| Push/Pull/Legs als 3x-Woche | Für Jugendliche reichen 3 Trainings, Erholung ist wichtig. 6x ist als Option erwähnt. |
+| Tabs mit Pfeiltasten | So funktionieren Tabs nach den Regeln für Barrierefreiheit (WAI-ARIA). |
+
+---
+
 ## Etappe 3 – Übungsbibliothek mit Filter
 
 **Datum:** 30.10.2026

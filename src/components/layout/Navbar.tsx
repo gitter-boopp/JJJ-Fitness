@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
+        className={`fixed inset-x-0 top-0 z-50 border-b print:hidden transition-all duration-300 ${
           scrolled
             ? 'border-white/10 bg-bg/70 py-3 backdrop-blur-xl' // gescrollt: kleiner, mit Blur
             : 'border-transparent bg-transparent py-5' // ganz oben: grösser, durchsichtig

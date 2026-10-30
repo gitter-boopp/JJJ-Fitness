@@ -83,3 +83,26 @@
     @apply bg-accent text-accent-ink;
   }
 }
+
+/*
+  Regeln nur für den Druck (und "Als PDF sichern").
+  Dunkler Hintergrund würde viel Tinte verbrauchen, deshalb schwarz auf weiss.
+  Navigation, Footer usw. haben die Klasse "print:hidden" und verschwinden.
+*/
+@media print {
+  @page {
+    margin: 15mm;
+  }
+
+  html,
+  body {
+    color-scheme: light; /* sonst färbt der Browser den Seitenrand dunkel */
+    background: white !important;
+    color: black !important;
+  }
+
+  /* Der Platz oben für die Navigation braucht es auf Papier nicht */
+  main {
+    padding-top: 0 !important;
+  }
+}
