@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import type { FormEvent } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 
+import { useI18n } from '../../i18n/i18n'
 import Button from '../ui/Button'
 import { StarIcon } from '../ui/Icons'
 
@@ -11,15 +12,13 @@ import { StarIcon } from '../ui/Icons'
 const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID
 const ENDPOINT = FORMSPREE_ID ? `https://formspree.io/f/${FORMSPREE_ID}` : null
 
-// Text zur gewählten Anzahl Sterne
-const ratingLabels = ['', 'Gefällt mir nicht', 'Geht so', 'Ganz okay', 'Gut', 'Super!']
-
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
 const textareaClass =
   'w-full rounded-xl border border-white/10 bg-surface-2 px-4 py-3 text-text placeholder:text-muted/60 focus:border-accent/60 focus:outline-none'
 
 export default function FeedbackForm() {
+  const { t } = useI18n()
   const [rating, setRating] = useState<number | null>(null)
   const [hoverRating, setHoverRating] = useState<number | null>(null)
   const [liked, setLiked] = useState('')
@@ -93,10 +92,10 @@ export default function FeedbackForm() {
                 transition={{ delay: 0.2, duration: 0.5, ease: 'easeOut' }}
               />
             </svg>
-            <h3 className="mt-6 text-3xl">Danke für dein Feedback!</h3>
-            <p className="mt-3 text-muted">Wir lesen alle Antworten und verbessern die Seite damit.</p>
+            <h3 className="mt-6 text-3xl">{t('feedback.successTitle')}</h3>
+            <p className="mt-3 text-muted">{t('feedback.successText')}</p>
             <Button variant="secondary" className="mt-8" onClick={reset}>
-              Nochmals Feedback geben
+              {t('feedback.again')}
             </Button>
           </motion.div>
         ) : (
@@ -112,15 +111,14 @@ export default function FeedbackForm() {
           >
             {!ENDPOINT && (
               <p className="rounded-xl border border-dashed border-white/20 p-4 text-sm text-muted">
-                Hinweis fürs Team: Das Formular ist noch nicht mit Formspree verbunden. Wie das geht, steht im README
-                unter «Feedback-Formular».
+                {t('feedback.notConnected')}
               </p>
             )}
 
             {/* Sterne-Bewertung: echte Radio-Buttons (unsichtbar) mit Sternen als Darstellung */}
             <fieldset aria-describedby={showRatingError ? 'rating-error' : undefined}>
               <legend className="mb-3 font-display text-xl font-bold">
-                Wie gefällt dir die Seite? <span className="text-accent">*</span>
+                {t('feedback.ratingQuestion')} <span className="text-accent">*</span>
               </legend>
               <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                 <div className="flex gap-1" onPointerLeave={() => setHoverRating(null)}>
@@ -145,25 +143,25 @@ export default function FeedbackForm() {
                         />
                       </span>
                       <span className="sr-only">
-                        {value} von 5 Sternen: {ratingLabels[value]}
+                        {t('feedback.ratingStar', { value, label: t(`feedback.ratingLabels.${value}`) })}
                       </span>
                     </label>
                   ))}
                 </div>
                 <span className="text-muted" aria-hidden>
-                  {ratingLabels[shownRating]}
+                  {shownRating > 0 && t(`feedback.ratingLabels.${shownRating}`)}
                 </span>
               </div>
               {showRatingError && (
                 <p id="rating-error" className="mt-2 text-sm text-red-300">
-                  Bitte wähle 1 bis 5 Sterne.
+                  {t('feedback.ratingError')}
                 </p>
               )}
             </fieldset>
 
             <div>
               <label htmlFor="feedback-liked" className="mb-2 block font-display text-xl font-bold">
-                Was gefällt dir?
+                {t('feedback.liked')}
               </label>
               <textarea
                 id="feedback-liked"
@@ -171,14 +169,14 @@ export default function FeedbackForm() {
                 maxLength={1000}
                 value={liked}
                 onChange={(event) => setLiked(event.target.value)}
-                placeholder="z.B. die Muskel-Karte, die Rezepte ..."
+                placeholder={t('feedback.likedPlaceholder')}
                 className={textareaClass}
               />
             </div>
 
             <div>
               <label htmlFor="feedback-missing" className="mb-2 block font-display text-xl font-bold">
-                Was fehlt dir?
+                {t('feedback.missing')}
               </label>
               <textarea
                 id="feedback-missing"
@@ -186,7 +184,7 @@ export default function FeedbackForm() {
                 maxLength={1000}
                 value={missing}
                 onChange={(event) => setMissing(event.target.value)}
-                placeholder="z.B. mehr Übungen für zu Hause ..."
+                placeholder={t('feedback.missingPlaceholder')}
                 className={textareaClass}
               />
             </div>
@@ -204,17 +202,16 @@ export default function FeedbackForm() {
 
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <p className="max-w-md text-sm text-muted">
-                Das Feedback ist anonym, bitte schreib keine persönlichen Daten hinein. Die Antworten werden über den
-                Dienst Formspree an uns geschickt.
+                {t('feedback.privacy')}
               </p>
               <Button type="submit" size="lg" disabled={!ENDPOINT || status === 'sending'} className="shrink-0">
-                {status === 'sending' ? 'Wird gesendet …' : 'Feedback senden'}
+                {status === 'sending' ? t('feedback.sending') : t('feedback.submit')}
               </Button>
             </div>
 
             {status === 'error' && (
               <p role="alert" className="rounded-xl border border-red-400/40 bg-red-400/5 p-4 text-sm text-red-200">
-                Das hat leider nicht geklappt. Prüfe deine Internetverbindung und versuche es nochmals.
+                {t('feedback.error')}
               </p>
             )}
           </motion.form>

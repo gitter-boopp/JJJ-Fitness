@@ -1,28 +1,31 @@
 import { Link } from 'react-router'
 
 import { findExercise } from '../../data/exercises'
-import { findMuscle } from '../../data/muscles'
 import type { PlanDay } from '../../data/plans'
+import { useI18n } from '../../i18n/i18n'
 
 // Tabelle mit den Übungen eines Trainingstags.
 // Jeder Übungsname ist ein Link zur Detailseite mit der Anleitung.
 // Auf dem Handy ist wenig Platz: Dort wird die Spalte "Sätze" ausgeblendet und
 // stattdessen "4 × 6–8" in der letzten Spalte angezeigt.
-export default function DayTable({ day }: { day: PlanDay }) {
+export default function DayTable({ planId, day }: { planId: string; day: PlanDay }) {
+  const { t } = useI18n()
+
   return (
     <div className="overflow-hidden rounded-2xl border border-white/5 bg-surface">
       <table className="w-full text-left">
-        <caption className="px-5 pt-5 text-left text-muted md:px-6">{day.focus}</caption>
+        <caption className="px-5 pt-5 text-left text-muted md:px-6">{t(`plans.${planId}.days.${day.id}.focus`)}</caption>
         <thead>
           <tr className="border-b border-white/5 text-xs tracking-widest text-muted uppercase">
             <th scope="col" className="px-5 py-4 font-medium md:px-6">
-              Übung
+              {t('plansPage.table.exercise')}
             </th>
             <th scope="col" className="hidden px-2 py-4 text-center font-medium sm:table-cell">
-              Sätze
+              {t('plansPage.table.sets')}
             </th>
             <th scope="col" className="py-4 pr-5 pl-2 text-right font-medium md:pr-6">
-              <span className="sm:hidden">Sätze × </span>Wdh.
+              <span className="sm:hidden">{t('plansPage.table.setsTimes')} </span>
+              {t('plansPage.table.reps')}
             </th>
           </tr>
         </thead>
@@ -30,9 +33,7 @@ export default function DayTable({ day }: { day: PlanDay }) {
           {day.exercises.map((planExercise, index) => {
             const exercise = findExercise(planExercise.slug)
             if (!exercise) return null
-            const muscles = exercise.primary.map((id) => findMuscle(id)?.name).join(', ')
-            // "10–12 pro Seite" -> range = "10–12", rest = ["pro", "Seite"]
-            const [range, ...rest] = planExercise.reps.split(' ')
+            const muscles = exercise.primary.map((id) => t(`muscles.${id}.name`)).join(', ')
 
             return (
               <tr key={planExercise.slug} className="border-b border-white/5 last:border-0">
@@ -44,7 +45,7 @@ export default function DayTable({ day }: { day: PlanDay }) {
                         to={`/uebungen/${exercise.slug}`}
                         className="font-semibold underline-offset-4 hover:text-accent hover:underline"
                       >
-                        {exercise.name}
+                        {t(`exercises.${exercise.slug}.name`)}
                       </Link>
                       <p className="mt-0.5 text-sm text-muted">{muscles}</p>
                     </div>
@@ -54,12 +55,12 @@ export default function DayTable({ day }: { day: PlanDay }) {
                   {planExercise.sets}
                 </td>
                 <td className="py-4 pr-5 pl-2 text-right font-display font-bold sm:text-lg sm:whitespace-nowrap md:pr-6">
-                  {/* Die Zahl ("10–12") nie umbrechen, nur den Zusatz ("pro Seite") */}
+                  {/* Die Zahl ("10–12") nie umbrechen, nur die Einheit ("pro Seite") */}
                   <span className="whitespace-nowrap">
                     <span className="sm:hidden">{planExercise.sets} × </span>
-                    {range}
+                    {planExercise.reps}
                   </span>
-                  {rest.length > 0 && ` ${rest.join(' ')}`}
+                  {planExercise.unit && ` ${t(`units.${planExercise.unit}`)}`}
                 </td>
               </tr>
             )

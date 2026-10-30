@@ -1,9 +1,11 @@
 import { stages } from '../../data/project'
+import { useI18n } from '../../i18n/i18n'
 import Reveal from '../motion/Reveal'
 
 // Projektverlauf: alle Etappen als senkrechte Zeitleiste.
 // Erledigte Etappen sind in der Akzentfarbe, die nächste ist hervorgehoben.
 export default function Timeline() {
+  const { t } = useI18n()
   // Die erste Etappe, die noch nicht erledigt ist = "als Nächstes"
   const nextNumber = stages.find((stage) => !stage.done)?.number
 
@@ -32,10 +34,12 @@ export default function Timeline() {
             >
               <span>
                 <span className="mr-3 font-display font-bold text-accent">{stage.number}</span>
-                <span className={stage.done || isNext ? 'text-text' : 'text-muted'}>{stage.title}</span>
+                <span className={stage.done || isNext ? 'text-text' : 'text-muted'}>
+                  {t(`about.stages.${stage.number}`)}
+                </span>
               </span>
               <span className="shrink-0 text-sm text-muted">
-                {stage.done ? 'Erledigt' : isNext ? 'Als Nächstes' : 'Offen'}
+                {stage.done ? t('about.stageDone') : isNext ? t('about.stageNext') : t('about.stageOpen')}
               </span>
             </Reveal>
           </li>

@@ -1,0 +1,1187 @@
+{
+  "meta": {
+    "siteName": "JJJ Fitness"
+  },
+  "language": {
+    "label": "Sprache wählen",
+    "de": "Deutsch",
+    "fr": "Französisch"
+  },
+  "nav": {
+    "exercises": "Übungen",
+    "plans": "Trainingspläne",
+    "nutrition": "Ernährung",
+    "about": "Über uns",
+    "start": "Jetzt starten",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schliessen",
+    "main": "Hauptnavigation",
+    "mainMobile": "Hauptnavigation mobil",
+    "home": "JJJ Fitness, zur Startseite",
+    "skipLink": "Zum Inhalt springen"
+  },
+  "footer": {
+    "text": "Übungen, Trainingspläne und Ernährungswissen für deinen Muskelaufbau. Ein Schulprojekt von KV-Lernenden aus Basel.",
+    "label": "Footer-Navigation",
+    "styleguide": "Design-System",
+    "disclaimer": "Alle Angaben sind Richtwerte. Bei gesundheitlichen Fragen eine Fachperson fragen."
+  },
+  "common": {
+    "all": "Alle",
+    "front": "Vorne",
+    "back": "Hinten"
+  },
+  "units": {
+    "perSide": "pro Seite",
+    "perLeg": "pro Bein",
+    "seconds": "Sek."
+  },
+  "home": {
+    "title": "Muskelaufbau einfach erklärt",
+    "hero": {
+      "eyebrow": "Muskelaufbau für Einsteiger",
+      "line1": "Stärker werden.",
+      "line2": "Schritt für Schritt.",
+      "text": "Übungen, Trainingspläne und Ernährung an einem Ort. Verständlich erklärt, ohne Extrem-Diäten und ohne Werbung.",
+      "ctaSecondary": "Trainingspläne ansehen"
+    },
+    "stats": {
+      "exercises": "Übungen",
+      "plans": "Trainingspläne",
+      "muscles": "Muskelgruppen",
+      "languages": "Sprachen"
+    },
+    "offer": {
+      "eyebrow": "Was dich erwartet",
+      "title": "Alles für deinen Muskelaufbau, an einem Ort.",
+      "text": "Kein Durcheinander aus Videos und Foren. Hier findest du das Wichtigste, verständlich erklärt.",
+      "more": "Ansehen",
+      "exercises": {
+        "title": "Übungen",
+        "text": "Rund 30 Übungen mit Anleitung, häufigen Fehlern und Alternativen. Filterbar nach Muskel und Equipment."
+      },
+      "plans": {
+        "title": "Trainingspläne",
+        "text": "Drei fertige Pläne, vom Ganzkörper-Training für Anfänger bis Push/Pull/Legs."
+      },
+      "nutrition": {
+        "title": "Ernährung",
+        "text": "Kalorien und Protein einfach erklärt, mit Rechner und günstigen Rezepten."
+      }
+    },
+    "muscleMap": {
+      "eyebrow": "Muskel-Karte",
+      "title": "Welchen Muskel willst du trainieren?",
+      "text": "Fahr mit der Maus über einen Muskel oder tippe ihn an. Danach zeigen wir dir die passenden Übungen.",
+      "emptyTitle": "Wähle einen Muskel",
+      "emptyText": "Auf der Karte oder unten in der Liste.",
+      "cta": "Übungen für {muscle} ansehen",
+      "groups": "Muskelgruppen"
+    },
+    "rules": {
+      "eyebrow": "Die Basics",
+      "title": "Die 5 Grundregeln für Muskelaufbau",
+      "text": "Mehr braucht es am Anfang nicht. Wer diese fünf Punkte einhält, macht schon fast alles richtig.",
+      "readyTitle": "Bereit?",
+      "readyText": "Wähle einen Trainingsplan, der zu dir passt, und leg los.",
+      "readyCta": "Plan wählen",
+      "items": [
+        {
+          "title": "Progressive Steigerung",
+          "text": "Steigere Gewicht, Wiederholungen oder Sätze nach und nach. Ein Muskel wächst nur, wenn er mehr gefordert wird als bisher."
+        },
+        {
+          "title": "Genug Protein",
+          "text": "Etwa 1,6 bis 2,2 g pro kg Körpergewicht am Tag, verteilt auf mehrere Mahlzeiten. Protein ist der Baustoff für neue Muskeln."
+        },
+        {
+          "title": "Leichter Kalorienüberschuss",
+          "text": "Iss etwa 250 bis 300 kcal mehr, als du verbrauchst. Noch mehr Kalorien bauen nicht mehr Muskeln auf, nur mehr Fett."
+        },
+        {
+          "title": "Genug Schlaf",
+          "text": "7 bis 9 Stunden pro Nacht. Muskeln wachsen in der Erholung, nicht während dem Training."
+        },
+        {
+          "title": "Konstanz",
+          "text": "Lieber über Monate 3x pro Woche trainieren als zwei Wochen lang jeden Tag. Dranbleiben schlägt Perfektion."
+        }
+      ]
+    }
+  },
+  "exercisesPage": {
+    "title": "Übungen",
+    "eyebrow": "Übungsbibliothek",
+    "heading": "Übungen",
+    "intro": "{count} Übungen mit Anleitung Schritt für Schritt. Filtere nach Muskel, Equipment und Level.",
+    "searchLabel": "Übung suchen",
+    "searchPlaceholder": "Übung suchen, z.B. Kniebeuge",
+    "muscleGroup": "Muskelgruppe",
+    "equipment": "Equipment",
+    "level": "Level",
+    "countOne": "Übung",
+    "countOther": "Übungen",
+    "reset": "Filter zurücksetzen",
+    "emptyTitle": "Keine Übung gefunden",
+    "emptyText": "Probier einen anderen Suchbegriff oder weniger Filter."
+  },
+  "exerciseDetail": {
+    "back": "Alle Übungen",
+    "howTo": "So geht’s",
+    "mistakes": "Häufige Fehler",
+    "sets": "Sätze",
+    "reps": "Wiederholungen",
+    "alternatives": "Alternativen",
+    "primary": "Hauptmuskel",
+    "secondary": "hilft mit",
+    "imageCredit": "Bild: {credit}"
+  },
+  "plansPage": {
+    "title": "Trainingspläne",
+    "eyebrow": "Trainingspläne",
+    "heading": "Dein Plan für jede Woche",
+    "intro": "Drei bewährte Pläne, vom ersten Training bis zum Fortgeschrittenen. Wähle einen Plan, der zu deiner Erfahrung passt.",
+    "choose": "Plan auswählen",
+    "planNumber": "Plan {number}",
+    "print": "Als PDF drucken",
+    "week": "Deine Woche",
+    "trainingDays": "Trainingstage",
+    "rest": "Pause",
+    "tipsTitle": "So holst du das Meiste raus",
+    "table": {
+      "exercise": "Übung",
+      "sets": "Sätze",
+      "reps": "Wdh.",
+      "setsTimes": "Sätze ×"
+    },
+    "printView": {
+      "header": "JJJ Fitness · Trainingsplan",
+      "week": "Woche",
+      "weekShort": "W",
+      "tips": "Tipps",
+      "note": "In die Spalten W1 bis W4 kannst du das Gewicht pro Woche eintragen. Alle Angaben sind Richtwerte. Bei Schmerzen oder gesundheitlichen Fragen eine Fachperson fragen."
+    },
+    "tips": [
+      {
+        "title": "Aufwärmen",
+        "text": "5 bis 10 Minuten locker bewegen (z.B. Velo oder Seilspringen). Dann bei der ersten Übung 1 bis 2 leichte Sätze machen."
+      },
+      {
+        "title": "Steigern",
+        "text": "Schaffst du in allen Sätzen die obere Zahl der Wiederholungen sauber? Dann beim nächsten Mal das Gewicht leicht erhöhen."
+      },
+      {
+        "title": "Pausen",
+        "text": "2 bis 3 Minuten bei schweren Grundübungen wie Kniebeuge oder Bankdrücken, 1 bis 2 Minuten bei den anderen Übungen."
+      },
+      {
+        "title": "Technik vor Gewicht",
+        "text": "Lieber etwas leichter und sauber als schwer und unsauber. Die letzte Wiederholung sollte anstrengend, aber noch sauber sein."
+      }
+    ]
+  },
+  "nutritionPage": {
+    "title": "Ernährung",
+    "eyebrow": "Ernährung",
+    "heading": "Richtig essen für Muskelaufbau",
+    "intro": "Kalorien, Protein, Kohlenhydrate und Fett, einfach erklärt. Dazu ein Rechner für deinen Bedarf und günstige Rezepte.",
+    "toCalculator": "Zum Rechner",
+    "toRecipes": "Zu den Rezepten",
+    "basics": {
+      "eyebrow": "Grundlagen",
+      "title": "Was dein Körper braucht",
+      "text": "Drei Nährstoffe liefern Energie: Protein, Kohlenhydrate und Fett. Alle drei sind wichtig, keiner ist «böse».",
+      "sourcesLabel": "Gute Quellen für {topic}",
+      "items": [
+        {
+          "title": "Kalorien",
+          "badge": "Energie",
+          "text": "Kalorien (kcal) sind die Energie aus dem Essen. Für Muskelaufbau brauchst du einen leichten Überschuss, also etwa 250 bis 300 kcal mehr, als du verbrauchst. Viel mehr bringt nicht mehr Muskeln, nur mehr Fett.",
+          "sources": [
+            "Regelmässig essen",
+            "3 Mahlzeiten + 1–2 Snacks"
+          ]
+        },
+        {
+          "title": "Protein",
+          "badge": "4 kcal pro g",
+          "text": "Protein (Eiweiss) ist der Baustoff für deine Muskeln. Ideal sind 1,6 bis 2,2 g pro kg Körpergewicht am Tag, verteilt auf mehrere Mahlzeiten.",
+          "sources": [
+            "Magerquark",
+            "Eier",
+            "Poulet",
+            "Linsen",
+            "Tofu",
+            "Milch",
+            "Thon"
+          ]
+        },
+        {
+          "title": "Kohlenhydrate",
+          "badge": "4 kcal pro g",
+          "text": "Kohlenhydrate sind der wichtigste Treibstoff fürs Training. Sie füllen die Energiespeicher in den Muskeln. Am besten aus Vollkorn, Kartoffeln und Früchten.",
+          "sources": [
+            "Haferflocken",
+            "Reis",
+            "Kartoffeln",
+            "Vollkornbrot",
+            "Teigwaren",
+            "Bananen"
+          ]
+        },
+        {
+          "title": "Fett",
+          "badge": "9 kcal pro g",
+          "text": "Fett ist wichtig für Hormone und damit der Körper bestimmte Vitamine aufnehmen kann. Es hat mehr als doppelt so viele Kalorien pro Gramm. Etwa 1 g pro kg Körpergewicht ist ein guter Richtwert.",
+          "sources": [
+            "Nüsse",
+            "Olivenöl",
+            "Rapsöl",
+            "Avocado",
+            "Lachs",
+            "Käse"
+          ]
+        }
+      ]
+    },
+    "supplements": {
+      "title": "Und Supplements?",
+      "text": "Brauchst du nicht. Mit normalem Essen wie Quark, Eiern, Milch, Hülsenfrüchten oder Poulet erreichst du dein Protein problemlos. Wichtiger als jedes Pulver sind genug Schlaf und regelmässiges Training."
+    },
+    "calculator": {
+      "eyebrow": "Rechner",
+      "title": "Wie viel solltest du essen?",
+      "text": "Berechne deinen Kalorien- und Proteinbedarf für den Muskelaufbau."
+    },
+    "recipes": {
+      "eyebrow": "Rezepte",
+      "title": "Günstig, einfach, viel Protein",
+      "text": "Alle Rezepte kosten wenig, gehen schnell und kommen ohne spezielle Produkte aus."
+    }
+  },
+  "calculator": {
+    "sex": "Geschlecht",
+    "sexHint": "(die Formel rechnet unterschiedlich)",
+    "male": "Männlich",
+    "female": "Weiblich",
+    "age": "Alter",
+    "ageUnit": "Jahre",
+    "height": "Grösse",
+    "weight": "Gewicht",
+    "activityTitle": "Wie aktiv bist du?",
+    "error": "Bitte einen Wert zwischen {min} und {max} eingeben.",
+    "goal": "Ziel Muskelaufbau",
+    "perDay": "kcal/Tag",
+    "maintenance": "Gewicht halten",
+    "bmr": "Grundumsatz",
+    "protein": "Protein pro Tag (1,6–2,2 g pro kg)",
+    "dayExample": "So könnte dein Tag aussehen:",
+    "under18": "Du bist unter 18 und wächst noch. Die Formel wurde für Erwachsene entwickelt, nimm die Werte deshalb als grobe Orientierung. Iss regelmässig und genug. Wenig zu essen bremst Wachstum und Training.",
+    "emptyTitle": "Dein Ergebnis",
+    "emptyText": "Gib Alter, Grösse und Gewicht ein. Wir rechnen mit der Mifflin-St-Jeor-Formel, einer der genauesten Formeln für den Grundumsatz, und zählen für den Muskelaufbau 250 bis 300 kcal dazu.",
+    "disclaimer": "Alle Werte sind Richtwerte und ersetzen keine Beratung. Bei gesundheitlichen Fragen wende dich an eine Fachperson, z.B. deine Hausärztin, deinen Hausarzt oder eine Ernährungsberatung.",
+    "macros": {
+      "protein": "Protein",
+      "carbs": "Kohlenhydrate",
+      "fat": "Fett"
+    },
+    "activity": {
+      "kaum": {
+        "label": "Kaum aktiv",
+        "description": "Schule oder Büro, kein Sport"
+      },
+      "leicht": {
+        "label": "Leicht aktiv",
+        "description": "Sport 1–3x pro Woche"
+      },
+      "maessig": {
+        "label": "Mässig aktiv",
+        "description": "Sport 3–5x pro Woche"
+      },
+      "sehr": {
+        "label": "Sehr aktiv",
+        "description": "Sport 6–7x pro Woche"
+      },
+      "extrem": {
+        "label": "Extrem aktiv",
+        "description": "Körperliche Arbeit und tägliches Training"
+      }
+    }
+  },
+  "recipeCard": {
+    "minutes": "{minutes} Min.",
+    "price": "ca. CHF {price}",
+    "portions": "{portions} Portionen",
+    "perPortion": "pro Portion, ungefähre Werte",
+    "show": "Zutaten & Zubereitung",
+    "hide": "Rezept ausblenden",
+    "ingredients": "Zutaten",
+    "steps": "Zubereitung",
+    "kcal": "kcal",
+    "protein": "Protein",
+    "carbs": "KH",
+    "fat": "Fett"
+  },
+  "about": {
+    "title": "Über uns",
+    "eyebrow": "Über uns",
+    "heading": "Wer hinter JJJ Fitness steckt",
+    "intro": "Wir sind KV-Lernende aus Basel und bauen diese Seite im Fach Projektmanagement. Unser Ziel: Einsteigerinnen und Einsteiger finden an einem Ort alles, was sie für den Muskelaufbau brauchen, verständlich und ohne Werbung.",
+    "teamEyebrow": "Team",
+    "teamTitle": "Das sind wir",
+    "projectEyebrow": "Das Projekt",
+    "projectTitle": "Warum eine Fitness-Website?",
+    "projectText": "Viele Jugendliche fangen mit Krafttraining an, finden im Internet aber vor allem Werbung, Extrem-Diäten und widersprüchliche Tipps. Wir wollten eine Seite bauen, die ehrlich, einfach und kostenlos ist. Und dabei lernen, wie man ein Projekt plant, aufteilt und termingerecht abschliesst.",
+    "timelineTitle": "Projektverlauf",
+    "stageDone": "Erledigt",
+    "stageNext": "Als Nächstes",
+    "stageOpen": "Offen",
+    "feedbackEyebrow": "Feedback",
+    "feedbackTitle": "Wie findest du die Seite?",
+    "feedbackText": "Dein Feedback hilft uns, die Seite zu verbessern, und fliesst in unsere Projektauswertung ein. Es dauert weniger als eine Minute.",
+    "creditsEyebrow": "Quellen",
+    "creditsTitle": "Quellen und Technik",
+    "team": {
+      "p1": {
+        "role": "Projektleitung",
+        "tasks": "Planung, Termine, Kommunikation mit der Lehrperson"
+      },
+      "p2": {
+        "role": "Inhalte",
+        "tasks": "Übungen, Trainingspläne und Rezepte recherchieren und prüfen"
+      },
+      "p3": {
+        "role": "Design & Tests",
+        "tasks": "Design, Bilder, Tests auf dem Handy, französische Texte"
+      }
+    },
+    "facts": [
+      {
+        "label": "Schule",
+        "value": "KV Basel"
+      },
+      {
+        "label": "Fach",
+        "value": "Projektmanagement"
+      },
+      {
+        "label": "Zielpublikum",
+        "value": "Jugendliche und junge Erwachsene, 15–25 Jahre"
+      },
+      {
+        "label": "Projektende",
+        "value": "Eine Woche nach den Osterferien 2027"
+      }
+    ],
+    "stages": {
+      "1": "Setup, Design-System und Navigation",
+      "2": "Startseite mit Animationen",
+      "3": "Übungsbibliothek mit Filter",
+      "4": "Trainingspläne",
+      "5": "Ernährung und Rechner",
+      "6": "Über uns und Feedback-Formular",
+      "7": "Französisch-Version",
+      "8": "Feinschliff, Tests auf dem Handy, Deployment"
+    },
+    "credits": [
+      {
+        "title": "Bilder und Grafiken",
+        "items": [
+          "Muskel-Karte, Körper-Grafiken und Icons: selbst gezeichnet (SVG)",
+          "Fotos: noch keine. Wir verwenden nur freie Bilder von Unsplash oder Pexels oder eigene Fotos, jeweils mit Quellenangabe."
+        ]
+      },
+      {
+        "title": "Schriften",
+        "items": [
+          "Space Grotesk (SIL Open Font License)",
+          "Inter (SIL Open Font License)"
+        ]
+      },
+      {
+        "title": "Technik",
+        "items": [
+          "React, Vite, TypeScript",
+          "Tailwind CSS",
+          "Motion (früher Framer Motion) für Animationen",
+          "Lenis für weiches Scrollen",
+          "React Router",
+          "Formspree für das Feedback-Formular"
+        ]
+      },
+      {
+        "title": "Fachliche Grundlagen",
+        "items": [
+          "Kalorienbedarf: Mifflin-St-Jeor-Formel (Mifflin et al., 1990)",
+          "Proteinempfehlung 1,6–2,2 g/kg: Meta-Analyse von Morton et al., British Journal of Sports Medicine (2018)"
+        ]
+      }
+    ]
+  },
+  "feedback": {
+    "notConnected": "Hinweis fürs Team: Das Formular ist noch nicht mit Formspree verbunden. Wie das geht, steht im README unter «Feedback-Formular».",
+    "ratingQuestion": "Wie gefällt dir die Seite?",
+    "ratingLabels": {
+      "1": "Gefällt mir nicht",
+      "2": "Geht so",
+      "3": "Ganz okay",
+      "4": "Gut",
+      "5": "Super!"
+    },
+    "ratingStar": "{value} von 5 Sternen: {label}",
+    "ratingError": "Bitte wähle 1 bis 5 Sterne.",
+    "liked": "Was gefällt dir?",
+    "likedPlaceholder": "z.B. die Muskel-Karte, die Rezepte ...",
+    "missing": "Was fehlt dir?",
+    "missingPlaceholder": "z.B. mehr Übungen für zu Hause ...",
+    "privacy": "Das Feedback ist anonym, bitte schreib keine persönlichen Daten hinein. Die Antworten werden über den Dienst Formspree an uns geschickt.",
+    "submit": "Feedback senden",
+    "sending": "Wird gesendet …",
+    "error": "Das hat leider nicht geklappt. Prüfe deine Internetverbindung und versuche es nochmals.",
+    "successTitle": "Danke für dein Feedback!",
+    "successText": "Wir lesen alle Antworten und verbessern die Seite damit.",
+    "again": "Nochmals Feedback geben"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "eyebrow": "Fehler 404",
+    "heading": "Diese Seite gibt es nicht.",
+    "text": "Vielleicht hat sich ein Tippfehler eingeschlichen.",
+    "home": "Zur Startseite"
+  },
+  "styleguide": {
+    "title": "Design-System",
+    "eyebrow": "Design-System",
+    "heading": "Unsere Bausteine",
+    "intro": "Farben, Schriften und Komponenten, aus denen die ganze Seite gebaut ist.",
+    "colors": "Farben",
+    "colorNames": {
+      "bg": "Hintergrund",
+      "surface": "Karte",
+      "surface2": "Karte hell",
+      "text": "Text",
+      "muted": "Nebentext",
+      "accent": "Akzent"
+    },
+    "fonts": "Schriften",
+    "fontHeading": "Überschriften: Space Grotesk, fett",
+    "fontBody": "Fliesstext: Inter",
+    "sampleHeading": "Stark bleiben.",
+    "sampleText": "Muskeln wachsen nicht im Training, sondern in der Erholung danach. Genug Schlaf und Protein sind deshalb genauso wichtig wie die Übungen selbst.",
+    "buttons": "Buttons",
+    "primary": "Primär",
+    "secondary": "Sekundär",
+    "ghost": "Zurückhaltend",
+    "small": "Klein",
+    "large": "Gross",
+    "disabled": "Deaktiviert",
+    "cards": "Karten",
+    "normalCard": "Normale Karte",
+    "normalCardText": "Für Inhalte, die man nur liest.",
+    "interactiveCard": "Interaktive Karte",
+    "interactiveCardText": "Fahr mit der Maus drüber: Sie hebt sich an und leuchtet."
+  },
+  "weekdays": [
+    "Mo",
+    "Di",
+    "Mi",
+    "Do",
+    "Fr",
+    "Sa",
+    "So"
+  ],
+  "muscles": {
+    "brust": {
+      "name": "Brust",
+      "description": "Der grosse Brustmuskel drückt die Arme nach vorne, z.B. beim Liegestütz oder Bankdrücken."
+    },
+    "schultern": {
+      "name": "Schultern",
+      "description": "Der Deltamuskel hebt die Arme nach vorne, zur Seite und nach hinten."
+    },
+    "bizeps": {
+      "name": "Bizeps",
+      "description": "Die Vorderseite des Oberarms beugt den Ellbogen, z.B. beim Curl oder Klimmzug."
+    },
+    "trizeps": {
+      "name": "Trizeps",
+      "description": "Die Rückseite des Oberarms streckt den Ellbogen, z.B. beim Dip oder Liegestütz."
+    },
+    "bauch": {
+      "name": "Bauch",
+      "description": "Gerade und schräge Bauchmuskeln stabilisieren den Rumpf, und zwar bei fast jeder Übung."
+    },
+    "ruecken": {
+      "name": "Rücken",
+      "description": "Der breite Rückenmuskel zieht die Arme zum Körper, z.B. beim Rudern oder Klimmzug."
+    },
+    "nacken": {
+      "name": "Nacken",
+      "description": "Der Trapezmuskel hebt und stabilisiert die Schulterblätter."
+    },
+    "gesaess": {
+      "name": "Gesäss",
+      "description": "Der grösste Muskel des Körpers streckt die Hüfte, z.B. bei Kniebeuge und Hip Thrust."
+    },
+    "quadrizeps": {
+      "name": "Oberschenkel vorne",
+      "description": "Der Quadrizeps streckt das Knie, z.B. bei Kniebeuge und Ausfallschritt."
+    },
+    "beinbeuger": {
+      "name": "Oberschenkel hinten",
+      "description": "Die Beinbeuger beugen das Knie und strecken die Hüfte, z.B. beim Rumänischen Kreuzheben."
+    },
+    "waden": {
+      "name": "Waden",
+      "description": "Die Wadenmuskeln heben die Ferse, z.B. beim Wadenheben oder Springen."
+    }
+  },
+  "equipment": {
+    "koerpergewicht": "Körpergewicht",
+    "kurzhantel": "Kurzhantel",
+    "langhantel": "Langhantel",
+    "maschine": "Maschine"
+  },
+  "levels": {
+    "anfaenger": "Anfänger",
+    "fortgeschritten": "Fortgeschritten"
+  },
+  "exercises": {
+    "liegestuetz": {
+      "name": "Liegestütz",
+      "description": "Der Klassiker ohne Geräte für Brust, Schultern und Trizeps.",
+      "steps": [
+        "Hände etwas breiter als schulterbreit auf den Boden setzen, die Finger zeigen nach vorne.",
+        "Den Körper von Kopf bis Fersen in eine gerade Linie bringen, Bauch und Gesäss anspannen.",
+        "Langsam nach unten gehen, bis die Brust fast den Boden berührt. Die Ellbogen zeigen schräg nach hinten (ca. 45 Grad).",
+        "Kraftvoll nach oben drücken, bis die Arme gestreckt sind."
+      ],
+      "mistakes": [
+        "Die Hüfte hängt durch oder ragt nach oben. Bauch anspannen!",
+        "Die Ellbogen zeigen gerade zur Seite. Das belastet die Schultern.",
+        "Nur halb runtergehen. Lieber auf den Knien üben und die volle Bewegung machen."
+      ]
+    },
+    "bankdruecken": {
+      "name": "Bankdrücken",
+      "description": "Die wichtigste Langhantel-Übung für eine kräftige Brust.",
+      "steps": [
+        "Flach auf die Bank legen, die Augen sind unter der Stange, die Füsse stehen fest am Boden.",
+        "Die Stange etwas breiter als schulterbreit greifen und die Schulterblätter nach hinten unten ziehen.",
+        "Die Stange kontrolliert auf die untere Brust senken.",
+        "Die Stange nach oben drücken, bis die Arme gestreckt sind."
+      ],
+      "mistakes": [
+        "Die Stange auf der Brust abprallen lassen.",
+        "Das Gesäss hebt von der Bank ab.",
+        "Schwer trainieren ohne Sicherung. Bei schweren Gewichten immer eine Person zum Sichern dabeihaben."
+      ]
+    },
+    "kurzhantel-schraegbankdruecken": {
+      "name": "Schrägbankdrücken mit Kurzhanteln",
+      "description": "Betont den oberen Teil der Brust und trainiert jede Seite einzeln.",
+      "steps": [
+        "Die Bank auf 30 bis 45 Grad einstellen und dich mit den Kurzhanteln auf den Oberschenkeln hinsetzen.",
+        "Zurücklehnen und die Hanteln seitlich neben die Brust bringen.",
+        "Die Hanteln nach oben drücken, bis sie sich über der Brust fast berühren.",
+        "Langsam wieder absenken, bis du eine leichte Dehnung in der Brust spürst."
+      ],
+      "mistakes": [
+        "Die Bank ist zu steil eingestellt. Dann arbeiten vor allem die Schultern.",
+        "Die Hanteln fallen lassen statt kontrolliert senken.",
+        "Den Rücken stark ins Hohlkreuz drücken."
+      ]
+    },
+    "dips": {
+      "name": "Dips",
+      "description": "Anspruchsvolle Übung mit dem eigenen Körpergewicht für Brust und Trizeps.",
+      "steps": [
+        "Dich am Barren hochstützen, die Arme sind gestreckt, die Schultern weg von den Ohren.",
+        "Den Oberkörper leicht nach vorne neigen.",
+        "Langsam absenken, bis die Oberarme etwa parallel zum Boden sind.",
+        "Kräftig nach oben drücken, bis die Arme wieder gestreckt sind."
+      ],
+      "mistakes": [
+        "Zu tief absenken. Das belastet die Schultern.",
+        "Die Schultern ziehen hoch zu den Ohren.",
+        "Mit Schwung arbeiten statt kontrolliert."
+      ]
+    },
+    "butterfly": {
+      "name": "Butterfly an der Maschine",
+      "description": "Isoliert die Brust, ideal zum Abschluss des Brusttrainings.",
+      "steps": [
+        "Den Sitz so einstellen, dass die Griffe auf Brusthöhe sind.",
+        "Die Griffe fassen, die Ellbogen sind leicht gebeugt, der Rücken liegt an der Lehne.",
+        "Die Arme in einem Bogen vor der Brust zusammenführen.",
+        "Langsam zurück, bis du eine leichte Dehnung spürst."
+      ],
+      "mistakes": [
+        "Zu weit nach hinten gehen und die Schultern überdehnen.",
+        "Die Arme ganz strecken oder stark beugen.",
+        "Das Gewicht zurückschnellen lassen."
+      ]
+    },
+    "klimmzug": {
+      "name": "Klimmzug",
+      "description": "Die Königsübung für einen breiten Rücken.",
+      "steps": [
+        "Die Stange etwas breiter als schulterbreit greifen, die Handflächen zeigen nach vorne.",
+        "Die Schulterblätter nach unten ziehen und den Bauch anspannen.",
+        "Hochziehen, bis das Kinn über der Stange ist.",
+        "Kontrolliert wieder ablassen, bis die Arme fast gestreckt sind."
+      ],
+      "mistakes": [
+        "Mit den Beinen Schwung holen.",
+        "Nur halbe Wiederholungen machen.",
+        "Du schaffst noch keinen Klimmzug? Starte mit dem Latzug oder nimm ein Widerstandsband als Hilfe."
+      ]
+    },
+    "latzug": {
+      "name": "Latzug",
+      "description": "Zieht wie ein Klimmzug, aber mit einstellbarem Gewicht.",
+      "steps": [
+        "Hinsetzen und die Knie unter dem Polster fixieren.",
+        "Die Stange breit greifen und den Oberkörper leicht zurücklehnen.",
+        "Die Stange zur oberen Brust ziehen, die Ellbogen zeigen nach unten.",
+        "Langsam nach oben führen, bis die Arme gestreckt sind."
+      ],
+      "mistakes": [
+        "Die Stange hinter den Nacken ziehen.",
+        "Mit dem ganzen Oberkörper nach hinten reissen.",
+        "Die Schultern hochziehen, statt die Schulterblätter nach unten zu ziehen."
+      ]
+    },
+    "langhantelrudern": {
+      "name": "Langhantel-Rudern vorgebeugt",
+      "description": "Baut Dicke und Kraft im ganzen Rücken auf.",
+      "steps": [
+        "Hüftbreit stehen und die Stange schulterbreit greifen.",
+        "Die Knie leicht beugen und den Oberkörper mit geradem Rücken nach vorne neigen (ca. 45 Grad).",
+        "Die Stange zum unteren Bauch ziehen und die Schulterblätter zusammendrücken.",
+        "Kontrolliert absenken, bis die Arme gestreckt sind."
+      ],
+      "mistakes": [
+        "Ein runder Rücken.",
+        "Der Oberkörper richtet sich bei jeder Wiederholung auf.",
+        "Zu schweres Gewicht, das nur mit Schwung hochkommt."
+      ]
+    },
+    "kurzhantelrudern": {
+      "name": "Einarmiges Kurzhantel-Rudern",
+      "description": "Trainiert jede Rückenseite einzeln und schont den unteren Rücken.",
+      "steps": [
+        "Ein Knie und eine Hand auf die Bank stützen, der Rücken ist gerade.",
+        "Die Hantel mit dem freien Arm hängen lassen.",
+        "Die Hantel Richtung Hüfte ziehen, der Ellbogen bleibt nah am Körper.",
+        "Langsam absenken. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "mistakes": [
+        "Der Oberkörper dreht sich mit.",
+        "Die Hantel zur Schulter statt zur Hüfte ziehen.",
+        "Den Rücken rund machen."
+      ]
+    },
+    "kreuzheben": {
+      "name": "Kreuzheben",
+      "description": "Ganzkörper-Übung für Rücken, Gesäss und Beine.",
+      "steps": [
+        "Die Füsse stehen hüftbreit, die Stange ist über der Fussmitte.",
+        "In die Knie gehen und die Stange schulterbreit greifen. Der Rücken ist gerade, die Brust raus.",
+        "Den Bauch anspannen und die Stange nah am Körper hochziehen, bis du aufrecht stehst.",
+        "Die Stange kontrolliert und nah an den Beinen wieder absenken."
+      ],
+      "mistakes": [
+        "Ein runder Rücken. Das ist das grösste Verletzungsrisiko.",
+        "Die Stange ist weit weg vom Körper.",
+        "Oben ins Hohlkreuz lehnen.",
+        "Ohne Technik-Check starten. Lass dir die Übung am Anfang von einer erfahrenen Person zeigen."
+      ]
+    },
+    "kurzhantel-schulterdruecken": {
+      "name": "Kurzhantel-Schulterdrücken",
+      "description": "Baut kräftige, runde Schultern auf.",
+      "steps": [
+        "Auf eine Bank mit aufrechter Lehne setzen.",
+        "Die Hanteln auf Schulterhöhe halten, die Handflächen zeigen nach vorne.",
+        "Die Hanteln über den Kopf drücken, bis die Arme fast gestreckt sind.",
+        "Langsam zurück auf Schulterhöhe."
+      ],
+      "mistakes": [
+        "Ein starkes Hohlkreuz.",
+        "Die Hanteln oben zusammenschlagen.",
+        "Zu schwer starten."
+      ]
+    },
+    "seitheben": {
+      "name": "Seitheben",
+      "description": "Trainiert die seitliche Schulter und macht die Schultern breiter.",
+      "steps": [
+        "Aufrecht stehen, die Hanteln hängen seitlich neben den Oberschenkeln.",
+        "Die Ellbogen leicht gebeugt lassen.",
+        "Die Arme seitlich anheben bis auf Schulterhöhe.",
+        "Langsam wieder senken."
+      ],
+      "mistakes": [
+        "Mit Schwung aus dem Oberkörper arbeiten.",
+        "Die Arme höher als die Schultern heben.",
+        "Zu schweres Gewicht. Bei dieser Übung reicht wenig."
+      ]
+    },
+    "face-pulls": {
+      "name": "Face Pulls",
+      "description": "Stärkt die hintere Schulter und sorgt für eine gute Haltung.",
+      "steps": [
+        "Ein Seil am Kabelzug auf Kopfhöhe einhängen.",
+        "Das Seil mit beiden Händen greifen und einen Schritt zurückgehen.",
+        "Das Seil Richtung Gesicht ziehen. Die Hände gehen dabei auseinander, die Ellbogen bleiben hoch.",
+        "Kurz halten, dann langsam zurück."
+      ],
+      "mistakes": [
+        "Zu schwer und mit Rücklage ziehen.",
+        "Die Ellbogen zeigen nach unten.",
+        "Die Schultern hochziehen."
+      ]
+    },
+    "shrugs": {
+      "name": "Shrugs (Schulterheben)",
+      "description": "Einfache Übung für den Trapezmuskel im Nacken.",
+      "steps": [
+        "Aufrecht stehen und die Hanteln seitlich halten.",
+        "Die Arme bleiben die ganze Zeit gestreckt.",
+        "Die Schultern gerade nach oben Richtung Ohren ziehen.",
+        "Oben kurz halten und langsam absenken."
+      ],
+      "mistakes": [
+        "Die Schultern kreisen lassen.",
+        "Den Kopf nach vorne schieben.",
+        "Mit den Armen mitziehen."
+      ]
+    },
+    "kurzhantel-curl": {
+      "name": "Kurzhantel-Curl",
+      "description": "Der Klassiker für den Bizeps.",
+      "steps": [
+        "Aufrecht stehen, die Handflächen zeigen nach vorne.",
+        "Die Oberarme bleiben ruhig neben dem Körper.",
+        "Die Hanteln Richtung Schulter beugen.",
+        "Langsam wieder absenken, bis die Arme gestreckt sind."
+      ],
+      "mistakes": [
+        "Mit dem Rücken Schwung holen.",
+        "Die Ellbogen wandern nach vorne.",
+        "Nur halb absenken."
+      ]
+    },
+    "hammercurl": {
+      "name": "Hammer-Curl",
+      "description": "Curl mit neutralem Griff, trainiert auch die Unterarme.",
+      "steps": [
+        "Die Hanteln seitlich halten, die Daumen zeigen nach vorne.",
+        "Die Oberarme ruhig halten.",
+        "Die Hanteln zur Schulter beugen, der Griff bleibt dabei neutral.",
+        "Kontrolliert absenken."
+      ],
+      "mistakes": [
+        "Schwung aus der Hüfte holen.",
+        "Die Handgelenke abknicken.",
+        "Zu schnell absenken."
+      ]
+    },
+    "langhantel-curl": {
+      "name": "Langhantel-Curl",
+      "description": "Mehr Gewicht für den Bizeps, beide Arme gleichzeitig.",
+      "steps": [
+        "Die Stange schulterbreit greifen, die Handflächen zeigen nach vorne.",
+        "Die Ellbogen bleiben nah am Körper.",
+        "Die Stange zur Brust beugen.",
+        "Langsam absenken."
+      ],
+      "mistakes": [
+        "Der Oberkörper lehnt sich zurück.",
+        "Die Ellbogen wandern nach vorne.",
+        "Die Handgelenke knicken ab."
+      ]
+    },
+    "trizepsdruecken-kabel": {
+      "name": "Trizepsdrücken am Kabel",
+      "description": "Isoliert den Trizeps und schont die Gelenke.",
+      "steps": [
+        "Ein Seil oder eine Stange oben am Kabelzug einhängen.",
+        "Aufrecht stehen, die Ellbogen sind eng am Körper.",
+        "Den Griff nach unten drücken, bis die Arme gestreckt sind.",
+        "Langsam zurück, bis die Ellbogen etwa 90 Grad gebeugt sind."
+      ],
+      "mistakes": [
+        "Die Ellbogen bewegen sich nach vorne und hinten.",
+        "Der Oberkörper lehnt sich über das Gewicht.",
+        "Das Gewicht zurückschnellen lassen."
+      ]
+    },
+    "french-press": {
+      "name": "French Press (Stirndrücken)",
+      "description": "Langhantel-Übung für einen kräftigen Trizeps.",
+      "steps": [
+        "Auf die Bank legen und die Stange (am besten eine SZ-Stange) mit gestreckten Armen über der Brust halten.",
+        "Die Oberarme bleiben senkrecht.",
+        "Die Stange langsam Richtung Stirn senken. Nur die Ellbogen beugen sich.",
+        "Zurück nach oben strecken."
+      ],
+      "mistakes": [
+        "Die Ellbogen gehen weit auseinander.",
+        "Die Oberarme bewegen sich mit.",
+        "Zu schweres Gewicht. Das belastet die Ellbogen."
+      ]
+    },
+    "kniebeuge": {
+      "name": "Kniebeuge mit Langhantel",
+      "description": "Die Grundübung für Beine und Gesäss.",
+      "steps": [
+        "Die Stange auf den oberen Rücken legen (nicht auf den Nacken). Die Füsse stehen schulterbreit.",
+        "Den Bauch anspannen und die Brust aufrecht halten.",
+        "Die Hüfte nach hinten unten bewegen, bis die Oberschenkel mindestens parallel zum Boden sind.",
+        "Über die ganze Fusssohle kraftvoll nach oben drücken."
+      ],
+      "mistakes": [
+        "Die Knie fallen nach innen.",
+        "Die Fersen heben ab.",
+        "Der Rücken wird unten in der Bewegung rund."
+      ]
+    },
+    "goblet-squat": {
+      "name": "Goblet Squat",
+      "description": "Kniebeuge mit Kurzhantel, perfekt zum Lernen der Technik.",
+      "steps": [
+        "Eine Kurzhantel senkrecht vor der Brust halten.",
+        "Die Füsse stehen schulterbreit, die Fussspitzen zeigen leicht nach aussen.",
+        "Tief in die Hocke gehen, die Ellbogen sind zwischen den Knien.",
+        "Aufrichten, bis du wieder gerade stehst."
+      ],
+      "mistakes": [
+        "Die Knie fallen nach innen.",
+        "Der Oberkörper kippt weit nach vorne.",
+        "Die Fersen heben ab."
+      ]
+    },
+    "ausfallschritte": {
+      "name": "Ausfallschritte",
+      "description": "Trainiert jedes Bein einzeln und verbessert das Gleichgewicht.",
+      "steps": [
+        "Aufrecht stehen und die Hanteln seitlich halten. Am Anfang geht es auch ohne Gewicht.",
+        "Einen grossen Schritt nach vorne machen.",
+        "Das hintere Knie Richtung Boden senken, bis beide Knie etwa 90 Grad gebeugt sind.",
+        "Mit dem vorderen Bein zurück in den Stand drücken."
+      ],
+      "mistakes": [
+        "Das vordere Knie knickt nach innen.",
+        "Der Schritt ist zu kurz.",
+        "Der Oberkörper fällt nach vorne."
+      ]
+    },
+    "beinpresse": {
+      "name": "Beinpresse",
+      "description": "Viel Gewicht für die Beine, ohne den Rücken zu belasten.",
+      "steps": [
+        "Hinsetzen, Rücken und Gesäss liegen fest am Polster.",
+        "Die Füsse schulterbreit in die Mitte der Plattform stellen.",
+        "Die Plattform langsam absenken, bis die Knie etwa 90 Grad gebeugt sind.",
+        "Hochdrücken, ohne die Knie ganz durchzustrecken."
+      ],
+      "mistakes": [
+        "Die Knie oben komplett durchdrücken.",
+        "Das Gesäss hebt vom Polster ab.",
+        "Zu wenig tief absenken."
+      ]
+    },
+    "rumaenisches-kreuzheben": {
+      "name": "Rumänisches Kreuzheben",
+      "description": "Trainiert die Rückseite der Beine und das Gesäss.",
+      "steps": [
+        "Hüftbreit stehen, die Hanteln sind vor den Oberschenkeln.",
+        "Die Knie leicht beugen und so lassen.",
+        "Die Hüfte nach hinten schieben und die Hanteln nah an den Beinen bis unter die Knie senken.",
+        "Das Gesäss anspannen und die Hüfte nach vorne schieben, bis du aufrecht stehst."
+      ],
+      "mistakes": [
+        "Ein runder Rücken.",
+        "Die Knie zu stark beugen. Dann wird es eine Kniebeuge.",
+        "Die Hanteln sind weit weg von den Beinen."
+      ]
+    },
+    "hip-thrust": {
+      "name": "Hip Thrust",
+      "description": "Die beste Übung, um gezielt das Gesäss zu trainieren.",
+      "steps": [
+        "Den oberen Rücken an eine Bank lehnen. Die Langhantel liegt mit einem Polster auf der Hüfte.",
+        "Die Füsse hüftbreit aufstellen, die Knie sind gebeugt.",
+        "Die Hüfte nach oben drücken, bis Oberkörper und Oberschenkel eine Linie bilden.",
+        "Oben das Gesäss kurz anspannen, dann langsam absenken."
+      ],
+      "mistakes": [
+        "Oben ins Hohlkreuz drücken.",
+        "Die Füsse stehen zu weit weg oder zu nah.",
+        "Den Kopf in den Nacken legen."
+      ]
+    },
+    "beinbeuger-maschine": {
+      "name": "Beinbeuger an der Maschine",
+      "description": "Isoliert die hinteren Oberschenkel.",
+      "steps": [
+        "Die Maschine so einstellen, dass das Polster knapp über den Fersen liegt.",
+        "Hinlegen oder hinsetzen (je nach Maschine) und die Griffe fassen.",
+        "Die Fersen Richtung Gesäss ziehen.",
+        "Langsam zurück, bis die Beine fast gestreckt sind."
+      ],
+      "mistakes": [
+        "Die Hüfte hebt ab.",
+        "Das Gewicht zurückfallen lassen.",
+        "Zu schnelle Wiederholungen."
+      ]
+    },
+    "wadenheben": {
+      "name": "Wadenheben",
+      "description": "Geht überall, zum Beispiel auf einer Treppenstufe.",
+      "steps": [
+        "Mit den Fussballen auf eine Stufe stellen, die Fersen hängen frei.",
+        "An einer Wand oder einem Geländer festhalten.",
+        "Die Fersen so hoch wie möglich anheben.",
+        "Langsam absenken, bis die Fersen unter der Stufe sind."
+      ],
+      "mistakes": [
+        "Wippen statt kontrolliert bewegen.",
+        "Die Bewegung ist zu klein.",
+        "Die Knie beugen."
+      ]
+    },
+    "plank": {
+      "name": "Unterarmstütz (Plank)",
+      "description": "Stärkt den ganzen Rumpf, ganz ohne Geräte.",
+      "steps": [
+        "Die Unterarme auf den Boden legen, die Ellbogen sind unter den Schultern.",
+        "Die Beine nach hinten strecken und dich auf die Zehenspitzen stützen.",
+        "Den Körper in eine gerade Linie bringen, Bauch und Gesäss anspannen.",
+        "Die Position halten und ruhig weiteratmen."
+      ],
+      "mistakes": [
+        "Die Hüfte hängt durch.",
+        "Das Gesäss ragt nach oben.",
+        "Die Luft anhalten."
+      ]
+    },
+    "crunch": {
+      "name": "Crunch",
+      "description": "Einfache Übung für die geraden Bauchmuskeln.",
+      "steps": [
+        "Auf den Rücken legen, die Knie sind gebeugt, die Füsse stehen am Boden.",
+        "Die Hände an die Schläfen oder vor die Brust legen.",
+        "Die Schultern vom Boden abheben, indem du den Bauch anspannst.",
+        "Langsam zurück, ohne den Kopf abzulegen."
+      ],
+      "mistakes": [
+        "Mit den Händen am Kopf ziehen.",
+        "Mit Schwung hochkommen.",
+        "Ganz aufsitzen, statt nur die Schultern zu heben."
+      ]
+    },
+    "haengendes-beinheben": {
+      "name": "Hängendes Beinheben",
+      "description": "Anspruchsvolle Bauchübung an der Klimmzugstange.",
+      "steps": [
+        "An die Stange hängen, die Arme sind gestreckt.",
+        "Den Bauch anspannen, nicht schwingen.",
+        "Die Knie oder die gestreckten Beine nach oben ziehen, mindestens bis auf Hüfthöhe.",
+        "Langsam wieder absenken."
+      ],
+      "mistakes": [
+        "Hin und her schwingen.",
+        "Nur die Beine heben, ohne das Becken einzurollen.",
+        "Zu schnell absenken."
+      ]
+    }
+  },
+  "plans": {
+    "ganzkoerper": {
+      "name": "Ganzkörper 3x pro Woche",
+      "short": "Ganzkörper",
+      "level": "Anfänger",
+      "frequency": "3x pro Woche",
+      "duration": "ca. 50 Min.",
+      "description": "Der ideale Start. Du trainierst jedes Mal den ganzen Körper und wechselst zwischen Tag A und Tag B ab. So wird jeder Muskel mehrmals pro Woche trainiert, und zwischen den Trainings hast du immer einen Ruhetag.",
+      "weekNote": "In der nächsten Woche umgekehrt: B – A – B.",
+      "days": {
+        "A": {
+          "short": "A",
+          "name": "Tag A",
+          "focus": "Ganzkörper mit Fokus auf Kniebeuge und Bankdrücken"
+        },
+        "B": {
+          "short": "B",
+          "name": "Tag B",
+          "focus": "Ganzkörper mit Fokus auf Beinpresse und Schulterdrücken"
+        }
+      }
+    },
+    "oberkoerper-unterkoerper": {
+      "name": "Oberkörper / Unterkörper 4x pro Woche",
+      "short": "Ober-/Unterkörper",
+      "level": "Ab ca. 3 Monaten Training",
+      "frequency": "4x pro Woche",
+      "duration": "ca. 60 Min.",
+      "description": "Der nächste Schritt nach dem Ganzkörper-Plan. Du trainierst abwechselnd Oberkörper und Unterkörper. Dadurch hast du pro Training mehr Zeit für jede Muskelgruppe, und jeder Muskel wird trotzdem zweimal pro Woche trainiert.",
+      "days": {
+        "OK1": {
+          "short": "OK1",
+          "name": "Oberkörper 1",
+          "focus": "Drücken und Ziehen, schwere Grundübungen"
+        },
+        "UK1": {
+          "short": "UK1",
+          "name": "Unterkörper 1",
+          "focus": "Kniebeuge im Mittelpunkt"
+        },
+        "OK2": {
+          "short": "OK2",
+          "name": "Oberkörper 2",
+          "focus": "Obere Brust, Rückenbreite und Arme"
+        },
+        "UK2": {
+          "short": "UK2",
+          "name": "Unterkörper 2",
+          "focus": "Kreuzheben und Gesäss"
+        }
+      }
+    },
+    "push-pull-legs": {
+      "name": "Push / Pull / Legs",
+      "short": "Push/Pull/Legs",
+      "level": "Fortgeschritten",
+      "frequency": "3x pro Woche",
+      "duration": "ca. 60 Min.",
+      "description": "Jeder Tag hat ein klares Thema: Drücken (Brust, Schultern, Trizeps), Ziehen (Rücken, Bizeps) und Beine. Dadurch kannst du jede Muskelgruppe an ihrem Tag sehr gründlich trainieren.",
+      "weekNote": "Wer schon länger trainiert, kann den Plan 2x pro Woche durchlaufen (6 Trainings). Für den Anfang reichen 3 Trainings völlig.",
+      "days": {
+        "PUSH": {
+          "short": "Push",
+          "name": "Push",
+          "focus": "Brust, Schultern, Trizeps"
+        },
+        "PULL": {
+          "short": "Pull",
+          "name": "Pull",
+          "focus": "Rücken, hintere Schulter, Bizeps"
+        },
+        "LEGS": {
+          "short": "Legs",
+          "name": "Legs",
+          "focus": "Beine, Gesäss, Bauch"
+        }
+      }
+    }
+  },
+  "recipes": {
+    "overnight-oats": {
+      "name": "Overnight Oats mit Quark",
+      "description": "Am Abend vorbereiten, am Morgen nur noch essen. Perfekt vor der Schule.",
+      "ingredients": [
+        "60 g Haferflocken",
+        "150 g Magerquark",
+        "150 ml Milch",
+        "1 Banane",
+        "1 Prise Zimt"
+      ],
+      "steps": [
+        "Haferflocken, Quark, Milch und Zimt in einem Glas gut verrühren.",
+        "Über Nacht (mindestens 4 Stunden) in den Kühlschrank stellen.",
+        "Am Morgen die Banane in Scheiben schneiden und darauflegen."
+      ]
+    },
+    "ruehrei-wrap": {
+      "name": "Rührei-Wrap",
+      "description": "Schnelles Frühstück oder Mittagessen, das lange satt macht.",
+      "ingredients": [
+        "3 Eier",
+        "1 Vollkorn-Tortilla",
+        "30 g Reibkäse",
+        "1 Handvoll Spinat",
+        "1 Tomate",
+        "Salz, Pfeffer"
+      ],
+      "steps": [
+        "Eier mit Salz und Pfeffer verquirlen und in einer Pfanne bei mittlerer Hitze stocken lassen.",
+        "Spinat kurz mitbraten, dann den Käse darüberstreuen.",
+        "Tortilla kurz in der Pfanne erwärmen, mit Rührei und Tomatenwürfeln füllen und einrollen."
+      ]
+    },
+    "poulet-reis-bowl": {
+      "name": "Poulet-Reis-Bowl",
+      "description": "Der Klassiker zum Vorkochen. Hält 3 Tage im Kühlschrank.",
+      "ingredients": [
+        "150 g Pouletbrust",
+        "80 g Reis (roh)",
+        "150 g Brokkoli",
+        "1 TL Rapsöl",
+        "1 EL Sojasauce",
+        "Paprikapulver"
+      ],
+      "steps": [
+        "Reis nach Packungsanleitung kochen.",
+        "Poulet in Stücke schneiden, mit Paprika würzen und im Öl rundum anbraten, bis es innen nicht mehr rosa ist.",
+        "Brokkoli in den letzten 5 Minuten zum Reis geben oder separat dämpfen.",
+        "Alles in eine Schüssel geben und mit Sojasauce abschmecken."
+      ]
+    },
+    "linsen-bolognese": {
+      "name": "Linsen-Bolognese",
+      "description": "Vegetarisch, sehr günstig und voller Protein. Ergibt 2 Portionen.",
+      "ingredients": [
+        "160 g rote Linsen",
+        "160 g Vollkorn-Spaghetti",
+        "1 Dose gehackte Tomaten (400 g)",
+        "1 Zwiebel",
+        "1 Rüebli",
+        "1 EL Olivenöl",
+        "30 g Parmesan",
+        "Salz, Pfeffer, Oregano"
+      ],
+      "steps": [
+        "Zwiebel und Rüebli fein hacken und im Öl 3 Minuten andünsten.",
+        "Linsen, Tomaten und 300 ml Wasser dazugeben und 15 Minuten köcheln lassen. Würzen.",
+        "Spaghetti in Salzwasser nach Packungsanleitung kochen.",
+        "Spaghetti mit der Sauce mischen und mit Parmesan servieren."
+      ]
+    },
+    "thon-kichererbsen-salat": {
+      "name": "Thon-Kichererbsen-Salat",
+      "description": "Ohne Kochen, ideal als Lunch zum Mitnehmen.",
+      "ingredients": [
+        "1 Dose Thon im eigenen Saft",
+        "½ Dose Kichererbsen",
+        "½ Gurke",
+        "1 Tomate",
+        "½ Peperoni",
+        "1 EL Olivenöl",
+        "Saft von ½ Zitrone",
+        "Salz, Pfeffer"
+      ],
+      "steps": [
+        "Thon und Kichererbsen abtropfen lassen und abspülen.",
+        "Gurke, Tomate und Peperoni in kleine Würfel schneiden.",
+        "Alles mischen und mit Öl, Zitronensaft, Salz und Pfeffer anmachen."
+      ]
+    },
+    "quark-beeren-bowl": {
+      "name": "Quark-Beeren-Bowl",
+      "description": "Schneller Snack nach dem Training oder am Abend.",
+      "ingredients": [
+        "250 g Magerquark",
+        "100 g Beeren (auch tiefgekühlt)",
+        "20 g Haferflocken",
+        "1 TL Honig"
+      ],
+      "steps": [
+        "Quark in eine Schüssel geben und glatt rühren (eventuell mit einem Schluck Milch).",
+        "Beeren und Haferflocken darübergeben und mit Honig süssen."
+      ]
+    }
+  }
+}

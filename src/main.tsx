@@ -12,6 +12,7 @@ import 'lenis/dist/lenis.css'
 import './index.css'
 
 import App from './App.tsx'
+import I18nProvider from './i18n/I18nProvider'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -20,7 +21,10 @@ createRoot(document.getElementById('root')!).render(
       eingeschaltet hat, schaltet Motion Bewegungs-Animationen automatisch ab.
     */}
     <MotionConfig reducedMotion="user">
-      <App />
+      {/* I18nProvider: Sprache (DE/FR) und Übersetzungen für die ganze App */}
+      <I18nProvider>
+        <App />
+      </I18nProvider>
     </MotionConfig>
   </StrictMode>,
 )

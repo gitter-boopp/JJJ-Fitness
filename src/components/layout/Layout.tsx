@@ -1,3 +1,4 @@
+import { useI18n } from '../../i18n/i18n'
 import SmoothScroll from './SmoothScroll'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -5,6 +6,8 @@ import PageTransition from './PageTransition'
 
 // Das Grundgerüst jeder Seite: Navigation, Inhalt, Footer.
 export default function Layout() {
+  const { t } = useI18n()
+
   return (
     <SmoothScroll>
       {/* Für Tastatur- und Screenreader-Nutzer: direkt zum Inhalt springen.
@@ -13,7 +16,7 @@ export default function Layout() {
         href="#main"
         className="sr-only z-[60] print:hidden rounded-full bg-accent px-4 py-2 font-semibold text-accent-ink focus:not-sr-only focus:fixed focus:top-4 focus:left-4"
       >
-        Zum Inhalt springen
+        {t('nav.skipLink')}
       </a>
 
       <Navbar />

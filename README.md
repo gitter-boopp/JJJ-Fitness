@@ -28,6 +28,34 @@ npm run dev -- --host
 
 Vite zeigt dann eine "Network"-Adresse an (z.B. `http://192.168.1.23:5173`). Diese im Handy-Browser öffnen. Handy und Computer müssen im gleichen WLAN sein.
 
+## Texte und Übersetzungen bearbeiten (DE / FR)
+
+Alle Texte der Seite stehen in zwei Dateien:
+
+- `src/i18n/de.json`: Deutsch
+- `src/i18n/fr.json`: Französisch
+
+Beide Dateien haben genau die gleiche Struktur. Ändert nur den Text rechts vom Doppelpunkt, nie den Namen links davon:
+
+```json
+"hero": {
+  "line1": "Devenir plus fort.",
+  "line2": "Pas à pas."
+}
+```
+
+Text in geschweiften Klammern wie `{count}` oder `{muscle}` ist ein Platzhalter. Der Code ersetzt ihn durch eine Zahl oder ein Wort, deshalb muss er unverändert bleiben.
+
+Die französischen Texte sind ein erster Entwurf. Ihr könnt sie im Französischunterricht verbessern. Fehlt ein Text auf Französisch, zeigt die Seite automatisch den deutschen.
+
+Nach dem Bearbeiten prüfen, ob noch alles zusammenpasst:
+
+```bash
+npm run i18n:check
+```
+
+Das Skript meldet fehlende oder überzählige Texte, unterschiedlich lange Listen (z.B. 4 Schritte auf Deutsch, 3 auf Französisch) und fehlende Platzhalter.
+
 ## Feedback-Formular verbinden (Formspree)
 
 Das Formular auf «Über uns» schickt die Antworten an [Formspree](https://formspree.io). Formspree leitet sie per E-Mail an euch weiter. Der Gratis-Plan reicht für ein Schulprojekt. Solange das Formular nicht verbunden ist, ist der Senden-Button gesperrt, und es erscheint ein Hinweis.

@@ -1,48 +1,35 @@
 import type { ComponentType, SVGProps } from 'react'
 import { Link } from 'react-router'
 
+import { useI18n } from '../../i18n/i18n'
 import Reveal from '../motion/Reveal'
 import Section from '../ui/Section'
 import SectionHeading from '../ui/SectionHeading'
 import { ArrowRightIcon, BowlIcon, CalendarIcon, DumbbellIcon } from '../ui/Icons'
 
 type OfferItem = {
-  title: string
-  text: string
+  key: 'exercises' | 'plans' | 'nutrition' // Texte unter "home.offer.<key>"
   path: string
   Icon: ComponentType<SVGProps<SVGSVGElement>>
 }
 
 const items: OfferItem[] = [
-  {
-    title: 'Übungen',
-    text: 'Rund 30 Übungen mit Anleitung, häufigen Fehlern und Alternativen. Filterbar nach Muskel und Equipment.',
-    path: '/uebungen',
-    Icon: DumbbellIcon,
-  },
-  {
-    title: 'Trainingspläne',
-    text: 'Drei fertige Pläne, vom Ganzkörper-Training für Anfänger bis Push/Pull/Legs.',
-    path: '/trainingsplaene',
-    Icon: CalendarIcon,
-  },
-  {
-    title: 'Ernährung',
-    text: 'Kalorien und Protein einfach erklärt, mit Rechner und günstigen Rezepten.',
-    path: '/ernaehrung',
-    Icon: BowlIcon,
-  },
+  { key: 'exercises', path: '/uebungen', Icon: DumbbellIcon },
+  { key: 'plans', path: '/trainingsplaene', Icon: CalendarIcon },
+  { key: 'nutrition', path: '/ernaehrung', Icon: BowlIcon },
 ]
 
 export default function Offer() {
+  const { t } = useI18n()
+
   return (
     <Section>
-      <SectionHeading eyebrow="Was dich erwartet" title="Alles für deinen Muskelaufbau, an einem Ort.">
-        Kein Durcheinander aus Videos und Foren. Hier findest du das Wichtigste, verständlich erklärt.
+      <SectionHeading eyebrow={t('home.offer.eyebrow')} title={t('home.offer.title')}>
+        {t('home.offer.text')}
       </SectionHeading>
 
       <ul className="grid gap-4 md:grid-cols-3 md:gap-6">
-        {items.map(({ title, text, path, Icon }, index) => (
+        {items.map(({ key, path, Icon }, index) => (
           <li key={path}>
             <Reveal delay={index * 0.1} className="h-full">
               {/* "group": Elemente in der Karte können auf den Hover der ganzen Karte reagieren */}
@@ -59,10 +46,10 @@ export default function Offer() {
                 </div>
 
                 <div className="flex flex-1 flex-col p-4">
-                  <h3 className="text-2xl">{title}</h3>
-                  <p className="mt-2 flex-1 text-muted">{text}</p>
+                  <h3 className="text-2xl">{t(`home.offer.${key}.title`)}</h3>
+                  <p className="mt-2 flex-1 text-muted">{t(`home.offer.${key}.text`)}</p>
                   <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent">
-                    Ansehen
+                    {t('home.offer.more')}
                     <ArrowRightIcon className="size-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </span>
                 </div>

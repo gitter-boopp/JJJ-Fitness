@@ -4,24 +4,17 @@
 export type Sex = 'maennlich' | 'weiblich'
 
 export type ActivityLevel = {
-  id: string
-  label: string
-  description: string
+  id: string // Text dazu in der Übersetzung unter "calculator.activity.<id>"
   factor: number // Multiplikator für den Grundumsatz (PAL-Wert)
 }
 
 // Wie aktiv bist du? Der Faktor sagt, wie viel Energie du zusätzlich zum Grundumsatz brauchst.
 export const activityLevels: ActivityLevel[] = [
-  { id: 'kaum', label: 'Kaum aktiv', description: 'Schule oder Büro, kein Sport', factor: 1.2 },
-  { id: 'leicht', label: 'Leicht aktiv', description: 'Sport 1–3x pro Woche', factor: 1.375 },
-  { id: 'maessig', label: 'Mässig aktiv', description: 'Sport 3–5x pro Woche', factor: 1.55 },
-  { id: 'sehr', label: 'Sehr aktiv', description: 'Sport 6–7x pro Woche', factor: 1.725 },
-  {
-    id: 'extrem',
-    label: 'Extrem aktiv',
-    description: 'Körperliche Arbeit und tägliches Training',
-    factor: 1.9,
-  },
+  { id: 'kaum', factor: 1.2 },
+  { id: 'leicht', factor: 1.375 },
+  { id: 'maessig', factor: 1.55 },
+  { id: 'sehr', factor: 1.725 },
+  { id: 'extrem', factor: 1.9 },
 ]
 
 // Erlaubte Bereiche für die Eingaben (alles andere ist vermutlich ein Tippfehler)
@@ -95,8 +88,12 @@ export function calculateNutrition(input: NutritionInput): NutritionResult {
   }
 }
 
-// Zahl im Schweizer Format: 2750 -> "2’750"
-const swissNumber = new Intl.NumberFormat('de-CH', { maximumFractionDigits: 0 })
-export function formatNumber(value: number): string {
-  return swissNumber.format(Math.round(value))
+// Zahl im Schweizer Format der jeweiligen Sprache:
+// Deutsch 2750 -> "2’750", Französisch 2750 -> "2 750"
+const formatters = {
+  de: new Intl.NumberFormat('de-CH', { maximumFractionDigits: 0 }),
+  fr: new Intl.NumberFormat('fr-CH', { maximumFractionDigits: 0 }),
+}
+export function formatNumber(value: number, lang: 'de' | 'fr' = 'de'): string {
+  return formatters[lang].format(Math.round(value))
 }

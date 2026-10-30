@@ -4,14 +4,17 @@ import { AnimatePresence, motion, useMotionValueEvent, useScroll } from 'motion/
 import { useLenis } from 'lenis/react'
 
 import { navItems } from '../../data/navigation'
+import { useI18n } from '../../i18n/i18n'
 import Container from '../ui/Container'
 import Button from '../ui/Button'
+import LanguageSwitch from './LanguageSwitch'
 import Logo from './Logo'
 
 // Ab wie vielen Pixeln Scrollen die Navigation kleiner wird
 const SCROLL_THRESHOLD = 24
 
 export default function Navbar() {
+  const { t } = useI18n()
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const lenis = useLenis()
@@ -45,7 +48,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-50 border-b print:hidden transition-all duration-300 ${
+        className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 print:hidden ${
           scrolled
             ? 'border-white/10 bg-bg/70 py-3 backdrop-blur-xl' // gescrollt: kleiner, mit Blur
             : 'border-transparent bg-transparent py-5' // ganz oben: grösser, durchsichtig
@@ -54,8 +57,8 @@ export default function Navbar() {
         <Container className="flex items-center justify-between gap-6">
           <Logo onClick={closeMenu} />
 
-          {/* Desktop-Menü (erst ab md = 768px sichtbar) */}
-          <nav aria-label="Hauptnavigation" className="hidden md:block">
+          {/* Desktop-Menü (erst ab lg = 1024px sichtbar, auf Französisch sind die Wörter länger) */}
+          <nav aria-label={t('nav.main')} className="hidden lg:block">
             <ul className="flex items-center gap-1">
               {navItems.map((item) => (
                 <li key={item.path}>
@@ -69,7 +72,7 @@ export default function Navbar() {
                   >
                     {({ isActive }) => (
                       <>
-                        {item.label}
+                        {t(`nav.${item.key}`)}
                         {/* Kleiner Strich unter dem aktiven Menüpunkt. Dank layoutId
                             gleitet er beim Seitenwechsel zum neuen Menüpunkt. */}
                         {isActive && (
@@ -87,33 +90,37 @@ export default function Navbar() {
             </ul>
           </nav>
 
-          <div className="hidden md:block">
-            <Button to="/uebungen" size="sm">
-              Jetzt starten
-            </Button>
-          </div>
+          <div className="flex items-center gap-3">
+            <LanguageSwitch idPrefix="header" />
+            {/* Eigener Wrapper: "hidden" direkt am Button würde mit dessen "inline-flex" kollidieren */}
+            <div className="hidden lg:block">
+              <Button to="/uebungen" size="sm">
+                {t('nav.start')}
+              </Button>
+            </div>
 
-          {/* Burger-Button fürs Handy */}
-          <button
-            type="button"
-            className="relative -mr-2 flex size-11 items-center justify-center md:hidden"
-            aria-expanded={menuOpen}
-            aria-controls="mobile-menu"
-            aria-label={menuOpen ? 'Menü schliessen' : 'Menü öffnen'}
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            {/* Zwei Striche, die sich beim Öffnen zu einem X drehen */}
-            <span
-              className={`absolute h-0.5 w-6 rounded-full bg-text transition-transform duration-300 ${
-                menuOpen ? 'rotate-45' : '-translate-y-1'
-              }`}
-            />
-            <span
-              className={`absolute h-0.5 w-6 rounded-full bg-text transition-transform duration-300 ${
-                menuOpen ? '-rotate-45' : 'translate-y-1'
-              }`}
-            />
-          </button>
+            {/* Burger-Button fürs Handy und Tablet */}
+            <button
+              type="button"
+              className="relative -mr-2 flex size-11 items-center justify-center lg:hidden"
+              aria-expanded={menuOpen}
+              aria-controls="mobile-menu"
+              aria-label={menuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
+              onClick={() => setMenuOpen((open) => !open)}
+            >
+              {/* Zwei Striche, die sich beim Öffnen zu einem X drehen */}
+              <span
+                className={`absolute h-0.5 w-6 rounded-full bg-text transition-transform duration-300 ${
+                  menuOpen ? 'rotate-45' : '-translate-y-1'
+                }`}
+              />
+              <span
+                className={`absolute h-0.5 w-6 rounded-full bg-text transition-transform duration-300 ${
+                  menuOpen ? '-rotate-45' : 'translate-y-1'
+                }`}
+              />
+            </button>
+          </div>
         </Container>
       </header>
 
@@ -122,13 +129,13 @@ export default function Navbar() {
         {menuOpen && (
           <motion.div
             id="mobile-menu"
-            className="fixed inset-0 z-40 bg-bg/95 pt-24 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 bg-bg/95 pt-24 backdrop-blur-xl lg:hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
           >
-            <nav aria-label="Hauptnavigation mobil">
+            <nav aria-label={t('nav.mainMobile')}>
               <Container>
                 <ul className="flex flex-col gap-2">
                   {navItems.map((item, index) => (
@@ -146,7 +153,7 @@ export default function Navbar() {
                           `block py-3 font-display text-4xl font-bold ${isActive ? 'text-accent' : 'text-text'}`
                         }
                       >
-                        {item.label}
+                        {t(`nav.${item.key}`)}
                       </NavLink>
                     </motion.li>
                   ))}
@@ -158,7 +165,7 @@ export default function Navbar() {
                   transition={{ delay: 0.3, duration: 0.3 }}
                 >
                   <Button to="/uebungen" size="lg" className="w-full" onClick={closeMenu}>
-                    Jetzt starten
+                    {t('nav.start')}
                   </Button>
                 </motion.div>
               </Container>

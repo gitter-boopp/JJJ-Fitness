@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import { motion, useReducedMotion, useScroll, useTransform } from 'motion/react'
 
+import { useI18n } from '../../i18n/i18n'
 import AnimatedHeadline from '../motion/AnimatedHeadline'
 import Button from '../ui/Button'
 import Container from '../ui/Container'
@@ -28,6 +29,7 @@ const fadeUp = (delay: number) => ({
 })
 
 export default function Hero() {
+  const { t } = useI18n()
   const ref = useRef<HTMLElement>(null)
   const reduceMotion = useReducedMotion()
 
@@ -48,25 +50,25 @@ export default function Hero() {
       <Container>
         <motion.div style={reduceMotion ? undefined : { y, opacity }}>
           <motion.p {...fadeUp(0)} className="mb-6 text-sm font-semibold tracking-widest text-accent uppercase">
-            Muskelaufbau für Einsteiger
+            {t('home.hero.eyebrow')}
           </motion.p>
 
+          {/* Beim Sprachwechsel ändern sich die Wörter, und die Animation startet neu */}
           <AnimatedHeadline
             className="max-w-5xl text-5xl leading-[0.95] sm:text-7xl md:text-8xl lg:text-9xl"
-            lines={[{ text: 'Stärker werden.' }, { text: 'Schritt für Schritt.', className: 'text-muted' }]}
+            lines={[{ text: t('home.hero.line1') }, { text: t('home.hero.line2'), className: 'text-muted' }]}
           />
 
           <motion.p {...fadeUp(0.7)} className="mt-8 max-w-xl text-lg text-muted md:text-xl">
-            Übungen, Trainingspläne und Ernährung an einem Ort. Verständlich erklärt, ohne Extrem-Diäten und ohne
-            Werbung.
+            {t('home.hero.text')}
           </motion.p>
 
           <motion.div {...fadeUp(0.85)} className="mt-10 flex flex-col gap-3 sm:flex-row">
             <Button to="/uebungen" size="lg">
-              Jetzt starten
+              {t('nav.start')}
             </Button>
             <Button to="/trainingsplaene" size="lg" variant="secondary">
-              Trainingspläne ansehen
+              {t('home.hero.ctaSecondary')}
             </Button>
           </motion.div>
         </motion.div>

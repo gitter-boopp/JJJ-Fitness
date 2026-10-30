@@ -5,6 +5,46 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Etappe 7 – Französisch-Version
+
+**Datum:** 30.10.2026
+**Wer:** [Namen eintragen]
+
+### Was wir gemacht haben
+
+- **Eigenes kleines Übersetzungs-System** (`src/i18n/`): `t('nav.exercises')` holt den Text in der gewählten Sprache. Fehlt ein französischer Text, wird automatisch der deutsche angezeigt.
+- **Alle Texte in `de.json` und `fr.json`**: Oberflächentexte, 30 Übungen, Muskeln, 3 Pläne, 6 Rezepte, Ernährungs-Grundlagen, Rechner und «Über uns»
+- Die Datendateien (`exercises.ts`, `plans.ts`, `recipes.ts` ...) enthalten nur noch Zahlen und Verknüpfungen, die in jeder Sprache gleich sind.
+- Die deutschen Texte wurden per Skript aus den alten Dateien übernommen, damit nichts verloren geht.
+- **Französische Übersetzung** als vollständiger erster Entwurf (Du-Form → «tu», Schweizer Begriffe wie «séré», «poulet»)
+- **Sprachumschalter DE / FR** oben in der Navigation, mit gleitendem Lime-Hintergrund
+  - Die Wahl wird im Browser gespeichert.
+  - Beim ersten Besuch wird die Browsersprache verwendet.
+  - `<html lang>` wird angepasst (`de-CH` / `fr-CH`), damit Screenreader richtig aussprechen.
+- **Zahlenformat je Sprache**: Deutsch «2’540», Französisch «2 540»
+- **Suche** funktioniert in beiden Sprachen und ignoriert Akzente («developpe» findet «Développé»).
+- Einheiten wie «pro Seite» → «par côté» und Kürzel der Trainingstage (OK1 → H1) sind übersetzbar.
+- **Prüf-Skript** `npm run i18n:check`: vergleicht `de.json` und `fr.json`
+- Die Desktop-Navigation erscheint erst ab 1024 px, weil die französischen Wörter länger sind.
+- **Fehler behoben:** Der «Jetzt starten»-Button im Header war auf dem Handy sichtbar (CSS-Klassen `hidden` und `inline-flex` im Konflikt).
+
+### Entscheide und warum
+
+| Entscheid | Warum |
+| --- | --- |
+| Eigenes Übersetzungs-System statt Bibliothek (z.B. i18next) | Ca. 60 Zeilen Code, die wir ganz verstehen. Für zwei Sprachen braucht es nicht mehr. |
+| JSON-Dateien | So steht es im Brief. Die Dateien kann man ohne Programmierkenntnisse im Französischunterricht bearbeiten. |
+| Gleiche Struktur in beiden Dateien | Das Prüf-Skript kann so automatisch fehlende Texte finden. |
+| Fallback auf Deutsch | Die Seite funktioniert auch, wenn ein französischer Text noch fehlt. |
+| Sprache im Browser speichern statt in der URL (`/fr/...`) | Einfacher umzusetzen und für ein Schulprojekt ausreichend. Nachteil: Suchmaschinen finden die französische Version schlechter. |
+| «tu» statt «vous» | Unser Zielpublikum ist 15–25 Jahre alt, auf Deutsch duzen wir auch. |
+
+### Für den Französischunterricht
+
+Die Übersetzung ist ein Entwurf. Bitte prüfen: Fachbegriffe der Übungen, Schweizer Ausdrücke und die Typografie vor «?» und «:» (in der Schweiz oft ohne Leerzeichen, in Frankreich mit).
+
+---
+
 ## Etappe 6 – Über uns und Feedback-Formular
 
 **Datum:** 30.10.2026

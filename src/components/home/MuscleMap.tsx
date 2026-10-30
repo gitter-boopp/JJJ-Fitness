@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 
-import { findMuscle, muscles } from '../../data/muscles'
+import { muscleIds } from '../../data/muscles'
 import type { MuscleId } from '../../data/muscles'
+import { useI18n } from '../../i18n/i18n'
 import Reveal from '../motion/Reveal'
 import BodyFigure from '../ui/BodyFigure'
 import Button from '../ui/Button'
@@ -11,11 +12,12 @@ import Section from '../ui/Section'
 import SectionHeading from '../ui/SectionHeading'
 
 export default function MuscleMap() {
+  const { t } = useI18n()
   const [selected, setSelected] = useState<MuscleId | null>(null)
   const [hovered, setHovered] = useState<MuscleId | null>(null)
 
   // Im Infokasten zeigen wir den Muskel unter der Maus, sonst den ausgewählten
-  const shown = findMuscle(hovered ?? selected)
+  const shown = hovered ?? selected
 
   // Diese Eigenschaften bekommen beide Figuren (vorne und hinten)
   const figureProps = {
@@ -28,16 +30,16 @@ export default function MuscleMap() {
 
   return (
     <Section id="muskel-karte">
-      <SectionHeading eyebrow="Muskel-Karte" title="Welchen Muskel willst du trainieren?">
-        Fahr mit der Maus über einen Muskel oder tippe ihn an. Danach zeigen wir dir die passenden Übungen.
+      <SectionHeading eyebrow={t('home.muscleMap.eyebrow')} title={t('home.muscleMap.title')}>
+        {t('home.muscleMap.text')}
       </SectionHeading>
 
       <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
         {/* Die zwei Körper: vorne und hinten */}
         <Reveal className="relative rounded-3xl border border-white/5 bg-surface p-6 md:p-10">
           <div className="grid grid-cols-2 gap-4 md:gap-10">
-            <BodyFigure side="front" label="Vorne" {...figureProps} />
-            <BodyFigure side="back" label="Hinten" {...figureProps} />
+            <BodyFigure side="front" label={t('common.front')} {...figureProps} />
+            <BodyFigure side="back" label={t('common.back')} {...figureProps} />
           </div>
         </Reveal>
 
@@ -46,7 +48,7 @@ export default function MuscleMap() {
           <div className="min-h-[11rem]" aria-live="polite">
             <AnimatePresence mode="wait">
               <motion.div
-                key={shown?.id ?? 'leer'}
+                key={shown ?? 'leer'}
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
@@ -54,13 +56,13 @@ export default function MuscleMap() {
               >
                 {shown ? (
                   <>
-                    <h3 className="text-3xl md:text-4xl">{shown.name}</h3>
-                    <p className="mt-3 text-lg text-muted">{shown.description}</p>
+                    <h3 className="text-3xl md:text-4xl">{t(`muscles.${shown}.name`)}</h3>
+                    <p className="mt-3 text-lg text-muted">{t(`muscles.${shown}.description`)}</p>
                   </>
                 ) : (
                   <>
-                    <h3 className="text-3xl text-muted md:text-4xl">Wähle einen Muskel</h3>
-                    <p className="mt-3 text-lg text-muted">Auf der Karte oder unten in der Liste.</p>
+                    <h3 className="text-3xl text-muted md:text-4xl">{t('home.muscleMap.emptyTitle')}</h3>
+                    <p className="mt-3 text-lg text-muted">{t('home.muscleMap.emptyText')}</p>
                   </>
                 )}
               </motion.div>
@@ -69,23 +71,23 @@ export default function MuscleMap() {
 
           {selected && (
             <Button to={`/uebungen?muskel=${selected}`} className="mb-8">
-              Übungen für {findMuscle(selected)?.name} ansehen
+              {t('home.muscleMap.cta', { muscle: t(`muscles.${selected}.name`) })}
             </Button>
           )}
 
           {/* Alle Muskeln als Buttons: praktisch auf dem Handy und für die Tastatur */}
-          <ul className="flex flex-wrap gap-2" aria-label="Muskelgruppen">
-            {muscles.map((muscle) => {
-              const isSelected = muscle.id === selected
+          <ul className="flex flex-wrap gap-2" aria-label={t('home.muscleMap.groups')}>
+            {muscleIds.map((id) => {
+              const isSelected = id === selected
               return (
-                <li key={muscle.id}>
+                <li key={id}>
                   <Chip
                     active={isSelected}
-                    onClick={() => setSelected(isSelected ? null : muscle.id)}
-                    onPointerEnter={() => setHovered(muscle.id)}
+                    onClick={() => setSelected(isSelected ? null : id)}
+                    onPointerEnter={() => setHovered(id)}
                     onPointerLeave={() => setHovered(null)}
                   >
-                    {muscle.name}
+                    {t(`muscles.${id}.name`)}
                   </Chip>
                 </li>
               )

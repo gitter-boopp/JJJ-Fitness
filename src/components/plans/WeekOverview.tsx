@@ -1,5 +1,5 @@
 import type { Plan } from '../../data/plans'
-import { weekdays } from '../../data/plans'
+import { useI18n } from '../../i18n/i18n'
 
 type WeekOverviewProps = {
   plan: Plan
@@ -10,6 +10,10 @@ type WeekOverviewProps = {
 // Zeigt die Woche von Montag bis Sonntag: Trainingstage und Ruhetage.
 // Ein Klick auf einen Trainingstag öffnet ihn in den Tabs darunter.
 export default function WeekOverview({ plan, activeDayId, onSelectDay }: WeekOverviewProps) {
+  const { t, tList, has } = useI18n()
+  const weekdays = tList('weekdays')
+  const weekNoteKey = `plans.${plan.id}.weekNote`
+
   return (
     <div>
       <ol className="grid grid-cols-7 gap-1.5 sm:gap-3">
@@ -18,12 +22,12 @@ export default function WeekOverview({ plan, activeDayId, onSelectDay }: WeekOve
           const active = dayId === activeDayId
 
           return (
-            <li key={weekdays[index]}>
+            <li key={index}>
               {day ? (
                 <button
                   type="button"
                   onClick={() => onSelectDay(day.id)}
-                  aria-label={`${weekdays[index]}: ${day.name}`}
+                  aria-label={`${weekdays[index]}: ${t(`plans.${plan.id}.days.${day.id}.name`)}`}
                   className={`flex w-full flex-col items-center gap-1 rounded-xl border px-1 py-3 transition-colors sm:py-4 ${
                     active
                       ? 'border-accent bg-accent/10'
@@ -31,19 +35,22 @@ export default function WeekOverview({ plan, activeDayId, onSelectDay }: WeekOve
                   }`}
                 >
                   <span className="text-xs text-muted">{weekdays[index]}</span>
-                  <span className="text-xs font-bold text-accent sm:text-sm">{day.id}</span>
+                  <span className="text-xs font-bold text-accent sm:text-sm">
+                    {t(`plans.${plan.id}.days.${day.id}.short`)}
+                  </span>
                 </button>
               ) : (
                 <div className="flex flex-col items-center gap-1 rounded-xl border border-dashed border-white/5 px-1 py-3 sm:py-4">
                   <span className="text-xs text-muted">{weekdays[index]}</span>
-                  <span className="text-xs text-muted/60 sm:text-sm">Pause</span>
+                  <span className="text-xs text-muted/60 sm:text-sm">{t('plansPage.rest')}</span>
                 </div>
               )}
             </li>
           )
         })}
       </ol>
-      {plan.weekNote && <p className="mt-3 text-sm text-muted">{plan.weekNote}</p>}
+      {/* Nicht jeder Plan hat einen Hinweis zur Woche */}
+      {has(weekNoteKey) && <p className="mt-3 text-sm text-muted">{t(weekNoteKey)}</p>}
     </div>
   )
 }

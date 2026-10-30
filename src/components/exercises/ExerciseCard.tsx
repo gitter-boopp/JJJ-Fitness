@@ -1,16 +1,18 @@
 import { Link, useLocation } from 'react-router'
 
-import { equipmentLabel, levelLabel } from '../../data/exercises'
-import type { Exercise } from '../../data/exercises'
-import { findMuscle } from '../../data/muscles'
 import { sideForMuscles } from '../../data/bodyShapes'
+import type { Exercise } from '../../data/exercises'
+import { useI18n } from '../../i18n/i18n'
+import { formatReps } from '../../utils/formatReps'
 import BodyFigure from '../ui/BodyFigure'
 
 // Karte für eine Übung in der Liste. Zeigt ein Foto, falls vorhanden,
 // sonst eine kleine Körper-Grafik mit den trainierten Muskeln.
 export default function ExerciseCard({ exercise }: { exercise: Exercise }) {
+  const { t } = useI18n()
   const location = useLocation()
-  const muscleNames = exercise.primary.map((id) => findMuscle(id)?.name).join(', ')
+  const name = t(`exercises.${exercise.slug}.name`)
+  const muscleNames = exercise.primary.map((id) => t(`muscles.${id}.name`)).join(', ')
 
   return (
     <Link
@@ -24,7 +26,7 @@ export default function ExerciseCard({ exercise }: { exercise: Exercise }) {
           {exercise.image ? (
             <img
               src={exercise.image.src}
-              alt={exercise.image.alt}
+              alt={name}
               loading="lazy" // Bild erst laden, wenn es fast sichtbar ist
               className="size-full rounded-lg object-cover"
             />
@@ -40,16 +42,16 @@ export default function ExerciseCard({ exercise }: { exercise: Exercise }) {
 
         {/* Level oben rechts */}
         <span className="absolute top-3 right-3 rounded-full bg-bg/80 px-3 py-1 text-xs font-medium text-muted backdrop-blur">
-          {levelLabel(exercise.level)}
+          {t(`levels.${exercise.level}`)}
         </span>
       </div>
 
       <div className="flex flex-1 flex-col p-4">
         <p className="text-xs font-semibold tracking-widest text-accent uppercase">{muscleNames}</p>
-        <h3 className="mt-2 text-xl">{exercise.name}</h3>
-        <p className="mt-2 flex-1 text-sm text-muted">{exercise.description}</p>
+        <h3 className="mt-2 text-xl">{name}</h3>
+        <p className="mt-2 flex-1 text-sm text-muted">{t(`exercises.${exercise.slug}.description`)}</p>
         <p className="mt-4 text-sm text-muted">
-          {equipmentLabel(exercise.equipment)} · {exercise.sets} × {exercise.reps}
+          {t(`equipment.${exercise.equipment}`)} · {exercise.sets} × {formatReps(exercise.reps, exercise.unit, t)}
         </p>
       </div>
     </Link>

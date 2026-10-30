@@ -1,3 +1,5 @@
+import { useI18n } from '../../i18n/i18n'
+
 type NumberFieldProps = {
   id: string
   label: string
@@ -10,6 +12,7 @@ type NumberFieldProps = {
 
 // Eingabefeld für eine Zahl mit Einheit und Fehlermeldung.
 export default function NumberField({ id, label, unit, value, onChange, min, max }: NumberFieldProps) {
+  const { t } = useI18n()
   const number = Number(value)
   // Fehler nur zeigen, wenn schon etwas eingegeben wurde
   const invalid = value !== '' && (Number.isNaN(number) || number < min || number > max)
@@ -41,7 +44,7 @@ export default function NumberField({ id, label, unit, value, onChange, min, max
       </div>
       {invalid && (
         <p id={errorId} className="mt-2 text-sm text-red-300">
-          Bitte einen Wert zwischen {min} und {max} eingeben.
+          {t('calculator.error', { min, max })}
         </p>
       )}
     </div>

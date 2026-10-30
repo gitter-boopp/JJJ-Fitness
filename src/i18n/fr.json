@@ -1,0 +1,1187 @@
+{
+  "meta": {
+    "siteName": "JJJ Fitness"
+  },
+  "language": {
+    "label": "Choisir la langue",
+    "de": "Allemand",
+    "fr": "Français"
+  },
+  "nav": {
+    "exercises": "Exercices",
+    "plans": "Programmes",
+    "nutrition": "Nutrition",
+    "about": "À propos",
+    "start": "C’est parti",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "main": "Navigation principale",
+    "mainMobile": "Navigation principale mobile",
+    "home": "JJJ Fitness, vers la page d’accueil",
+    "skipLink": "Aller au contenu"
+  },
+  "footer": {
+    "text": "Exercices, programmes d’entraînement et conseils de nutrition pour ta prise de muscle. Un projet scolaire d’apprenti·e·s employé·e·s de commerce de Bâle.",
+    "label": "Navigation du pied de page",
+    "styleguide": "Design system",
+    "disclaimer": "Toutes les indications sont des valeurs indicatives. Pour toute question de santé, demande conseil à un·e spécialiste."
+  },
+  "common": {
+    "all": "Tous",
+    "front": "Devant",
+    "back": "Derrière"
+  },
+  "units": {
+    "perSide": "par côté",
+    "perLeg": "par jambe",
+    "seconds": "s"
+  },
+  "home": {
+    "title": "La musculation expliquée simplement",
+    "hero": {
+      "eyebrow": "La musculation pour débutant·e·s",
+      "line1": "Devenir plus fort.",
+      "line2": "Pas à pas.",
+      "text": "Exercices, programmes et nutrition au même endroit. Expliqués clairement, sans régimes extrêmes et sans publicité.",
+      "ctaSecondary": "Voir les programmes"
+    },
+    "stats": {
+      "exercises": "Exercices",
+      "plans": "Programmes",
+      "muscles": "Groupes musculaires",
+      "languages": "Langues"
+    },
+    "offer": {
+      "eyebrow": "Ce qui t’attend",
+      "title": "Tout pour ta prise de muscle, au même endroit.",
+      "text": "Fini le chaos entre vidéos et forums. Ici, tu trouves l’essentiel, expliqué clairement.",
+      "more": "Voir",
+      "exercises": {
+        "title": "Exercices",
+        "text": "Une trentaine d’exercices avec instructions, erreurs fréquentes et alternatives. Filtrables par muscle et par matériel."
+      },
+      "plans": {
+        "title": "Programmes",
+        "text": "Trois programmes prêts à l’emploi, du corps entier pour débutant·e·s jusqu’au Push/Pull/Legs."
+      },
+      "nutrition": {
+        "title": "Nutrition",
+        "text": "Calories et protéines expliquées simplement, avec un calculateur et des recettes bon marché."
+      }
+    },
+    "muscleMap": {
+      "eyebrow": "Carte des muscles",
+      "title": "Quel muscle veux-tu entraîner ?",
+      "text": "Passe la souris sur un muscle ou touche-le. Ensuite, on te montre les exercices qui vont avec.",
+      "emptyTitle": "Choisis un muscle",
+      "emptyText": "Sur la carte ou dans la liste ci-dessous.",
+      "cta": "Exercices pour : {muscle}",
+      "groups": "Groupes musculaires"
+    },
+    "rules": {
+      "eyebrow": "Les bases",
+      "title": "Les 5 règles d’or de la prise de muscle",
+      "text": "Au début, il n’en faut pas plus. Si tu respectes ces cinq points, tu fais déjà presque tout juste.",
+      "readyTitle": "Prêt·e ?",
+      "readyText": "Choisis un programme qui te correspond et lance-toi.",
+      "readyCta": "Choisir un programme",
+      "items": [
+        {
+          "title": "Progression",
+          "text": "Augmente peu à peu le poids, les répétitions ou les séries. Un muscle ne grandit que s’il est plus sollicité qu’avant."
+        },
+        {
+          "title": "Assez de protéines",
+          "text": "Environ 1,6 à 2,2 g par kg de poids corporel par jour, réparties sur plusieurs repas. Les protéines sont les briques de nouveaux muscles."
+        },
+        {
+          "title": "Léger surplus calorique",
+          "text": "Mange environ 250 à 300 kcal de plus que ce que tu dépenses. Plus de calories ne construit pas plus de muscle, seulement plus de graisse."
+        },
+        {
+          "title": "Assez de sommeil",
+          "text": "7 à 9 heures par nuit. Les muscles grandissent pendant la récupération, pas pendant l’entraînement."
+        },
+        {
+          "title": "Régularité",
+          "text": "Mieux vaut s’entraîner 3x par semaine pendant des mois que tous les jours pendant deux semaines. La persévérance bat la perfection."
+        }
+      ]
+    }
+  },
+  "exercisesPage": {
+    "title": "Exercices",
+    "eyebrow": "Bibliothèque d’exercices",
+    "heading": "Exercices",
+    "intro": "{count} exercices avec des instructions pas à pas. Filtre par muscle, matériel et niveau.",
+    "searchLabel": "Rechercher un exercice",
+    "searchPlaceholder": "Rechercher, p. ex. squat",
+    "muscleGroup": "Groupe musculaire",
+    "equipment": "Matériel",
+    "level": "Niveau",
+    "countOne": "exercice",
+    "countOther": "exercices",
+    "reset": "Réinitialiser les filtres",
+    "emptyTitle": "Aucun exercice trouvé",
+    "emptyText": "Essaie un autre mot ou moins de filtres."
+  },
+  "exerciseDetail": {
+    "back": "Tous les exercices",
+    "howTo": "Comment faire",
+    "mistakes": "Erreurs fréquentes",
+    "sets": "Séries",
+    "reps": "Répétitions",
+    "alternatives": "Alternatives",
+    "primary": "Muscle principal",
+    "secondary": "aide aussi",
+    "imageCredit": "Image : {credit}"
+  },
+  "plansPage": {
+    "title": "Programmes",
+    "eyebrow": "Programmes d’entraînement",
+    "heading": "Ton programme pour chaque semaine",
+    "intro": "Trois programmes éprouvés, du premier entraînement jusqu’au niveau avancé. Choisis celui qui correspond à ton expérience.",
+    "choose": "Choisir un programme",
+    "planNumber": "Programme {number}",
+    "print": "Imprimer en PDF",
+    "week": "Ta semaine",
+    "trainingDays": "Jours d’entraînement",
+    "rest": "Repos",
+    "tipsTitle": "Pour en tirer le maximum",
+    "table": {
+      "exercise": "Exercice",
+      "sets": "Séries",
+      "reps": "Rép.",
+      "setsTimes": "Séries ×"
+    },
+    "printView": {
+      "header": "JJJ Fitness · Programme d’entraînement",
+      "week": "Semaine",
+      "weekShort": "S",
+      "tips": "Conseils",
+      "note": "Dans les colonnes S1 à S4, tu peux noter le poids de chaque semaine. Toutes les indications sont des valeurs indicatives. En cas de douleur ou de question de santé, demande conseil à un·e spécialiste."
+    },
+    "tips": [
+      {
+        "title": "Échauffement",
+        "text": "Bouge tranquillement pendant 5 à 10 minutes (p. ex. vélo ou corde à sauter). Puis fais 1 à 2 séries légères au premier exercice."
+      },
+      {
+        "title": "Progresser",
+        "text": "Tu arrives proprement au nombre maximal de répétitions dans toutes les séries ? Alors augmente légèrement le poids la prochaine fois."
+      },
+      {
+        "title": "Pauses",
+        "text": "2 à 3 minutes pour les exercices de base lourds comme le squat ou le développé couché, 1 à 2 minutes pour les autres exercices."
+      },
+      {
+        "title": "La technique avant le poids",
+        "text": "Mieux vaut un peu plus léger et propre que lourd et bâclé. La dernière répétition doit être difficile, mais encore propre."
+      }
+    ]
+  },
+  "nutritionPage": {
+    "title": "Nutrition",
+    "eyebrow": "Nutrition",
+    "heading": "Bien manger pour prendre du muscle",
+    "intro": "Calories, protéines, glucides et lipides, expliqués simplement. Avec un calculateur pour tes besoins et des recettes bon marché.",
+    "toCalculator": "Vers le calculateur",
+    "toRecipes": "Vers les recettes",
+    "basics": {
+      "eyebrow": "Les bases",
+      "title": "Ce dont ton corps a besoin",
+      "text": "Trois nutriments fournissent de l’énergie : les protéines, les glucides et les lipides. Les trois sont importants, aucun n’est « mauvais ».",
+      "sourcesLabel": "Bonnes sources : {topic}",
+      "items": [
+        {
+          "title": "Calories",
+          "badge": "Énergie",
+          "text": "Les calories (kcal) sont l’énergie contenue dans la nourriture. Pour prendre du muscle, il te faut un léger surplus, soit environ 250 à 300 kcal de plus que ce que tu dépenses. Beaucoup plus n’apporte pas plus de muscle, seulement plus de graisse.",
+          "sources": [
+            "Manger régulièrement",
+            "3 repas + 1–2 collations"
+          ]
+        },
+        {
+          "title": "Protéines",
+          "badge": "4 kcal par g",
+          "text": "Les protéines sont les briques de tes muscles. L’idéal : 1,6 à 2,2 g par kg de poids corporel par jour, réparties sur plusieurs repas.",
+          "sources": [
+            "Séré maigre",
+            "Œufs",
+            "Poulet",
+            "Lentilles",
+            "Tofu",
+            "Lait",
+            "Thon"
+          ]
+        },
+        {
+          "title": "Glucides",
+          "badge": "4 kcal par g",
+          "text": "Les glucides sont le carburant principal de l’entraînement. Ils remplissent les réserves d’énergie des muscles. Le mieux : céréales complètes, pommes de terre et fruits.",
+          "sources": [
+            "Flocons d’avoine",
+            "Riz",
+            "Pommes de terre",
+            "Pain complet",
+            "Pâtes",
+            "Bananes"
+          ]
+        },
+        {
+          "title": "Lipides",
+          "badge": "9 kcal par g",
+          "text": "Les lipides (graisses) sont importants pour les hormones et pour que le corps puisse absorber certaines vitamines. Ils contiennent plus de deux fois plus de calories par gramme. Environ 1 g par kg de poids corporel est une bonne valeur indicative.",
+          "sources": [
+            "Noix",
+            "Huile d’olive",
+            "Huile de colza",
+            "Avocat",
+            "Saumon",
+            "Fromage"
+          ]
+        }
+      ]
+    },
+    "supplements": {
+      "title": "Et les compléments alimentaires ?",
+      "text": "Tu n’en as pas besoin. Avec une alimentation normale comme le séré, les œufs, le lait, les légumineuses ou le poulet, tu atteins facilement tes protéines. Bien dormir et s’entraîner régulièrement compte plus que n’importe quelle poudre."
+    },
+    "calculator": {
+      "eyebrow": "Calculateur",
+      "title": "Combien devrais-tu manger ?",
+      "text": "Calcule tes besoins en calories et en protéines pour la prise de muscle."
+    },
+    "recipes": {
+      "eyebrow": "Recettes",
+      "title": "Bon marché, simple, riche en protéines",
+      "text": "Toutes les recettes coûtent peu, se préparent vite et ne demandent aucun produit spécial."
+    }
+  },
+  "calculator": {
+    "sex": "Sexe",
+    "sexHint": "(la formule calcule différemment)",
+    "male": "Masculin",
+    "female": "Féminin",
+    "age": "Âge",
+    "ageUnit": "ans",
+    "height": "Taille",
+    "weight": "Poids",
+    "activityTitle": "Quel est ton niveau d’activité ?",
+    "error": "Merci d’entrer une valeur entre {min} et {max}.",
+    "goal": "Objectif prise de muscle",
+    "perDay": "kcal/jour",
+    "maintenance": "Maintenir son poids",
+    "bmr": "Métabolisme de base",
+    "protein": "Protéines par jour (1,6–2,2 g par kg)",
+    "dayExample": "Voici à quoi pourrait ressembler ta journée :",
+    "under18": "Tu as moins de 18 ans et tu es encore en croissance. La formule a été développée pour les adultes, prends donc ces valeurs comme une orientation. Mange régulièrement et suffisamment. Manger trop peu freine la croissance et l’entraînement.",
+    "emptyTitle": "Ton résultat",
+    "emptyText": "Entre ton âge, ta taille et ton poids. Nous utilisons la formule de Mifflin-St Jeor, l’une des plus précises pour le métabolisme de base, et ajoutons 250 à 300 kcal pour la prise de muscle.",
+    "disclaimer": "Toutes les valeurs sont indicatives et ne remplacent pas un conseil professionnel. Pour toute question de santé, adresse-toi à un·e spécialiste, p. ex. ton médecin de famille ou un·e diététicien·ne.",
+    "macros": {
+      "protein": "Protéines",
+      "carbs": "Glucides",
+      "fat": "Lipides"
+    },
+    "activity": {
+      "kaum": {
+        "label": "Peu actif",
+        "description": "École ou bureau, pas de sport"
+      },
+      "leicht": {
+        "label": "Légèrement actif",
+        "description": "Sport 1–3x par semaine"
+      },
+      "maessig": {
+        "label": "Moyennement actif",
+        "description": "Sport 3–5x par semaine"
+      },
+      "sehr": {
+        "label": "Très actif",
+        "description": "Sport 6–7x par semaine"
+      },
+      "extrem": {
+        "label": "Extrêmement actif",
+        "description": "Travail physique et entraînement quotidien"
+      }
+    }
+  },
+  "recipeCard": {
+    "minutes": "{minutes} min",
+    "price": "env. CHF {price}",
+    "portions": "{portions} portions",
+    "perPortion": "par portion, valeurs approximatives",
+    "show": "Ingrédients & préparation",
+    "hide": "Masquer la recette",
+    "ingredients": "Ingrédients",
+    "steps": "Préparation",
+    "kcal": "kcal",
+    "protein": "Protéines",
+    "carbs": "Gluc.",
+    "fat": "Lip."
+  },
+  "about": {
+    "title": "À propos",
+    "eyebrow": "À propos",
+    "heading": "Qui se cache derrière JJJ Fitness",
+    "intro": "Nous sommes des apprenti·e·s employé·e·s de commerce de Bâle et nous créons ce site dans le cadre du cours de gestion de projet. Notre objectif : que les débutant·e·s trouvent au même endroit tout ce dont ils ont besoin pour prendre du muscle, clairement et sans publicité.",
+    "teamEyebrow": "Équipe",
+    "teamTitle": "C’est nous",
+    "projectEyebrow": "Le projet",
+    "projectTitle": "Pourquoi un site de fitness ?",
+    "projectText": "Beaucoup de jeunes commencent la musculation, mais trouvent surtout sur Internet de la publicité, des régimes extrêmes et des conseils contradictoires. Nous voulions créer un site honnête, simple et gratuit. Et apprendre en même temps à planifier un projet, à le répartir et à le terminer dans les délais.",
+    "timelineTitle": "Déroulement du projet",
+    "stageDone": "Terminé",
+    "stageNext": "Prochaine étape",
+    "stageOpen": "À faire",
+    "feedbackEyebrow": "Feedback",
+    "feedbackTitle": "Comment trouves-tu le site ?",
+    "feedbackText": "Ton avis nous aide à améliorer le site et compte pour l’évaluation de notre projet. Ça prend moins d’une minute.",
+    "creditsEyebrow": "Sources",
+    "creditsTitle": "Sources et technique",
+    "team": {
+      "p1": {
+        "role": "Gestion de projet",
+        "tasks": "Planification, délais, communication avec l’enseignant·e"
+      },
+      "p2": {
+        "role": "Contenus",
+        "tasks": "Rechercher et vérifier les exercices, les programmes et les recettes"
+      },
+      "p3": {
+        "role": "Design & tests",
+        "tasks": "Design, images, tests sur mobile, textes en français"
+      }
+    },
+    "facts": [
+      {
+        "label": "École",
+        "value": "KV Basel"
+      },
+      {
+        "label": "Cours",
+        "value": "Gestion de projet"
+      },
+      {
+        "label": "Public cible",
+        "value": "Ados et jeunes adultes, 15–25 ans"
+      },
+      {
+        "label": "Fin du projet",
+        "value": "Une semaine après les vacances de Pâques 2027"
+      }
+    ],
+    "stages": {
+      "1": "Mise en place, design system et navigation",
+      "2": "Page d’accueil avec animations",
+      "3": "Bibliothèque d’exercices avec filtres",
+      "4": "Programmes d’entraînement",
+      "5": "Nutrition et calculateur",
+      "6": "À propos et formulaire de feedback",
+      "7": "Version française",
+      "8": "Finitions, tests sur mobile, mise en ligne"
+    },
+    "credits": [
+      {
+        "title": "Images et graphiques",
+        "items": [
+          "Carte des muscles, silhouettes et icônes : dessinées par nous-mêmes (SVG)",
+          "Photos : aucune pour l’instant. Nous utilisons uniquement des images libres d’Unsplash ou de Pexels ou nos propres photos, toujours avec la source."
+        ]
+      },
+      {
+        "title": "Polices",
+        "items": [
+          "Space Grotesk (SIL Open Font License)",
+          "Inter (SIL Open Font License)"
+        ]
+      },
+      {
+        "title": "Technique",
+        "items": [
+          "React, Vite, TypeScript",
+          "Tailwind CSS",
+          "Motion (anciennement Framer Motion) pour les animations",
+          "Lenis pour un défilement fluide",
+          "React Router",
+          "Formspree pour le formulaire de feedback"
+        ]
+      },
+      {
+        "title": "Bases scientifiques",
+        "items": [
+          "Besoins en calories : formule de Mifflin-St Jeor (Mifflin et al., 1990)",
+          "Recommandation de 1,6–2,2 g/kg de protéines : méta-analyse de Morton et al., British Journal of Sports Medicine (2018)"
+        ]
+      }
+    ]
+  },
+  "feedback": {
+    "notConnected": "Note pour l’équipe : le formulaire n’est pas encore relié à Formspree. La marche à suivre se trouve dans le README, sous « Feedback-Formular ».",
+    "ratingQuestion": "Comment trouves-tu le site ?",
+    "ratingLabels": {
+      "1": "Je n’aime pas",
+      "2": "Bof",
+      "3": "Plutôt bien",
+      "4": "Bien",
+      "5": "Super !"
+    },
+    "ratingStar": "{value} étoiles sur 5 : {label}",
+    "ratingError": "Choisis entre 1 et 5 étoiles.",
+    "liked": "Qu’est-ce qui te plaît ?",
+    "likedPlaceholder": "p. ex. la carte des muscles, les recettes ...",
+    "missing": "Qu’est-ce qui te manque ?",
+    "missingPlaceholder": "p. ex. plus d’exercices à faire à la maison ...",
+    "privacy": "Le feedback est anonyme, merci de ne pas y écrire de données personnelles. Les réponses nous sont envoyées via le service Formspree.",
+    "submit": "Envoyer",
+    "sending": "Envoi en cours …",
+    "error": "Malheureusement, ça n’a pas marché. Vérifie ta connexion Internet et réessaie.",
+    "successTitle": "Merci pour ton feedback !",
+    "successText": "Nous lisons toutes les réponses et nous nous en servons pour améliorer le site.",
+    "again": "Donner un nouveau feedback"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "eyebrow": "Erreur 404",
+    "heading": "Cette page n’existe pas.",
+    "text": "Il y a peut-être une faute de frappe.",
+    "home": "Vers la page d’accueil"
+  },
+  "styleguide": {
+    "title": "Design system",
+    "eyebrow": "Design system",
+    "heading": "Nos éléments de base",
+    "intro": "Les couleurs, les polices et les composants avec lesquels tout le site est construit.",
+    "colors": "Couleurs",
+    "colorNames": {
+      "bg": "Fond",
+      "surface": "Carte",
+      "surface2": "Carte claire",
+      "text": "Texte",
+      "muted": "Texte secondaire",
+      "accent": "Accent"
+    },
+    "fonts": "Polices",
+    "fontHeading": "Titres : Space Grotesk, gras",
+    "fontBody": "Texte courant : Inter",
+    "sampleHeading": "Rester fort.",
+    "sampleText": "Les muscles ne grandissent pas pendant l’entraînement, mais pendant la récupération qui suit. Dormir suffisamment et manger assez de protéines est donc aussi important que les exercices eux-mêmes.",
+    "buttons": "Boutons",
+    "primary": "Principal",
+    "secondary": "Secondaire",
+    "ghost": "Discret",
+    "small": "Petit",
+    "large": "Grand",
+    "disabled": "Désactivé",
+    "cards": "Cartes",
+    "normalCard": "Carte normale",
+    "normalCardText": "Pour du contenu qu’on lit seulement.",
+    "interactiveCard": "Carte interactive",
+    "interactiveCardText": "Passe la souris dessus : elle se soulève et s’illumine."
+  },
+  "weekdays": [
+    "Lu",
+    "Ma",
+    "Me",
+    "Je",
+    "Ve",
+    "Sa",
+    "Di"
+  ],
+  "muscles": {
+    "brust": {
+      "name": "Pectoraux",
+      "description": "Le grand pectoral pousse les bras vers l’avant, p. ex. lors des pompes ou du développé couché."
+    },
+    "schultern": {
+      "name": "Épaules",
+      "description": "Le deltoïde lève les bras vers l’avant, sur le côté et vers l’arrière."
+    },
+    "bizeps": {
+      "name": "Biceps",
+      "description": "L’avant du bras fléchit le coude, p. ex. lors du curl ou de la traction."
+    },
+    "trizeps": {
+      "name": "Triceps",
+      "description": "L’arrière du bras tend le coude, p. ex. lors des dips ou des pompes."
+    },
+    "bauch": {
+      "name": "Abdominaux",
+      "description": "Les abdominaux droits et obliques stabilisent le tronc, et ce dans presque tous les exercices."
+    },
+    "ruecken": {
+      "name": "Dos",
+      "description": "Le grand dorsal tire les bras vers le corps, p. ex. lors du rowing ou de la traction."
+    },
+    "nacken": {
+      "name": "Nuque",
+      "description": "Le trapèze lève et stabilise les omoplates."
+    },
+    "gesaess": {
+      "name": "Fessiers",
+      "description": "Le plus grand muscle du corps tend la hanche, p. ex. lors du squat et du hip thrust."
+    },
+    "quadrizeps": {
+      "name": "Quadriceps",
+      "description": "L’avant de la cuisse tend le genou, p. ex. lors du squat et des fentes."
+    },
+    "beinbeuger": {
+      "name": "Ischio-jambiers",
+      "description": "L’arrière de la cuisse fléchit le genou et tend la hanche, p. ex. lors du soulevé de terre roumain."
+    },
+    "waden": {
+      "name": "Mollets",
+      "description": "Les mollets soulèvent le talon, p. ex. lors des élévations sur pointe de pieds ou des sauts."
+    }
+  },
+  "equipment": {
+    "koerpergewicht": "Poids du corps",
+    "kurzhantel": "Haltères",
+    "langhantel": "Barre",
+    "maschine": "Machine"
+  },
+  "levels": {
+    "anfaenger": "Débutant",
+    "fortgeschritten": "Avancé"
+  },
+  "exercises": {
+    "liegestuetz": {
+      "name": "Pompes",
+      "description": "Le classique sans matériel pour les pectoraux, les épaules et les triceps.",
+      "steps": [
+        "Pose les mains au sol un peu plus larges que les épaules, les doigts vers l’avant.",
+        "Aligne ton corps de la tête aux talons, contracte les abdos et les fessiers.",
+        "Descends lentement jusqu’à ce que la poitrine touche presque le sol. Les coudes pointent en diagonale vers l’arrière (env. 45 degrés).",
+        "Pousse avec force vers le haut jusqu’à ce que les bras soient tendus."
+      ],
+      "mistakes": [
+        "Les hanches s’affaissent ou remontent. Contracte les abdos !",
+        "Les coudes partent droit sur les côtés. Cela sollicite trop les épaules.",
+        "Ne descendre qu’à moitié. Mieux vaut s’entraîner sur les genoux et faire le mouvement complet."
+      ]
+    },
+    "bankdruecken": {
+      "name": "Développé couché",
+      "description": "L’exercice à la barre le plus important pour des pectoraux puissants.",
+      "steps": [
+        "Allonge-toi sur le banc, les yeux sous la barre, les pieds bien au sol.",
+        "Saisis la barre un peu plus large que les épaules et tire les omoplates vers l’arrière et vers le bas.",
+        "Descends la barre de manière contrôlée vers le bas de la poitrine.",
+        "Pousse la barre vers le haut jusqu’à ce que les bras soient tendus."
+      ],
+      "mistakes": [
+        "Faire rebondir la barre sur la poitrine.",
+        "Les fessiers décollent du banc.",
+        "S’entraîner lourd sans pareur. Avec des charges lourdes, toujours avoir quelqu’un pour assurer."
+      ]
+    },
+    "kurzhantel-schraegbankdruecken": {
+      "name": "Développé incliné aux haltères",
+      "description": "Met l’accent sur le haut des pectoraux et entraîne chaque côté séparément.",
+      "steps": [
+        "Règle le banc entre 30 et 45 degrés et assieds-toi avec les haltères sur les cuisses.",
+        "Allonge-toi en arrière et amène les haltères sur les côtés de la poitrine.",
+        "Pousse les haltères vers le haut jusqu’à ce qu’ils se touchent presque au-dessus de la poitrine.",
+        "Redescends lentement jusqu’à sentir un léger étirement dans les pectoraux."
+      ],
+      "mistakes": [
+        "Le banc est trop incliné. Ce sont alors surtout les épaules qui travaillent.",
+        "Laisser tomber les haltères au lieu de les descendre de manière contrôlée.",
+        "Cambrer fortement le dos."
+      ]
+    },
+    "dips": {
+      "name": "Dips",
+      "description": "Exercice exigeant au poids du corps pour les pectoraux et les triceps.",
+      "steps": [
+        "Monte en appui sur les barres parallèles, bras tendus, épaules loin des oreilles.",
+        "Penche légèrement le buste vers l’avant.",
+        "Descends lentement jusqu’à ce que les bras soient à peu près parallèles au sol.",
+        "Pousse avec force jusqu’à ce que les bras soient à nouveau tendus."
+      ],
+      "mistakes": [
+        "Descendre trop bas. Cela sollicite trop les épaules.",
+        "Les épaules remontent vers les oreilles.",
+        "Travailler avec de l’élan au lieu de contrôler le mouvement."
+      ]
+    },
+    "butterfly": {
+      "name": "Butterfly à la machine",
+      "description": "Isole les pectoraux, idéal pour finir l’entraînement de la poitrine.",
+      "steps": [
+        "Règle le siège pour que les poignées soient à hauteur de poitrine.",
+        "Saisis les poignées, coudes légèrement fléchis, dos contre le dossier.",
+        "Ramène les bras en arc de cercle devant la poitrine.",
+        "Reviens lentement jusqu’à sentir un léger étirement."
+      ],
+      "mistakes": [
+        "Aller trop loin en arrière et trop étirer les épaules.",
+        "Tendre complètement ou trop plier les bras.",
+        "Laisser le poids revenir brusquement."
+      ]
+    },
+    "klimmzug": {
+      "name": "Traction",
+      "description": "L’exercice roi pour un dos large.",
+      "steps": [
+        "Saisis la barre un peu plus large que les épaules, paumes vers l’avant.",
+        "Tire les omoplates vers le bas et contracte les abdos.",
+        "Monte jusqu’à ce que le menton dépasse la barre.",
+        "Redescends de manière contrôlée jusqu’à ce que les bras soient presque tendus."
+      ],
+      "mistakes": [
+        "Prendre de l’élan avec les jambes.",
+        "Ne faire que des demi-répétitions.",
+        "Tu n’arrives pas encore à faire une traction ? Commence avec le tirage vertical ou aide-toi d’un élastique."
+      ]
+    },
+    "latzug": {
+      "name": "Tirage vertical",
+      "description": "Le même mouvement que la traction, mais avec un poids réglable.",
+      "steps": [
+        "Assieds-toi et bloque les genoux sous le coussin.",
+        "Saisis la barre largement et penche légèrement le buste en arrière.",
+        "Tire la barre vers le haut de la poitrine, les coudes pointent vers le bas.",
+        "Remonte lentement jusqu’à ce que les bras soient tendus."
+      ],
+      "mistakes": [
+        "Tirer la barre derrière la nuque.",
+        "Tirer brusquement avec tout le buste vers l’arrière.",
+        "Hausser les épaules au lieu de tirer les omoplates vers le bas."
+      ]
+    },
+    "langhantelrudern": {
+      "name": "Rowing barre buste penché",
+      "description": "Développe l’épaisseur et la force de tout le dos.",
+      "steps": [
+        "Tiens-toi debout, pieds écartés de la largeur des hanches, et saisis la barre à largeur d’épaules.",
+        "Fléchis légèrement les genoux et penche le buste vers l’avant, dos droit (env. 45 degrés).",
+        "Tire la barre vers le bas du ventre et serre les omoplates.",
+        "Redescends de manière contrôlée jusqu’à ce que les bras soient tendus."
+      ],
+      "mistakes": [
+        "Un dos rond.",
+        "Le buste se redresse à chaque répétition.",
+        "Un poids trop lourd qui ne monte qu’avec de l’élan."
+      ]
+    },
+    "kurzhantelrudern": {
+      "name": "Rowing unilatéral à l’haltère",
+      "description": "Entraîne chaque côté du dos séparément et ménage le bas du dos.",
+      "steps": [
+        "Appuie un genou et une main sur le banc, le dos est droit.",
+        "Laisse pendre l’haltère avec le bras libre.",
+        "Tire l’haltère vers la hanche, le coude reste près du corps.",
+        "Redescends lentement. Après toutes les répétitions, change de côté."
+      ],
+      "mistakes": [
+        "Le buste tourne avec le mouvement.",
+        "Tirer l’haltère vers l’épaule au lieu de la hanche.",
+        "Arrondir le dos."
+      ]
+    },
+    "kreuzheben": {
+      "name": "Soulevé de terre",
+      "description": "Exercice complet pour le dos, les fessiers et les jambes.",
+      "steps": [
+        "Les pieds sont écartés de la largeur des hanches, la barre au-dessus du milieu du pied.",
+        "Fléchis les genoux et saisis la barre à largeur d’épaules. Le dos est droit, la poitrine sortie.",
+        "Contracte les abdos et monte la barre près du corps jusqu’à être debout.",
+        "Redescends la barre de manière contrôlée, près des jambes."
+      ],
+      "mistakes": [
+        "Un dos rond. C’est le plus grand risque de blessure.",
+        "La barre est loin du corps.",
+        "Se cambrer en arrière en haut du mouvement.",
+        "Commencer sans contrôle de la technique. Au début, fais-toi montrer l’exercice par une personne expérimentée."
+      ]
+    },
+    "kurzhantel-schulterdruecken": {
+      "name": "Développé épaules aux haltères",
+      "description": "Développe des épaules fortes et arrondies.",
+      "steps": [
+        "Assieds-toi sur un banc avec un dossier droit.",
+        "Tiens les haltères à hauteur des épaules, paumes vers l’avant.",
+        "Pousse les haltères au-dessus de la tête jusqu’à ce que les bras soient presque tendus.",
+        "Redescends lentement à hauteur des épaules."
+      ],
+      "mistakes": [
+        "Une forte cambrure du dos.",
+        "Faire claquer les haltères en haut.",
+        "Commencer trop lourd."
+      ]
+    },
+    "seitheben": {
+      "name": "Élévations latérales",
+      "description": "Entraîne le côté des épaules et élargit la carrure.",
+      "steps": [
+        "Tiens-toi droit, les haltères pendent le long des cuisses.",
+        "Garde les coudes légèrement fléchis.",
+        "Lève les bras sur les côtés jusqu’à hauteur des épaules.",
+        "Redescends lentement."
+      ],
+      "mistakes": [
+        "Prendre de l’élan avec le buste.",
+        "Lever les bras plus haut que les épaules.",
+        "Un poids trop lourd. Pour cet exercice, il en faut peu."
+      ]
+    },
+    "face-pulls": {
+      "name": "Face pulls",
+      "description": "Renforce l’arrière des épaules et améliore la posture.",
+      "steps": [
+        "Accroche une corde à la poulie à hauteur de tête.",
+        "Saisis la corde à deux mains et fais un pas en arrière.",
+        "Tire la corde vers ton visage. Les mains s’écartent, les coudes restent hauts.",
+        "Tiens brièvement, puis reviens lentement."
+      ],
+      "mistakes": [
+        "Tirer trop lourd en se penchant en arrière.",
+        "Les coudes pointent vers le bas.",
+        "Hausser les épaules."
+      ]
+    },
+    "shrugs": {
+      "name": "Shrugs (haussements d’épaules)",
+      "description": "Exercice simple pour le trapèze dans la nuque.",
+      "steps": [
+        "Tiens-toi droit et tiens les haltères sur les côtés.",
+        "Les bras restent tendus tout le temps.",
+        "Monte les épaules tout droit vers les oreilles.",
+        "Tiens brièvement en haut et redescends lentement."
+      ],
+      "mistakes": [
+        "Faire tourner les épaules.",
+        "Avancer la tête.",
+        "Tirer avec les bras."
+      ]
+    },
+    "kurzhantel-curl": {
+      "name": "Curl aux haltères",
+      "description": "Le classique pour les biceps.",
+      "steps": [
+        "Tiens-toi droit, les paumes vers l’avant.",
+        "Les bras restent immobiles le long du corps.",
+        "Fléchis les haltères vers les épaules.",
+        "Redescends lentement jusqu’à ce que les bras soient tendus."
+      ],
+      "mistakes": [
+        "Prendre de l’élan avec le dos.",
+        "Les coudes partent vers l’avant.",
+        "Ne redescendre qu’à moitié."
+      ]
+    },
+    "hammercurl": {
+      "name": "Curl marteau",
+      "description": "Curl en prise neutre qui entraîne aussi les avant-bras.",
+      "steps": [
+        "Tiens les haltères sur les côtés, les pouces vers l’avant.",
+        "Garde les bras immobiles.",
+        "Fléchis les haltères vers les épaules, la prise reste neutre.",
+        "Redescends de manière contrôlée."
+      ],
+      "mistakes": [
+        "Prendre de l’élan avec les hanches.",
+        "Plier les poignets.",
+        "Redescendre trop vite."
+      ]
+    },
+    "langhantel-curl": {
+      "name": "Curl à la barre",
+      "description": "Plus de poids pour les biceps, les deux bras en même temps.",
+      "steps": [
+        "Saisis la barre à largeur d’épaules, paumes vers l’avant.",
+        "Les coudes restent près du corps.",
+        "Fléchis la barre vers la poitrine.",
+        "Redescends lentement."
+      ],
+      "mistakes": [
+        "Le buste se penche en arrière.",
+        "Les coudes partent vers l’avant.",
+        "Les poignets se plient."
+      ]
+    },
+    "trizepsdruecken-kabel": {
+      "name": "Extension des triceps à la poulie",
+      "description": "Isole les triceps et ménage les articulations.",
+      "steps": [
+        "Accroche une corde ou une barre en haut de la poulie.",
+        "Tiens-toi droit, les coudes serrés contre le corps.",
+        "Pousse la poignée vers le bas jusqu’à ce que les bras soient tendus.",
+        "Reviens lentement jusqu’à ce que les coudes soient pliés à environ 90 degrés."
+      ],
+      "mistakes": [
+        "Les coudes bougent vers l’avant et l’arrière.",
+        "Le buste se penche au-dessus du poids.",
+        "Laisser le poids remonter brusquement."
+      ]
+    },
+    "french-press": {
+      "name": "Barre au front (French press)",
+      "description": "Exercice à la barre pour des triceps puissants.",
+      "steps": [
+        "Allonge-toi sur le banc et tiens la barre (idéalement une barre EZ) bras tendus au-dessus de la poitrine.",
+        "Les bras restent verticaux.",
+        "Descends lentement la barre vers le front. Seuls les coudes se plient.",
+        "Tends à nouveau les bras vers le haut."
+      ],
+      "mistakes": [
+        "Les coudes s’écartent beaucoup.",
+        "Les bras bougent avec.",
+        "Un poids trop lourd. Cela sollicite trop les coudes."
+      ]
+    },
+    "kniebeuge": {
+      "name": "Squat à la barre",
+      "description": "L’exercice de base pour les jambes et les fessiers.",
+      "steps": [
+        "Pose la barre sur le haut du dos (pas sur la nuque). Les pieds sont à largeur d’épaules.",
+        "Contracte les abdos et garde la poitrine droite.",
+        "Descends les hanches vers l’arrière et vers le bas jusqu’à ce que les cuisses soient au moins parallèles au sol.",
+        "Remonte avec force en poussant sur tout le pied."
+      ],
+      "mistakes": [
+        "Les genoux rentrent vers l’intérieur.",
+        "Les talons décollent.",
+        "Le dos s’arrondit en bas du mouvement."
+      ]
+    },
+    "goblet-squat": {
+      "name": "Goblet squat",
+      "description": "Le squat avec un haltère, parfait pour apprendre la technique.",
+      "steps": [
+        "Tiens un haltère à la verticale devant la poitrine.",
+        "Les pieds sont à largeur d’épaules, les pointes légèrement vers l’extérieur.",
+        "Descends profondément en position accroupie, les coudes entre les genoux.",
+        "Remonte jusqu’à être de nouveau debout."
+      ],
+      "mistakes": [
+        "Les genoux rentrent vers l’intérieur.",
+        "Le buste bascule fortement vers l’avant.",
+        "Les talons décollent."
+      ]
+    },
+    "ausfallschritte": {
+      "name": "Fentes",
+      "description": "Entraîne chaque jambe séparément et améliore l’équilibre.",
+      "steps": [
+        "Tiens-toi droit, les haltères sur les côtés. Au début, ça marche aussi sans poids.",
+        "Fais un grand pas en avant.",
+        "Descends le genou arrière vers le sol jusqu’à ce que les deux genoux soient pliés à environ 90 degrés.",
+        "Repousse avec la jambe avant pour revenir debout."
+      ],
+      "mistakes": [
+        "Le genou avant rentre vers l’intérieur.",
+        "Le pas est trop court.",
+        "Le buste tombe vers l’avant."
+      ]
+    },
+    "beinpresse": {
+      "name": "Presse à cuisses",
+      "description": "Beaucoup de poids pour les jambes, sans charger le dos.",
+      "steps": [
+        "Assieds-toi, le dos et les fessiers bien collés au dossier.",
+        "Place les pieds à largeur d’épaules au milieu de la plateforme.",
+        "Descends lentement la plateforme jusqu’à ce que les genoux soient pliés à environ 90 degrés.",
+        "Pousse vers le haut sans verrouiller complètement les genoux."
+      ],
+      "mistakes": [
+        "Verrouiller complètement les genoux en haut.",
+        "Les fessiers décollent du dossier.",
+        "Ne pas descendre assez bas."
+      ]
+    },
+    "rumaenisches-kreuzheben": {
+      "name": "Soulevé de terre roumain",
+      "description": "Entraîne l’arrière des jambes et les fessiers.",
+      "steps": [
+        "Tiens-toi debout, pieds écartés de la largeur des hanches, les haltères devant les cuisses.",
+        "Fléchis légèrement les genoux et garde-les ainsi.",
+        "Pousse les hanches vers l’arrière et descends les haltères près des jambes jusque sous les genoux.",
+        "Contracte les fessiers et pousse les hanches vers l’avant jusqu’à être debout."
+      ],
+      "mistakes": [
+        "Un dos rond.",
+        "Trop plier les genoux. Cela devient alors un squat.",
+        "Les haltères sont loin des jambes."
+      ]
+    },
+    "hip-thrust": {
+      "name": "Hip thrust",
+      "description": "Le meilleur exercice pour cibler les fessiers.",
+      "steps": [
+        "Appuie le haut du dos contre un banc. La barre repose sur les hanches avec un coussin.",
+        "Pose les pieds à largeur des hanches, les genoux sont fléchis.",
+        "Pousse les hanches vers le haut jusqu’à ce que le buste et les cuisses forment une ligne.",
+        "En haut, contracte brièvement les fessiers, puis redescends lentement."
+      ],
+      "mistakes": [
+        "Se cambrer en haut du mouvement.",
+        "Les pieds sont trop loin ou trop près.",
+        "Basculer la tête en arrière."
+      ]
+    },
+    "beinbeuger-maschine": {
+      "name": "Leg curl à la machine",
+      "description": "Isole l’arrière des cuisses.",
+      "steps": [
+        "Règle la machine pour que le coussin soit juste au-dessus des talons.",
+        "Allonge-toi ou assieds-toi (selon la machine) et saisis les poignées.",
+        "Ramène les talons vers les fessiers.",
+        "Reviens lentement jusqu’à ce que les jambes soient presque tendues."
+      ],
+      "mistakes": [
+        "Les hanches décollent.",
+        "Laisser retomber le poids.",
+        "Des répétitions trop rapides."
+      ]
+    },
+    "wadenheben": {
+      "name": "Élévations des mollets",
+      "description": "Se fait partout, par exemple sur une marche d’escalier.",
+      "steps": [
+        "Place-toi sur une marche avec l’avant des pieds, les talons dans le vide.",
+        "Tiens-toi à un mur ou à une rampe.",
+        "Monte les talons le plus haut possible.",
+        "Redescends lentement jusqu’à ce que les talons soient sous la marche."
+      ],
+      "mistakes": [
+        "Rebondir au lieu de bouger de manière contrôlée.",
+        "Un mouvement trop petit.",
+        "Plier les genoux."
+      ]
+    },
+    "plank": {
+      "name": "Gainage (planche)",
+      "description": "Renforce tout le tronc, sans aucun matériel.",
+      "steps": [
+        "Pose les avant-bras au sol, les coudes sous les épaules.",
+        "Tends les jambes vers l’arrière et appuie-toi sur la pointe des pieds.",
+        "Aligne ton corps, contracte les abdos et les fessiers.",
+        "Tiens la position en respirant calmement."
+      ],
+      "mistakes": [
+        "Les hanches s’affaissent.",
+        "Les fessiers remontent.",
+        "Retenir sa respiration."
+      ]
+    },
+    "crunch": {
+      "name": "Crunch",
+      "description": "Exercice simple pour les abdominaux droits.",
+      "steps": [
+        "Allonge-toi sur le dos, genoux fléchis, pieds au sol.",
+        "Pose les mains sur les tempes ou croise-les sur la poitrine.",
+        "Décolle les épaules du sol en contractant les abdos.",
+        "Redescends lentement sans reposer la tête."
+      ],
+      "mistakes": [
+        "Tirer sur la tête avec les mains.",
+        "Monter avec de l’élan.",
+        "S’asseoir complètement au lieu de lever seulement les épaules."
+      ]
+    },
+    "haengendes-beinheben": {
+      "name": "Relevés de jambes suspendu",
+      "description": "Exercice exigeant pour les abdos à la barre de traction.",
+      "steps": [
+        "Suspends-toi à la barre, les bras tendus.",
+        "Contracte les abdos, ne te balance pas.",
+        "Monte les genoux ou les jambes tendues au moins jusqu’à hauteur des hanches.",
+        "Redescends lentement."
+      ],
+      "mistakes": [
+        "Se balancer d’avant en arrière.",
+        "Lever seulement les jambes sans enrouler le bassin.",
+        "Redescendre trop vite."
+      ]
+    }
+  },
+  "plans": {
+    "ganzkoerper": {
+      "name": "Corps entier 3x par semaine",
+      "short": "Corps entier",
+      "level": "Débutant",
+      "frequency": "3x par semaine",
+      "duration": "env. 50 min",
+      "description": "Le départ idéal. À chaque séance, tu entraînes tout le corps en alternant le jour A et le jour B. Ainsi, chaque muscle est entraîné plusieurs fois par semaine, et tu as toujours un jour de repos entre les séances.",
+      "weekNote": "La semaine suivante, c’est l’inverse : B – A – B.",
+      "days": {
+        "A": {
+          "short": "A",
+          "name": "Jour A",
+          "focus": "Corps entier, accent sur le squat et le développé couché"
+        },
+        "B": {
+          "short": "B",
+          "name": "Jour B",
+          "focus": "Corps entier, accent sur la presse à cuisses et le développé épaules"
+        }
+      }
+    },
+    "oberkoerper-unterkoerper": {
+      "name": "Haut / bas du corps 4x par semaine",
+      "short": "Haut / bas du corps",
+      "level": "Après env. 3 mois d’entraînement",
+      "frequency": "4x par semaine",
+      "duration": "env. 60 min",
+      "description": "L’étape suivante après le programme corps entier. Tu alternes haut du corps et bas du corps. Tu as ainsi plus de temps pour chaque groupe musculaire par séance, et chaque muscle est quand même entraîné deux fois par semaine.",
+      "days": {
+        "OK1": {
+          "short": "H1",
+          "name": "Haut du corps 1",
+          "focus": "Pousser et tirer, exercices de base lourds"
+        },
+        "UK1": {
+          "short": "B1",
+          "name": "Bas du corps 1",
+          "focus": "Le squat au centre"
+        },
+        "OK2": {
+          "short": "H2",
+          "name": "Haut du corps 2",
+          "focus": "Haut des pectoraux, largeur du dos et bras"
+        },
+        "UK2": {
+          "short": "B2",
+          "name": "Bas du corps 2",
+          "focus": "Soulevé de terre et fessiers"
+        }
+      }
+    },
+    "push-pull-legs": {
+      "name": "Push / Pull / Legs",
+      "short": "Push/Pull/Legs",
+      "level": "Avancé",
+      "frequency": "3x par semaine",
+      "duration": "env. 60 min",
+      "description": "Chaque jour a un thème clair : pousser (pectoraux, épaules, triceps), tirer (dos, biceps) et jambes. Tu peux ainsi entraîner chaque groupe musculaire à fond le jour qui lui est consacré.",
+      "weekNote": "Si tu t’entraînes depuis longtemps, tu peux faire le programme 2x par semaine (6 séances). Pour commencer, 3 séances suffisent largement.",
+      "days": {
+        "PUSH": {
+          "short": "Push",
+          "name": "Push",
+          "focus": "Pectoraux, épaules, triceps"
+        },
+        "PULL": {
+          "short": "Pull",
+          "name": "Pull",
+          "focus": "Dos, arrière des épaules, biceps"
+        },
+        "LEGS": {
+          "short": "Legs",
+          "name": "Legs",
+          "focus": "Jambes, fessiers, abdos"
+        }
+      }
+    }
+  },
+  "recipes": {
+    "overnight-oats": {
+      "name": "Overnight oats au séré",
+      "description": "À préparer le soir, il n’y a plus qu’à manger le matin. Parfait avant l’école.",
+      "ingredients": [
+        "60 g de flocons d’avoine",
+        "150 g de séré maigre",
+        "150 ml de lait",
+        "1 banane",
+        "1 pincée de cannelle"
+      ],
+      "steps": [
+        "Mélange bien les flocons d’avoine, le séré, le lait et la cannelle dans un bocal.",
+        "Mets au frigo pendant la nuit (au moins 4 heures).",
+        "Le matin, coupe la banane en rondelles et pose-les dessus."
+      ]
+    },
+    "ruehrei-wrap": {
+      "name": "Wrap aux œufs brouillés",
+      "description": "Petit-déjeuner ou repas de midi rapide qui cale longtemps.",
+      "ingredients": [
+        "3 œufs",
+        "1 tortilla complète",
+        "30 g de fromage râpé",
+        "1 poignée d’épinards",
+        "1 tomate",
+        "Sel, poivre"
+      ],
+      "steps": [
+        "Bats les œufs avec du sel et du poivre et fais-les cuire à feu moyen dans une poêle.",
+        "Ajoute brièvement les épinards, puis parsème de fromage.",
+        "Réchauffe la tortilla dans la poêle, garnis-la d’œufs brouillés et de dés de tomate, puis roule-la."
+      ]
+    },
+    "poulet-reis-bowl": {
+      "name": "Bowl poulet-riz",
+      "description": "Le classique à préparer à l’avance. Se conserve 3 jours au frigo.",
+      "ingredients": [
+        "150 g de blanc de poulet",
+        "80 g de riz (cru)",
+        "150 g de brocoli",
+        "1 c. à café d’huile de colza",
+        "1 c. à soupe de sauce soja",
+        "Paprika en poudre"
+      ],
+      "steps": [
+        "Cuis le riz selon les indications de l’emballage.",
+        "Coupe le poulet en morceaux, assaisonne de paprika et fais-le dorer dans l’huile jusqu’à ce qu’il ne soit plus rose à l’intérieur.",
+        "Ajoute le brocoli au riz pendant les 5 dernières minutes ou cuis-le à la vapeur à part.",
+        "Mets tout dans un bol et assaisonne avec la sauce soja."
+      ]
+    },
+    "linsen-bolognese": {
+      "name": "Bolognaise aux lentilles",
+      "description": "Végétarienne, très bon marché et pleine de protéines. Pour 2 portions.",
+      "ingredients": [
+        "160 g de lentilles corail",
+        "160 g de spaghettis complets",
+        "1 boîte de tomates concassées (400 g)",
+        "1 oignon",
+        "1 carotte",
+        "1 c. à soupe d’huile d’olive",
+        "30 g de parmesan",
+        "Sel, poivre, origan"
+      ],
+      "steps": [
+        "Hache finement l’oignon et la carotte et fais-les revenir 3 minutes dans l’huile.",
+        "Ajoute les lentilles, les tomates et 300 ml d’eau, puis laisse mijoter 15 minutes. Assaisonne.",
+        "Cuis les spaghettis dans de l’eau salée selon les indications de l’emballage.",
+        "Mélange les spaghettis avec la sauce et sers avec le parmesan."
+      ]
+    },
+    "thon-kichererbsen-salat": {
+      "name": "Salade thon et pois chiches",
+      "description": "Sans cuisson, idéale comme lunch à emporter.",
+      "ingredients": [
+        "1 boîte de thon au naturel",
+        "½ boîte de pois chiches",
+        "½ concombre",
+        "1 tomate",
+        "½ poivron",
+        "1 c. à soupe d’huile d’olive",
+        "Le jus d’½ citron",
+        "Sel, poivre"
+      ],
+      "steps": [
+        "Égoutte et rince le thon et les pois chiches.",
+        "Coupe le concombre, la tomate et le poivron en petits dés.",
+        "Mélange le tout et assaisonne avec l’huile, le jus de citron, le sel et le poivre."
+      ]
+    },
+    "quark-beeren-bowl": {
+      "name": "Bowl séré et baies",
+      "description": "En-cas rapide après l’entraînement ou le soir.",
+      "ingredients": [
+        "250 g de séré maigre",
+        "100 g de baies (aussi surgelées)",
+        "20 g de flocons d’avoine",
+        "1 c. à café de miel"
+      ],
+      "steps": [
+        "Mets le séré dans un bol et remue jusqu’à ce qu’il soit lisse (éventuellement avec un peu de lait).",
+        "Ajoute les baies et les flocons d’avoine et sucre avec le miel."
+      ]
+    }
+  }
+}

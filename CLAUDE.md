@@ -79,6 +79,8 @@ Wir sind eine Gruppe von KV-Lernenden (KV Basel) und bauen im Fach Projektmanage
 
 Die Seite bekommt einen Sprachumschalter DE / FR oben in der Navigation. Alle Texte liegen in Übersetzungsdateien (z.B. `de.json` und `fr.json`), damit wir die französischen Texte später im Französischunterricht selbst schreiben oder verbessern können.
 
+**Umsetzung:** `src/i18n/de.json` und `fr.json` mit gleicher Struktur. Im Code `const { t, tList } = useI18n()` und `t('pfad.zum.text', { platzhalter })`. KEINE Texte direkt in Komponenten oder Datendateien schreiben: neue Texte immer in BEIDEN JSON-Dateien ergänzen und danach `npm run i18n:check` ausführen.
+
 ## 7. So arbeiten wir
 
 Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Deshalb:
@@ -90,7 +92,7 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
   4. Trainingspläne ✅
   5. Ernährung und Rechner ✅
   6. Über uns und Feedback-Formular ✅
-  7. Französisch-Version
+  7. Französisch-Version ✅
   8. Feinschliff, Tests auf dem Handy, Deployment
 - Nach jeder Etappe einen Git-Commit mit klarer Nachricht
 - `CHANGELOG.md` führen: Datum, was gemacht wurde, wer dran war
@@ -104,16 +106,17 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
 - Keine Supplement-Werbung, keine Extrem-Diäten
 - Kein überladenes Design, lieber weniger, dafür sauber
 
-## Projektstruktur (Stand Etappe 6)
+## Projektstruktur (Stand Etappe 7)
 
 ```
 src/
   main.tsx               Einstieg: Schriften, CSS, MotionConfig
   App.tsx                Alle Routen (welche URL zeigt welche Seite)
   index.css              Tailwind + Design-System (@theme)
-  data/                  Inhalte: navigation, muscles, exercises, plans, recipes, nutritionBasics, rules, project, bodyShapes
-  utils/                 Hilfsfunktionen: filterExercises (Suche/Filter), nutrition (Kalorienrechner)
-  components/layout/     Layout, Navbar, Footer, Logo, SmoothScroll, PageTransition
+  i18n/                  Übersetzungen: de.json, fr.json, i18n.ts (t-Funktion), I18nProvider
+  data/                  Daten ohne Texte: navigation, muscles, exercises, plans, recipes, project, bodyShapes
+  utils/                 Hilfsfunktionen: filterExercises (Suche/Filter), nutrition (Kalorienrechner), formatReps
+  components/layout/     Layout, Navbar, LanguageSwitch, Footer, Logo, SmoothScroll, PageTransition
   components/ui/         Button, Card, Chip, Tabs, BodyFigure, Container, Section, PageHeader, SectionHeading, Icons
   components/exercises/  ExerciseCard, FilterGroup
   components/plans/      PlanDetails, WeekOverview, DayTable, PlanPrintView (Druckansicht)
@@ -124,6 +127,7 @@ src/
   pages/                 Eine Datei pro Seite
 vercel.json              Damit Unterseiten auf Vercel direkt aufrufbar sind
 .env.example             Vorlage für .env.local (Formspree-ID), siehe README
+scripts/check-translations.mjs  Prüft fr.json gegen de.json (npm run i18n:check)
 ```
 
 Nach jeder Etappe in `src/data/project.ts` die Etappe auf `done: true` setzen.

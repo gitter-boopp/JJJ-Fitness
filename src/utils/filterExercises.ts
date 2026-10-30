@@ -1,6 +1,6 @@
-import { equipmentLabel, equipmentOptions, levelOptions } from '../data/exercises'
+import { equipmentIds, levelIds } from '../data/exercises'
 import type { Equipment, Exercise, Level } from '../data/exercises'
-import { findMuscle } from '../data/muscles'
+import { isMuscleId } from '../data/muscles'
 import type { MuscleId } from '../data/muscles'
 
 // Die aktuell gewählten Filter. undefined = "Alle"
@@ -14,27 +14,33 @@ export type ExerciseFilters = {
 // Liest die Filter aus der Adresse, z.B. /uebungen?muskel=brust&equipment=kurzhantel
 // Ungültige Werte (z.B. ?muskel=quatsch) werden einfach ignoriert.
 export function filtersFromParams(params: URLSearchParams): ExerciseFilters {
-  const equipment = params.get('equipment')
-  const level = params.get('level')
+  const muscle = params.get('muskel')
+  const equipment = params.get('equipment') as Equipment
+  const level = params.get('level') as Level
   return {
-    muscle: findMuscle(params.get('muskel'))?.id,
-    equipment: equipmentOptions.find((option) => option.id === equipment)?.id,
-    level: levelOptions.find((option) => option.id === level)?.id,
+    muscle: isMuscleId(muscle) ? muscle : undefined,
+    equipment: equipmentIds.includes(equipment) ? equipment : undefined,
+    level: levelIds.includes(level) ? level : undefined,
     query: params.get('q') ?? '',
   }
 }
 
-// Macht Text vergleichbar: alles klein, Umlaute ohne Punkte (ü -> u).
-// So findet "rucken" auch "Rücken" und "BANK" auch "Bankdrücken".
+// Macht Text vergleichbar: alles klein, Akzente und Umlaute ohne Punkte (ü -> u, é -> e).
+// So findet "rucken" auch "Rücken" und "developpe" auch "Développé".
 export function normalize(text: string): string {
   return text
-    .toLocaleLowerCase('de-CH')
+    .toLowerCase()
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/[\u0300-\u036f]/g, '') // entfernt die Akzent-Zeichen
 }
 
 // Filtert die Übungsliste. Alle Filter müssen gleichzeitig passen (UND-Verknüpfung).
-export function filterExercises(list: Exercise[], filters: ExerciseFilters): Exercise[] {
+// t: Übersetzungs-Funktion, damit die Suche in der gewählten Sprache sucht.
+export function filterExercises(
+  list: Exercise[],
+  filters: ExerciseFilters,
+  t: (key: string) => string,
+): Exercise[] {
   const query = normalize(filters.query.trim())
 
   const result = list.filter((exercise) => {
@@ -46,9 +52,11 @@ export function filterExercises(list: Exercise[], filters: ExerciseFilters): Exe
     if (query) {
       // Durchsucht Name, Muskeln und Equipment
       const searchText = normalize(
-        [exercise.name, equipmentLabel(exercise.equipment), ...allMuscles.map((id) => findMuscle(id)?.name)].join(
-          ' ',
-        ),
+        [
+          t(`exercises.${exercise.slug}.name`),
+          t(`equipment.${exercise.equipment}`),
+          ...allMuscles.map((id) => t(`muscles.${id}.name`)),
+        ].join(' '),
       )
       if (!searchText.includes(query)) return false
     }

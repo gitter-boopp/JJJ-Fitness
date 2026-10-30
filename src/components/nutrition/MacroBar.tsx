@@ -1,5 +1,7 @@
 import { motion } from 'motion/react'
 
+import { useI18n } from '../../i18n/i18n'
+
 type MacroBarProps = {
   protein: number // Gramm
   carbs: number
@@ -8,11 +10,12 @@ type MacroBarProps = {
 
 // Balken, der zeigt, wie sich die Kalorien auf Protein, Kohlenhydrate und Fett verteilen.
 export default function MacroBar({ protein, carbs, fat }: MacroBarProps) {
+  const { t } = useI18n()
   // Gramm in Kalorien umrechnen: Protein und KH 4 kcal/g, Fett 9 kcal/g
   const parts = [
-    { label: 'Protein', grams: protein, kcal: protein * 4, color: 'bg-accent' },
-    { label: 'Kohlenhydrate', grams: carbs, kcal: carbs * 4, color: 'bg-accent/50' },
-    { label: 'Fett', grams: fat, kcal: fat * 9, color: 'bg-white/30' },
+    { label: t('calculator.macros.protein'), grams: protein, kcal: protein * 4, color: 'bg-accent' },
+    { label: t('calculator.macros.carbs'), grams: carbs, kcal: carbs * 4, color: 'bg-accent/50' },
+    { label: t('calculator.macros.fat'), grams: fat, kcal: fat * 9, color: 'bg-white/30' },
   ]
   const total = parts.reduce((sum, part) => sum + part.kcal, 0)
 

@@ -1,14 +1,20 @@
-import { rules } from '../../data/rules'
+import { useI18n } from '../../i18n/i18n'
 import Reveal from '../motion/Reveal'
 import Button from '../ui/Button'
 import Section from '../ui/Section'
 import SectionHeading from '../ui/SectionHeading'
 
+type Rule = { title: string; text: string }
+
 export default function Rules() {
+  const { t, tList } = useI18n()
+  // Die Regeln stehen als Liste in der Übersetzung unter "home.rules.items"
+  const rules = tList<Rule>('home.rules.items')
+
   return (
     <Section>
-      <SectionHeading eyebrow="Die Basics" title="Die 5 Grundregeln für Muskelaufbau">
-        Mehr braucht es am Anfang nicht. Wer diese fünf Punkte einhält, macht schon fast alles richtig.
+      <SectionHeading eyebrow={t('home.rules.eyebrow')} title={t('home.rules.title')}>
+        {t('home.rules.text')}
       </SectionHeading>
 
       <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -33,11 +39,11 @@ export default function Rules() {
             className="flex h-full flex-col justify-between gap-8 rounded-2xl border border-accent/30 bg-accent/5 p-6 md:p-8"
           >
             <div>
-              <h3 className="text-2xl">Bereit?</h3>
-              <p className="mt-3 text-muted">Wähle einen Trainingsplan, der zu dir passt, und leg los.</p>
+              <h3 className="text-2xl">{t('home.rules.readyTitle')}</h3>
+              <p className="mt-3 text-muted">{t('home.rules.readyText')}</p>
             </div>
             <Button to="/trainingsplaene" className="self-start">
-              Plan wählen
+              {t('home.rules.readyCta')}
             </Button>
           </Reveal>
         </li>

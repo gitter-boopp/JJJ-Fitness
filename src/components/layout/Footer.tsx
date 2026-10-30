@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import { navItems } from '../../data/navigation'
+import { useI18n } from '../../i18n/i18n'
 import Container from '../ui/Container'
 import Logo from './Logo'
 
@@ -7,29 +8,28 @@ import Logo from './Logo'
 const year = new Date().getFullYear()
 
 export default function Footer() {
+  const { t } = useI18n()
+
   return (
     <footer className="mt-24 border-t border-white/5 py-12 print:hidden">
       <Container className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
         <div className="max-w-sm">
           <Logo />
-          <p className="mt-4 text-sm text-muted">
-            Übungen, Trainingspläne und Ernährungswissen für deinen Muskelaufbau. Ein Schulprojekt von KV-Lernenden
-            aus Basel.
-          </p>
+          <p className="mt-4 text-sm text-muted">{t('footer.text')}</p>
         </div>
 
-        <nav aria-label="Footer-Navigation">
+        <nav aria-label={t('footer.label')}>
           <ul className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
             {navItems.map((item) => (
               <li key={item.path}>
                 <Link to={item.path} className="text-muted transition-colors hover:text-text">
-                  {item.label}
+                  {t(`nav.${item.key}`)}
                 </Link>
               </li>
             ))}
             <li>
               <Link to="/styleguide" className="text-muted transition-colors hover:text-text">
-                Design-System
+                {t('footer.styleguide')}
               </Link>
             </li>
           </ul>
@@ -37,7 +37,9 @@ export default function Footer() {
       </Container>
 
       <Container className="mt-10 text-xs text-muted/70">
-        <p>© {year} JJJ Fitness · Alle Angaben sind Richtwerte. Bei gesundheitlichen Fragen eine Fachperson fragen.</p>
+        <p>
+          © {year} JJJ Fitness · {t('footer.disclaimer')}
+        </p>
       </Container>
     </footer>
   )

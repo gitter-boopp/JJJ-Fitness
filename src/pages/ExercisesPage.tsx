@@ -1,8 +1,9 @@
 import { useSearchParams } from 'react-router'
 import { AnimatePresence, motion } from 'motion/react'
 
-import { equipmentOptions, exercises, levelOptions } from '../data/exercises'
-import { muscles } from '../data/muscles'
+import { equipmentIds, exercises, levelIds } from '../data/exercises'
+import { muscleIds } from '../data/muscles'
+import { useI18n } from '../i18n/i18n'
 import { filterExercises, filtersFromParams } from '../utils/filterExercises'
 import ExerciseCard from '../components/exercises/ExerciseCard'
 import FilterGroup from '../components/exercises/FilterGroup'
@@ -13,11 +14,12 @@ import PageHeader from '../components/ui/PageHeader'
 import Section from '../components/ui/Section'
 
 export default function ExercisesPage() {
+  const { t } = useI18n()
   // Alle Filter stehen in der Adresse (URL), z.B. /uebungen?muskel=brust&level=anfaenger
   // Vorteil: Man kann einen gefilterten Link teilen, und "Zurück" im Browser funktioniert.
   const [searchParams, setSearchParams] = useSearchParams()
   const filters = filtersFromParams(searchParams)
-  const results = filterExercises(exercises, filters)
+  const results = filterExercises(exercises, filters, t)
   const hasFilters = Boolean(filters.muscle || filters.equipment || filters.level || filters.query)
 
   // Setzt einen Filter. value = undefined entfernt ihn ("Alle").
@@ -38,9 +40,9 @@ export default function ExercisesPage() {
 
   return (
     <Section>
-      <title>Übungen – JJJ Fitness</title>
-      <PageHeader eyebrow="Übungsbibliothek" title="Übungen">
-        {exercises.length} Übungen mit Anleitung Schritt für Schritt. Filtere nach Muskel, Equipment und Level.
+      <title>{`${t('exercisesPage.title')} – JJJ Fitness`}</title>
+      <PageHeader eyebrow={t('exercisesPage.eyebrow')} title={t('exercisesPage.heading')}>
+        {t('exercisesPage.intro', { count: exercises.length })}
       </PageHeader>
 
       {/* ---------- Suche und Filter ---------- */}
@@ -48,61 +50,61 @@ export default function ExercisesPage() {
         <div className="relative max-w-xl">
           <SearchIcon className="pointer-events-none absolute top-1/2 left-4 size-5 -translate-y-1/2 text-muted" />
           <label htmlFor="exercise-search" className="sr-only">
-            Übung suchen
+            {t('exercisesPage.searchLabel')}
           </label>
           <input
             id="exercise-search"
             type="search"
-            placeholder="Übung suchen, z.B. Kniebeuge"
+            placeholder={t('exercisesPage.searchPlaceholder')}
             value={filters.query}
             onChange={(event) => setFilter('q', event.target.value || undefined)}
             className="w-full rounded-full border border-white/10 bg-surface py-3 pr-4 pl-12 text-text placeholder:text-muted/70 focus:border-accent/60 focus:outline-none"
           />
         </div>
 
-        <FilterGroup legend="Muskelgruppe" scrollable>
+        <FilterGroup legend={t('exercisesPage.muscleGroup')} scrollable>
           <Chip active={!filters.muscle} onClick={() => setFilter('muskel', undefined)}>
-            Alle
+            {t('common.all')}
           </Chip>
-          {muscles.map((muscle) => (
+          {muscleIds.map((id) => (
             <Chip
-              key={muscle.id}
-              active={filters.muscle === muscle.id}
+              key={id}
+              active={filters.muscle === id}
               // Nochmals klicken = Filter wieder entfernen
-              onClick={() => setFilter('muskel', filters.muscle === muscle.id ? undefined : muscle.id)}
+              onClick={() => setFilter('muskel', filters.muscle === id ? undefined : id)}
             >
-              {muscle.name}
+              {t(`muscles.${id}.name`)}
             </Chip>
           ))}
         </FilterGroup>
 
         <div className="grid gap-8 md:grid-cols-2">
-          <FilterGroup legend="Equipment" scrollable>
+          <FilterGroup legend={t('exercisesPage.equipment')} scrollable>
             <Chip active={!filters.equipment} onClick={() => setFilter('equipment', undefined)}>
-              Alle
+              {t('common.all')}
             </Chip>
-            {equipmentOptions.map((option) => (
+            {equipmentIds.map((id) => (
               <Chip
-                key={option.id}
-                active={filters.equipment === option.id}
-                onClick={() => setFilter('equipment', filters.equipment === option.id ? undefined : option.id)}
+                key={id}
+                active={filters.equipment === id}
+                onClick={() => setFilter('equipment', filters.equipment === id ? undefined : id)}
               >
-                {option.label}
+                {t(`equipment.${id}`)}
               </Chip>
             ))}
           </FilterGroup>
 
-          <FilterGroup legend="Level">
+          <FilterGroup legend={t('exercisesPage.level')}>
             <Chip active={!filters.level} onClick={() => setFilter('level', undefined)}>
-              Alle
+              {t('common.all')}
             </Chip>
-            {levelOptions.map((option) => (
+            {levelIds.map((id) => (
               <Chip
-                key={option.id}
-                active={filters.level === option.id}
-                onClick={() => setFilter('level', filters.level === option.id ? undefined : option.id)}
+                key={id}
+                active={filters.level === id}
+                onClick={() => setFilter('level', filters.level === id ? undefined : id)}
               >
-                {option.label}
+                {t(`levels.${id}`)}
               </Chip>
             ))}
           </FilterGroup>
@@ -113,12 +115,13 @@ export default function ExercisesPage() {
       <div className="mt-12 flex min-h-10 items-center justify-between gap-4 border-t border-white/5 pt-6">
         {/* aria-live: Screenreader sagen die neue Anzahl an, wenn sich der Filter ändert */}
         <p aria-live="polite" className="text-muted">
-          <strong className="text-text">{results.length}</strong> {results.length === 1 ? 'Übung' : 'Übungen'}
+          <strong className="text-text">{results.length}</strong>{' '}
+          {results.length === 1 ? t('exercisesPage.countOne') : t('exercisesPage.countOther')}
         </p>
         {hasFilters && (
           <Button variant="ghost" size="sm" onClick={resetFilters}>
             <CloseIcon className="size-4" />
-            Filter zurücksetzen
+            {t('exercisesPage.reset')}
           </Button>
         )}
       </div>
@@ -144,10 +147,10 @@ export default function ExercisesPage() {
         </ul>
       ) : (
         <div className="mt-6 rounded-2xl border border-dashed border-white/10 p-10 text-center">
-          <p className="font-display text-2xl font-bold">Keine Übung gefunden</p>
-          <p className="mt-2 text-muted">Probier einen anderen Suchbegriff oder weniger Filter.</p>
+          <p className="font-display text-2xl font-bold">{t('exercisesPage.emptyTitle')}</p>
+          <p className="mt-2 text-muted">{t('exercisesPage.emptyText')}</p>
           <Button variant="secondary" className="mt-6" onClick={resetFilters}>
-            Filter zurücksetzen
+            {t('exercisesPage.reset')}
           </Button>
         </div>
       )}
