@@ -5,6 +5,40 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Etappe 5 – Ernährung und Rechner
+
+**Datum:** 30.10.2026
+**Wer:** [Namen eintragen]
+
+### Was wir gemacht haben
+
+- **Grundlagen:** 4 Karten zu Kalorien, Protein, Kohlenhydraten und Fett, mit kcal pro Gramm und guten Lebensmitteln. Dazu ein kurzer Abschnitt «Und Supplements?»: Man braucht keine.
+- **Kalorien- und Proteinrechner** (`src/utils/nutrition.ts`):
+  - Grundumsatz mit der Mifflin-St-Jeor-Formel
+  - × Aktivitätsfaktor (5 Stufen von «kaum aktiv» bis «extrem aktiv») = Gesamtumsatz
+  - Ziel Muskelaufbau = Gesamtumsatz + 250 bis 300 kcal
+  - Protein = 1,6 bis 2,2 g pro kg Körpergewicht
+  - Beispiel-Verteilung als Balken (Protein 1,8 g/kg, Fett 1 g/kg aber mind. 25%, Rest Kohlenhydrate)
+- Die Zahlen gleiten beim Ändern weich zum neuen Wert.
+- **Eingaben prüfen:** Alter 15–80, Grösse 120–230 cm, Gewicht 35–250 kg. Bei falschen Werten erscheint ein Hinweis, und das Feld wird rot.
+- **Ruhiger Hinweis:** Die Werte sind Richtwerte, bei Fragen eine Fachperson fragen. Unter 18 gibt es einen Zusatzhinweis, dass man im Wachstum genug essen soll.
+- **6 Rezepte** (`src/data/recipes.ts`) mit Zeit, Preis, Makros pro Portion, aufklappbaren Zutaten und Zubereitung: Overnight Oats, Rührei-Wrap, Poulet-Reis-Bowl, Linsen-Bolognese, Thon-Kichererbsen-Salat und Quark-Beeren-Bowl
+- Die Buttons «Zum Rechner» und «Zu den Rezepten» scrollen weich zum Abschnitt.
+
+### Entscheide und warum
+
+| Entscheid | Warum |
+| --- | --- |
+| Mifflin-St-Jeor-Formel | Gilt in Studien als eine der genauesten Formeln für den Grundumsatz und ist einfach nachzurechnen. Wir haben sie mit einem Beispiel überprüft (Mann, 25 J., 180 cm, 80 kg = 1805 kcal). |
+| Ein Rechner für Kalorien und Protein zusammen | Das Gewicht muss man nur einmal eingeben, und man sieht alles auf einen Blick. |
+| Nur das Ziel «Muskelaufbau», kein Abnehmen | So steht es im Brief: kein Fokus auf Abnehmen, keine Diät-Extreme. «Gewicht halten» zeigen wir nur zum Vergleich. |
+| Ergebnis auf 10 kcal gerundet | Eine Formel ist immer eine Schätzung. «2’587 kcal» würde eine Genauigkeit vortäuschen, die es nicht gibt. |
+| Eingaben werden nicht gespeichert und nicht verschickt | Alles wird nur im Browser gerechnet. Gewicht und Alter sind persönliche Daten. |
+| Hinweis für unter 18-Jährige | Die Formel ist für Erwachsene gemacht, und unser Zielpublikum ist teilweise jünger. |
+| Keine Supplement-Empfehlungen | Steht so im Brief. Mit normalem Essen erreicht man sein Protein auch. |
+
+---
+
 ## Etappe 4 – Trainingspläne
 
 **Datum:** 30.10.2026
