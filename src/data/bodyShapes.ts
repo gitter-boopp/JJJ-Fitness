@@ -120,3 +120,11 @@ export const backShapes: BodyShape[] = [
   // Wirbelsäulen-Linie
   { decor: true, d: 'M100 126 L100 200' },
 ]
+
+// Muskeln, die man nur von hinten sieht. Hilft zu entscheiden, welche Seite wir zeigen.
+const BACK_MUSCLES: MuscleId[] = ['ruecken', 'nacken', 'trizeps', 'gesaess', 'beinbeuger']
+
+// Gibt 'back' zurück, wenn der erste Hauptmuskel hinten liegt, sonst 'front'
+export function sideForMuscles(muscles: MuscleId[]): 'front' | 'back' {
+  return muscles.length > 0 && BACK_MUSCLES.includes(muscles[0]) ? 'back' : 'front'
+}

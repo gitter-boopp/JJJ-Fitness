@@ -86,7 +86,7 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
 - In kleinen Etappen bauen, nicht alles auf einmal:
   1. Setup, Design-System (Farben, Schriften, Buttons), Navigation ✅
   2. Startseite mit Animationen ✅
-  3. Übungsbibliothek mit Filter
+  3. Übungsbibliothek mit Filter ✅
   4. Trainingspläne
   5. Ernährung und Rechner
   6. Über uns und Feedback-Formular
@@ -104,16 +104,18 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
 - Keine Supplement-Werbung, keine Extrem-Diäten
 - Kein überladenes Design, lieber weniger, dafür sauber
 
-## Projektstruktur (Stand Etappe 2)
+## Projektstruktur (Stand Etappe 3)
 
 ```
 src/
   main.tsx               Einstieg: Schriften, CSS, MotionConfig
   App.tsx                Alle Routen (welche URL zeigt welche Seite)
   index.css              Tailwind + Design-System (@theme)
-  data/                  Inhalte: navigation, muscles, rules, bodyShapes (SVG-Körper)
+  data/                  Inhalte: navigation, muscles, exercises, rules, bodyShapes (SVG-Körper)
+  utils/                 Hilfsfunktionen, z.B. filterExercises (Suche und Filter)
   components/layout/     Layout, Navbar, Footer, Logo, SmoothScroll, PageTransition
-  components/ui/         Button, Card, Container, Section, PageHeader, SectionHeading, Icons, ComingSoon
+  components/ui/         Button, Card, Chip, BodyFigure, Container, Section, PageHeader, SectionHeading, Icons, ComingSoon
+  components/exercises/  ExerciseCard, FilterGroup
   components/motion/     Animations-Bausteine: Reveal, Counter, AnimatedHeadline
   components/home/       Abschnitte der Startseite: Hero, Stats, Offer, MuscleMap, Rules
   pages/                 Eine Datei pro Seite

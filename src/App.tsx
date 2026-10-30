@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router'
 import Layout from './components/layout/Layout'
 import HomePage from './pages/HomePage'
 import ExercisesPage from './pages/ExercisesPage'
+import ExerciseDetailPage from './pages/ExerciseDetailPage'
 import PlansPage from './pages/PlansPage'
 import NutritionPage from './pages/NutritionPage'
 import AboutPage from './pages/AboutPage'
@@ -18,6 +19,8 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="uebungen" element={<ExercisesPage />} />
+          {/* :slug ist ein Platzhalter, z.B. /uebungen/liegestuetz */}
+          <Route path="uebungen/:slug" element={<ExerciseDetailPage />} />
           <Route path="trainingsplaene" element={<PlansPage />} />
           <Route path="ernaehrung" element={<NutritionPage />} />
           <Route path="ueber-uns" element={<AboutPage />} />

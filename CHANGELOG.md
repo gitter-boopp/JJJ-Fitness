@@ -5,6 +5,34 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Etappe 3 – Übungsbibliothek mit Filter
+
+**Datum:** 30.10.2026
+**Wer:** [Namen eintragen]
+
+### Was wir gemacht haben
+
+- **30 Übungen** in `src/data/exercises.ts`, verteilt auf Brust, Rücken, Schultern, Arme, Beine und Bauch. Jede Übung hat Beschreibung, Haupt- und Hilfsmuskeln, Equipment, Level, Sätze/Wiederholungen, 4 Schritte, häufige Fehler und 2 Alternativen.
+- **Übungsliste** (`/uebungen`) mit Suchfeld und drei Filtern: Muskelgruppe, Equipment (Körpergewicht, Kurzhantel, Langhantel, Maschine) und Level (Anfänger, Fortgeschritten)
+- Die Filter stehen in der Adresse, z.B. `/uebungen?muskel=brust&level=anfaenger`. Die Muskel-Karte auf der Startseite filtert jetzt richtig.
+- Beim Filtern gleiten die Karten an ihren neuen Platz. Bei 0 Treffern gibt es einen Hinweis mit «Filter zurücksetzen».
+- Die Suche findet auch Wörter ohne Umlaute («rucken» findet «Rücken») und sucht in Name, Muskeln und Equipment.
+- **Detailseite** pro Übung (`/uebungen/liegestuetz` usw.): Körper-Grafik vorne/hinten mit Haupt- und Hilfsmuskeln, Sätze und Wiederholungen, Ausführung Schritt für Schritt, häufige Fehler, Alternativen. «Alle Übungen» führt zurück zur Liste mit den gleichen Filtern wie vorher.
+- Die Körper-Grafik ist jetzt ein wiederverwendbarer Baustein (`BodyFigure`), den Startseite, Übungskarten und Detailseite gemeinsam nutzen. Neuer Baustein `Chip` für alle Filter-Buttons.
+- Der Counter auf der Startseite zählt die Übungen jetzt automatisch.
+
+### Entscheide und warum
+
+| Entscheid | Warum |
+| --- | --- |
+| Körper-Grafik statt Foto als Standard | Zeigt sofort, welche Muskeln trainiert werden, und hat keine Bildrechte-Probleme. Fotos/GIFs können wir pro Übung mit dem Feld `image` ergänzen (mit Quelle). |
+| Filter in der URL | Gefilterte Links kann man teilen, und die Zurück-Taste im Browser funktioniert. |
+| Muskelfilter zeigt auch Übungen, bei denen der Muskel nur mithilft | So findet man mehr passende Übungen. Übungen mit dem Muskel als Hauptmuskel stehen zuoberst. |
+| Filter auf dem Handy seitlich wischbar | Spart Platz. Sonst wären die Filter allein schon einen ganzen Bildschirm hoch. |
+| Daten in einer TS-Datei statt Datenbank | So steht es im Brief. Ausserdem prüft TypeScript, dass jede Übung alle Felder hat. |
+
+---
+
 ## Etappe 2 – Startseite mit Animationen
 
 **Datum:** 30.10.2026

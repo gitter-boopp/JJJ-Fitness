@@ -1,75 +1,14 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 
-import { backShapes, frontShapes } from '../../data/bodyShapes'
-import type { BodyShape } from '../../data/bodyShapes'
 import { findMuscle, muscles } from '../../data/muscles'
 import type { MuscleId } from '../../data/muscles'
 import Reveal from '../motion/Reveal'
+import BodyFigure from '../ui/BodyFigure'
 import Button from '../ui/Button'
+import Chip from '../ui/Chip'
 import Section from '../ui/Section'
 import SectionHeading from '../ui/SectionHeading'
-
-// Spiegelt eine Form an der Mitte (x = 100): x wird zu 200 - x
-const MIRROR = 'matrix(-1 0 0 1 200 0)'
-
-type FigureProps = {
-  label: string
-  shapes: BodyShape[]
-  selected: MuscleId | null
-  hovered: MuscleId | null
-  onHover: (muscle: MuscleId | null) => void
-  onSelect: (muscle: MuscleId) => void
-}
-
-// Ein Körper (vorne ODER hinten) als SVG
-function Figure({ label, shapes, selected, hovered, onHover, onSelect }: FigureProps) {
-  return (
-    <figure className="flex flex-col items-center">
-      {/* aria-hidden: Für Tastatur und Screenreader gibt es unten die Muskel-Buttons */}
-      <svg viewBox="0 0 200 420" className="h-auto w-full max-w-[220px]" aria-hidden>
-        {shapes.map((shape, index) => {
-          // Farbe je nach Zustand bestimmen
-          let className: string
-          if (shape.decor) {
-            className = 'pointer-events-none fill-none stroke-bg stroke-[1.5]'
-          } else if (!shape.muscle) {
-            className = 'fill-surface-2' // neutraler Körperteil
-          } else {
-            const isSelected = shape.muscle === selected
-            const isHovered = shape.muscle === hovered
-            className = `cursor-pointer stroke-bg stroke-[1.5] transition-[fill] duration-200 ${
-              isSelected
-                ? 'fill-accent drop-shadow-[0_0_6px_rgb(198_255_61/0.6)]'
-                : isHovered
-                  ? 'fill-accent/60'
-                  : 'fill-muscle'
-            }`
-          }
-
-          // Maus- und Klick-Ereignisse nur für Muskeln
-          const muscle = shape.muscle
-          const events =
-            muscle && !shape.decor
-              ? {
-                  onPointerEnter: () => onHover(muscle),
-                  onPointerLeave: () => onHover(null),
-                  onClick: () => onSelect(muscle),
-                }
-              : {}
-
-          return (
-            <g key={index}>
-              <path d={shape.d} className={className} {...events} />
-              {shape.mirror && <path d={shape.d} transform={MIRROR} className={className} {...events} />}
-            </g>
-          )
-        })}
-      </svg>
-      <figcaption className="mt-3 text-sm text-muted">{label}</figcaption>
-    </figure>
-  )
-}
 
 export default function MuscleMap() {
   const [selected, setSelected] = useState<MuscleId | null>(null)
@@ -78,7 +17,14 @@ export default function MuscleMap() {
   // Im Infokasten zeigen wir den Muskel unter der Maus, sonst den ausgewählten
   const shown = findMuscle(hovered ?? selected)
 
-  const figureProps = { selected, hovered, onHover: setHovered, onSelect: setSelected }
+  // Diese Eigenschaften bekommen beide Figuren (vorne und hinten)
+  const figureProps = {
+    primary: selected ? [selected] : [],
+    hovered,
+    onHover: setHovered,
+    onSelect: setSelected,
+    className: 'h-auto w-full max-w-[220px]',
+  }
 
   return (
     <Section id="muskel-karte">
@@ -90,8 +36,8 @@ export default function MuscleMap() {
         {/* Die zwei Körper: vorne und hinten */}
         <Reveal className="relative rounded-3xl border border-white/5 bg-surface p-6 md:p-10">
           <div className="grid grid-cols-2 gap-4 md:gap-10">
-            <Figure label="Vorne" shapes={frontShapes} {...figureProps} />
-            <Figure label="Hinten" shapes={backShapes} {...figureProps} />
+            <BodyFigure side="front" label="Vorne" {...figureProps} />
+            <BodyFigure side="back" label="Hinten" {...figureProps} />
           </div>
         </Reveal>
 
@@ -133,20 +79,14 @@ export default function MuscleMap() {
               const isSelected = muscle.id === selected
               return (
                 <li key={muscle.id}>
-                  <button
-                    type="button"
-                    aria-pressed={isSelected}
+                  <Chip
+                    active={isSelected}
                     onClick={() => setSelected(isSelected ? null : muscle.id)}
                     onPointerEnter={() => setHovered(muscle.id)}
                     onPointerLeave={() => setHovered(null)}
-                    className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
-                      isSelected
-                        ? 'border-accent bg-accent text-accent-ink'
-                        : 'border-white/10 text-muted hover:border-accent/50 hover:text-text'
-                    }`}
                   >
                     {muscle.name}
-                  </button>
+                  </Chip>
                 </li>
               )
             })}

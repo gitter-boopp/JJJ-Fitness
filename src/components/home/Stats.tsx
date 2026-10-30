@@ -1,12 +1,13 @@
+import { exercises } from '../../data/exercises'
 import { muscles } from '../../data/muscles'
 import Counter from '../motion/Counter'
 import Reveal from '../motion/Reveal'
 import Container from '../ui/Container'
 
 // Die Zahlen, die beim Scrollen hochzählen.
-// TODO Etappe 3: "30" durch die echte Anzahl Übungen ersetzen (exercises.length)
+// Übungen und Muskelgruppen werden automatisch gezählt.
 const stats = [
-  { value: 30, suffix: '+', label: 'Übungen' },
+  { value: exercises.length, suffix: '', label: 'Übungen' },
   { value: 3, suffix: '', label: 'Trainingspläne' },
   { value: muscles.length, suffix: '', label: 'Muskelgruppen' },
   { value: 2, suffix: '', label: 'Sprachen' },
