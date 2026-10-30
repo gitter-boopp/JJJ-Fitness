@@ -78,6 +78,14 @@ export function PrinterIcon(props: SVGProps<SVGSVGElement>) {
   )
 }
 
+export function StarIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <IconBase {...props}>
+      <path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z" />
+    </IconBase>
+  )
+}
+
 export function ArrowRightIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <IconBase {...props}>

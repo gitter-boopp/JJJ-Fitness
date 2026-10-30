@@ -5,6 +5,43 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Etappe 6 – Über uns und Feedback-Formular
+
+**Datum:** 30.10.2026
+**Wer:** [Namen eintragen]
+
+### Was wir gemacht haben
+
+- **Team:** Karten mit Initialen, Rolle und Aufgaben (`src/data/project.ts`, Namen sind noch Platzhalter)
+- **Das Projekt:** Warum wir die Seite bauen, plus Eckdaten (Schule, Fach, Zielpublikum, Projektende)
+- **Projektverlauf:** Zeitleiste mit allen 8 Etappen (erledigt / als Nächstes / offen)
+- **Feedback-Formular:**
+  - Sterne-Bewertung 1–5 (Pflicht), «Was gefällt dir?» und «Was fehlt dir?»
+  - Eigene Prüfung: Ohne Sterne erscheint ein Hinweis.
+  - Senden über Formspree, mit den Zuständen «Wird gesendet …», Fehlermeldung und Danke-Ansicht mit animiertem Haken
+  - Unsichtbares Spam-Schutz-Feld (Honeypot)
+  - Ist das Formular noch nicht verbunden, wird der Button gesperrt und ein Hinweis fürs Team angezeigt.
+- **Quellen und Technik:** Bilder, Schriften, Bibliotheken und fachliche Quellen (Mifflin-St-Jeor, Morton et al. 2018)
+- `.env.example` als Vorlage und eine Anleitung im README, wie man Formspree verbindet
+- Der Platzhalter-Baustein `ComingSoon` wurde entfernt, weil jetzt alle Seiten fertig sind.
+
+### Entscheide und warum
+
+| Entscheid | Warum |
+| --- | --- |
+| Formspree statt Google Form | Das Formular passt ins Design und funktioniert ohne Google-Konto. Ein eingebettetes Google Form sähe fremd aus. |
+| Formular-ID in `.env.local` statt im Code | So kann jedes Team-Mitglied sein eigenes Test-Formular nutzen, und die ID ist an einem Ort änderbar. |
+| Anonymes Feedback, keine E-Mail-Adresse | Datenschutz (nDSG): Wir sammeln nur, was wir wirklich brauchen. |
+| Initialen statt Fotos beim Team | Schützt die Privatsphäre. Viele im Team sind minderjährig. |
+| Projektverlauf auf der Seite | Zeigt in der Schule direkt, wie wir das Projekt geplant und umgesetzt haben. |
+| Quellen öffentlich auflisten | Bildrechte und Lizenzen müssen angegeben werden, so steht es auch im Brief. |
+
+### Getestet
+
+Das Absenden wurde mit einer Test-ID simuliert, ohne dass Daten verschickt wurden. Geprüft wurden drei Fälle: ohne Sterne, Serverfehler und Erfolg. Ein echter Test folgt, sobald das Formspree-Konto eingerichtet ist.
+
+---
+
 ## Etappe 5 – Ernährung und Rechner
 
 **Datum:** 30.10.2026

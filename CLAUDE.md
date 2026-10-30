@@ -89,7 +89,7 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
   3. Übungsbibliothek mit Filter ✅
   4. Trainingspläne ✅
   5. Ernährung und Rechner ✅
-  6. Über uns und Feedback-Formular
+  6. Über uns und Feedback-Formular ✅
   7. Französisch-Version
   8. Feinschliff, Tests auf dem Handy, Deployment
 - Nach jeder Etappe einen Git-Commit mit klarer Nachricht
@@ -104,22 +104,26 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
 - Keine Supplement-Werbung, keine Extrem-Diäten
 - Kein überladenes Design, lieber weniger, dafür sauber
 
-## Projektstruktur (Stand Etappe 5)
+## Projektstruktur (Stand Etappe 6)
 
 ```
 src/
   main.tsx               Einstieg: Schriften, CSS, MotionConfig
   App.tsx                Alle Routen (welche URL zeigt welche Seite)
   index.css              Tailwind + Design-System (@theme)
-  data/                  Inhalte: navigation, muscles, exercises, plans, recipes, nutritionBasics, rules, bodyShapes
+  data/                  Inhalte: navigation, muscles, exercises, plans, recipes, nutritionBasics, rules, project, bodyShapes
   utils/                 Hilfsfunktionen: filterExercises (Suche/Filter), nutrition (Kalorienrechner)
   components/layout/     Layout, Navbar, Footer, Logo, SmoothScroll, PageTransition
-  components/ui/         Button, Card, Chip, Tabs, BodyFigure, Container, Section, PageHeader, SectionHeading, Icons, ComingSoon
+  components/ui/         Button, Card, Chip, Tabs, BodyFigure, Container, Section, PageHeader, SectionHeading, Icons
   components/exercises/  ExerciseCard, FilterGroup
   components/plans/      PlanDetails, WeekOverview, DayTable, PlanPrintView (Druckansicht)
   components/nutrition/  Calculator, NumberField, MacroBar, RecipeCard
+  components/about/      FeedbackForm (Formspree), Timeline (Projektverlauf)
   components/motion/     Animations-Bausteine: Reveal, Counter, AnimatedNumber, AnimatedHeadline
   components/home/       Abschnitte der Startseite: Hero, Stats, Offer, MuscleMap, Rules
   pages/                 Eine Datei pro Seite
 vercel.json              Damit Unterseiten auf Vercel direkt aufrufbar sind
+.env.example             Vorlage für .env.local (Formspree-ID), siehe README
 ```
+
+Nach jeder Etappe in `src/data/project.ts` die Etappe auf `done: true` setzen.
