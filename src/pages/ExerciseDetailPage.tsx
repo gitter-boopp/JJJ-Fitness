@@ -18,7 +18,7 @@ function MuscleLink({ id, strong }: { id: MuscleId; strong: boolean }) {
   return (
     <Link
       to={`/uebungen?muskel=${id}`}
-      className={`rounded-full border px-3 py-1 text-sm transition-colors hover:border-accent ${
+      className={`rounded-full border px-3 py-1.5 text-sm transition-colors hover:border-accent ${
         strong ? 'border-accent/50 text-text' : 'border-white/10 text-muted'
       }`}
     >
@@ -95,7 +95,7 @@ export default function ExerciseDetailPage() {
       <Section>
         <Link
           to={`/uebungen${backSearch}`}
-          className="inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-text"
+          className="-my-2 inline-flex items-center gap-2 py-2 text-sm text-muted transition-colors hover:text-text"
         >
           <ArrowLeftIcon className="size-4" />
           {t('exerciseDetail.back')}

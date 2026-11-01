@@ -23,7 +23,7 @@ export default function LanguageSwitch({ idPrefix }: { idPrefix: string }) {
             lang={option}
             aria-label={t(`language.${option}`)}
             onClick={() => setLang(option)}
-            className={`relative rounded-full px-2.5 py-1.5 uppercase transition-colors ${
+            className={`relative min-h-8 rounded-full px-3 py-2 uppercase transition-colors ${
               active ? 'text-accent-ink' : 'text-muted hover:text-text'
             }`}
           >

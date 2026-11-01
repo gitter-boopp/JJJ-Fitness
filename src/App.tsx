@@ -1,15 +1,20 @@
 // App.tsx legt fest, welche Seite bei welcher Adresse (URL) angezeigt wird.
+import { lazy } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router'
 
 import Layout from './components/layout/Layout'
 import HomePage from './pages/HomePage'
-import ExercisesPage from './pages/ExercisesPage'
-import ExerciseDetailPage from './pages/ExerciseDetailPage'
-import PlansPage from './pages/PlansPage'
-import NutritionPage from './pages/NutritionPage'
-import AboutPage from './pages/AboutPage'
-import StyleguidePage from './pages/StyleguidePage'
 import NotFoundPage from './pages/NotFoundPage'
+
+// Code-Splitting: Die Unterseiten werden erst geladen, wenn man sie öffnet.
+// So muss der Browser beim ersten Besuch nur die Startseite herunterladen -> schneller.
+// (Startseite und 404-Seite laden wir direkt, die braucht man sofort.)
+const ExercisesPage = lazy(() => import('./pages/ExercisesPage'))
+const ExerciseDetailPage = lazy(() => import('./pages/ExerciseDetailPage'))
+const PlansPage = lazy(() => import('./pages/PlansPage'))
+const NutritionPage = lazy(() => import('./pages/NutritionPage'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const StyleguidePage = lazy(() => import('./pages/StyleguidePage'))
 
 export default function App() {
   return (

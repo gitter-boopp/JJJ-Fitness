@@ -1,0 +1,3 @@
+# Alle Suchmaschinen dürfen die Seite lesen
+User-agent: *
+Allow: /

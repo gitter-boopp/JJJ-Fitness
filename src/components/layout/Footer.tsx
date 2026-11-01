@@ -19,16 +19,17 @@ export default function Footer() {
         </div>
 
         <nav aria-label={t('footer.label')}>
-          <ul className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
+          {/* inline-block py-2: grössere Tippfläche auf dem Handy (mind. ca. 32 px hoch) */}
+          <ul className="grid grid-cols-2 gap-x-10 text-sm">
             {navItems.map((item) => (
               <li key={item.path}>
-                <Link to={item.path} className="text-muted transition-colors hover:text-text">
+                <Link to={item.path} className="inline-block py-2 text-muted transition-colors hover:text-text">
                   {t(`nav.${item.key}`)}
                 </Link>
               </li>
             ))}
             <li>
-              <Link to="/styleguide" className="text-muted transition-colors hover:text-text">
+              <Link to="/styleguide" className="inline-block py-2 text-muted transition-colors hover:text-text">
                 {t('footer.styleguide')}
               </Link>
             </li>

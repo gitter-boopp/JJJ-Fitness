@@ -75,6 +75,8 @@ Das Formular auf «Über uns» schickt die Antworten an [Formspree](https://form
 
 - `CLAUDE.md`: Projekt-Brief mit allen Anforderungen
 - `CHANGELOG.md`: Was wann von wem gemacht wurde
+- `TESTPROTOKOLL.md`: Was getestet wurde, plus Vorlage für eure eigenen Tests
+- `DEPLOYMENT.md`: So stellt ihr die Seite auf Vercel online
 - `src/index.css`: Farben und Schriften (Design-System)
 - `src/pages/`: Eine Datei pro Seite
 - `src/components/`: Wiederverwendbare Bausteine

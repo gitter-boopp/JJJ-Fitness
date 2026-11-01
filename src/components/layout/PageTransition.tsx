@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useLocation, useOutlet } from 'react-router'
 import { useLenis } from 'lenis/react'
@@ -28,7 +29,9 @@ export default function PageTransition() {
         exit={{ opacity: 0, y: -8 }}
         transition={{ duration: 0.25, ease: 'easeOut' }}
       >
-        {outlet}
+        {/* Suspense: Solange eine Unterseite noch lädt (Code-Splitting, siehe App.tsx),
+            zeigen wir einen leeren Platzhalter. Das dauert meist nur Millisekunden. */}
+        <Suspense fallback={<div className="min-h-screen" />}>{outlet}</Suspense>
       </motion.div>
     </AnimatePresence>
   )

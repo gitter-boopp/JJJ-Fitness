@@ -93,7 +93,7 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
   5. Ernährung und Rechner ✅
   6. Über uns und Feedback-Formular ✅
   7. Französisch-Version ✅
-  8. Feinschliff, Tests auf dem Handy, Deployment
+  8. Feinschliff, Tests auf dem Handy, Deployment (Feinschliff und Tests ✅, Deployment siehe DEPLOYMENT.md)
 - Nach jeder Etappe einen Git-Commit mit klarer Nachricht
 - `CHANGELOG.md` führen: Datum, was gemacht wurde, wer dran war
 - Nach jeder Etappe kurz sagen, was wir jetzt testen und screenshotten sollen
@@ -106,7 +106,7 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
 - Keine Supplement-Werbung, keine Extrem-Diäten
 - Kein überladenes Design, lieber weniger, dafür sauber
 
-## Projektstruktur (Stand Etappe 7)
+## Projektstruktur (Stand Etappe 8)
 
 ```
 src/

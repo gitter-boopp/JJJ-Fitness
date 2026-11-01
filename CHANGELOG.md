@@ -5,6 +5,43 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Etappe 8 – Feinschliff, Tests, Vorbereitung Deployment
+
+**Datum:** 01.11.2026
+**Wer:** [Namen eintragen]
+
+### Was wir gemacht haben
+
+- **Handy-Tests:** Alle Seiten automatisch bei 375 px und 320 px geprüft, auf Deutsch und Französisch. Es gibt kein seitliches Scrollen, nichts ragt über den Rand, alle Buttons sind beschriftet, keine Schrift ist zu klein. Details in `TESTPROTOKOLL.md`.
+- **Tippflächen vergrössert:** Footer-Links (vorher 17 px hoch), DE/FR-Umschalter, «Alle Übungen»-Link und Muskel-Chips auf der Detailseite
+- **Code-Splitting:** Unterseiten werden erst geladen, wenn man sie öffnet (`React.lazy`). Die Startseite lädt ca. 180 statt 187 KB JavaScript.
+- **Vorschaubild zum Teilen** (`public/og-image.png`, 1200×630) und Open-Graph-Tags: So sieht der Link in WhatsApp, Teams usw. gut aus.
+- **Icon für den Home-Bildschirm** (`apple-touch-icon.png`), `robots.txt` und ein Hinweis, falls JavaScript ausgeschaltet ist
+- **«Bewegung reduzieren» getestet:** Zähler zeigen sofort die Endzahl, weiches Scrollen ist aus.
+- **Fertige Version getestet** (`npm run build` + `npm run preview`): direkte Links, 404, keine Konsolenfehler
+- `TESTPROTOKOLL.md` mit allen Tests und einer Vorlage für eure Tests auf echten Geräten
+- `DEPLOYMENT.md` mit einer Schritt-für-Schritt-Anleitung für GitHub und Vercel
+
+### Entscheide und warum
+
+| Entscheid | Warum |
+| --- | --- |
+| Code-Splitting, obwohl die Ersparnis klein ist | Der grösste Teil sind React, Motion und die Übersetzungen, die man sofort braucht. Jede künftige Unterseite profitiert aber automatisch davon. |
+| Keine Übersetzungsdatei nachladen | fr.json separat laden würde ca. 14 KB sparen, aber beim ersten Besuch kurz deutsche Texte aufblitzen lassen. |
+| Tippflächen mind. ca. 32 px | Die Richtlinie WCAG 2.2 verlangt mindestens 24 px. Grössere Flächen sind auf dem Handy angenehmer. |
+| Vorschaubild selbst gestaltet | Gleicher Look wie die Seite, keine Bildrechte-Probleme |
+| Deployment-Anleitung statt automatischem Upload | Für GitHub und Vercel braucht es eure eigenen Konten. Die Anmeldung muss eine Person aus dem Team selbst machen. |
+
+### Noch offen
+
+- [ ] GitHub- und Vercel-Konto erstellen und deployen (siehe `DEPLOYMENT.md`)
+- [ ] Formspree verbinden
+- [ ] Vornamen in `src/data/project.ts` und hier im CHANGELOG eintragen
+- [ ] Tests auf echten Handys und Lighthouse (siehe `TESTPROTOKOLL.md`)
+- [ ] Nach dem Deployment Etappe 8 in `src/data/project.ts` auf `done: true` setzen
+
+---
+
 ## Etappe 7 – Französisch-Version
 
 **Datum:** 30.10.2026
