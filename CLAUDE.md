@@ -20,7 +20,8 @@ Wir sind eine Gruppe von KV-Lernenden (KV Basel) und bauen im Fach Projektmanage
 - Lenis für weiches Scrollen
 - React Router für die Unterseiten
 - Inhalte (Übungen, Pläne, Rezepte) als JSON- oder TS-Dateien im Projekt, keine Datenbank
-- Deployment auf **Vercel**
+- Deployment auf **Vercel**: https://jjj-fitness.vercel.app (jeder Push auf `main` geht automatisch live)
+- Code auf GitHub: https://github.com/gitter-boopp/JJJ-Fitness (öffentlich: keine Nachnamen, Passwörter oder anderen persönlichen Daten hineinschreiben)
 - Code sauber und gut kommentiert (auf Deutsch), wir sind Anfänger und wollen ihn verstehen
 
 ## 3. Design
@@ -93,7 +94,7 @@ Wir müssen in der Schule zeigen, dass wir echt am Projekt gearbeitet haben. Des
   5. Ernährung und Rechner ✅
   6. Über uns und Feedback-Formular ✅
   7. Französisch-Version ✅
-  8. Feinschliff, Tests auf dem Handy, Deployment (Feinschliff und Tests ✅, Deployment siehe DEPLOYMENT.md)
+  8. Feinschliff, Tests auf dem Handy, Deployment ✅
 - Nach jeder Etappe einen Git-Commit mit klarer Nachricht
 - `CHANGELOG.md` führen: Datum, was gemacht wurde, wer dran war
 - Nach jeder Etappe kurz sagen, was wir jetzt testen und screenshotten sollen

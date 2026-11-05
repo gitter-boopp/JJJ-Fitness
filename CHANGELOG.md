@@ -5,9 +5,10 @@ Neueste Einträge stehen oben.
 
 ---
 
-## Etappe 8 – Feinschliff, Tests, Vorbereitung Deployment
+## Etappe 8 – Feinschliff, Tests, Deployment
 
-**Datum:** 01.11.2026
+**Datum:** 01.11.2026 bis 06.11.2026
+**Live:** https://jjj-fitness.vercel.app
 **Wer:** [Namen eintragen]
 
 ### Was wir gemacht haben
@@ -21,6 +22,10 @@ Neueste Einträge stehen oben.
 - **Fertige Version getestet** (`npm run build` + `npm run preview`): direkte Links, 404, keine Konsolenfehler
 - `TESTPROTOKOLL.md` mit allen Tests und einer Vorlage für eure Tests auf echten Geräten
 - `DEPLOYMENT.md` mit einer Schritt-für-Schritt-Anleitung für GitHub und Vercel
+- **Projekt in einen festen Ordner verschoben**, weil der alte Ordner mit der Session gelöscht worden wäre
+- **Code auf GitHub hochgeladen** (https://github.com/gitter-boopp/JJJ-Fitness) und **auf Vercel veröffentlicht**
+- **Autor der Commits auf `gitter-boopp` geändert**, weil sonst der volle Name im öffentlichen Repository sichtbar wäre
+- Live-Seite getestet (siehe `TESTPROTOKOLL.md`), Vorschaubild mit voller Adresse eingetragen
 
 ### Entscheide und warum
 
@@ -31,14 +36,15 @@ Neueste Einträge stehen oben.
 | Tippflächen mind. ca. 32 px | Die Richtlinie WCAG 2.2 verlangt mindestens 24 px. Grössere Flächen sind auf dem Handy angenehmer. |
 | Vorschaubild selbst gestaltet | Gleicher Look wie die Seite, keine Bildrechte-Probleme |
 | Deployment-Anleitung statt automatischem Upload | Für GitHub und Vercel braucht es eure eigenen Konten. Die Anmeldung muss eine Person aus dem Team selbst machen. |
+| Öffentliches Repository | Die Lehrperson kann den Commit-Verlauf direkt anschauen. Deshalb stehen keine Nachnamen oder Geheimnisse im Code. |
 
 ### Noch offen
 
-- [ ] GitHub- und Vercel-Konto erstellen und deployen (siehe `DEPLOYMENT.md`)
-- [ ] Formspree verbinden
+- [x] GitHub- und Vercel-Konto erstellen und deployen (siehe `DEPLOYMENT.md`)
+- [ ] Formspree verbinden (Formular ist bis dahin gesperrt)
 - [ ] Vornamen in `src/data/project.ts` und hier im CHANGELOG eintragen
 - [ ] Tests auf echten Handys und Lighthouse (siehe `TESTPROTOKOLL.md`)
-- [ ] Nach dem Deployment Etappe 8 in `src/data/project.ts` auf `done: true` setzen
+- [x] Nach dem Deployment Etappe 8 in `src/data/project.ts` auf `done: true` setzen
 
 ---
 

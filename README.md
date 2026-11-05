@@ -3,6 +3,8 @@
 Fitness-Website für Muskelaufbau: Übungen, Trainingspläne und Ernährung.
 Ein Schulprojekt von KV-Lernenden aus Basel (Fach Projektmanagement).
 
+**Live:** https://jjj-fitness.vercel.app
+
 ## Starten
 
 Voraussetzung: [Node.js](https://nodejs.org) ab Version 20.

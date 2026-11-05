@@ -59,6 +59,24 @@ Geprüft wurden alle Seiten: Startseite, Übungen, Übungs-Detail, Trainingsplä
 
 ---
 
+## Live-Test auf Vercel (06.11.2026)
+
+Getestet auf https://jjj-fitness.vercel.app im eingebauten Browser bei 375 px.
+
+| Test | Ergebnis |
+| --- | --- |
+| Live-Version entspricht dem aktuellen Code (gleiche Dateinamen wie im Build) | ✅ |
+| Direkter Aufruf aller Unterseiten, z.B. `/uebungen/kreuzheben` | ✅ |
+| 404-Seite bei unbekannter Adresse | ✅ |
+| Vorschaubild, Icon, `robots.txt` und Favicon werden ausgeliefert | ✅ |
+| Kein seitliches Scrollen auf den geprüften Seiten | ✅ |
+| Sprachwechsel DE/FR, Filter über die Adresse (`?muskel=brust`) | ✅ |
+| Keine Fehler in der Browser-Konsole | ✅ |
+
+Noch nicht getestet: Feedback-Formular (Formspree noch nicht verbunden), echte Handys, Vorschaubild in WhatsApp, Lighthouse.
+
+---
+
 ## Teil 2: Tests auf echten Geräten (füllt ihr aus)
 
 Testet am besten mit der Live-Adresse von Vercel. Notiert bei Problemen, was genau passiert ist, und macht einen Screenshot.

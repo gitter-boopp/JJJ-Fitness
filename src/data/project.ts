@@ -22,5 +22,5 @@ export const stages: { number: number; done: boolean }[] = [
   { number: 5, done: true },
   { number: 6, done: true },
   { number: 7, done: true },
-  { number: 8, done: false },
+  { number: 8, done: true },
 ]

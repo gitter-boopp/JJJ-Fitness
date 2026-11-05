@@ -1,7 +1,7 @@
 # Deployment: JJJ Fitness online stellen (Vercel)
 
-Ziel: Die Seite ist unter einer echten Adresse erreichbar, z.B. `https://jjj-fitness.vercel.app`.
-Danach wird sie bei jedem `git push` automatisch neu veröffentlicht.
+**Status: Die Seite ist online unter https://jjj-fitness.vercel.app** (Code: https://github.com/gitter-boopp/JJJ-Fitness).
+Bei jedem `git push` wird sie automatisch neu veröffentlicht. Die Schritte unten sind die Anleitung, wie wir das eingerichtet haben.
 
 Alles ist kostenlos. Ihr braucht ein GitHub-Konto und ein Vercel-Konto. Diese Konten muss eine Person aus dem Team selbst erstellen.
 
@@ -39,9 +39,9 @@ Alles ist kostenlos. Ihr braucht ein GitHub-Konto und ein Vercel-Konto. Diese Ko
 
 ## Schritt 3: Nach dem ersten Deployment
 
-- [ ] Live-Adresse notieren: `https://______________________.vercel.app`
-- [ ] In `index.html` bei `og:image` die volle Adresse eintragen, z.B. `https://jjj-fitness.vercel.app/og-image.png`. Dann committen und pushen.
-- [ ] Alle Seiten auf der Live-Adresse durchklicken, besonders direkte Links wie `/uebungen/kreuzheben` neu laden.
+- [x] Live-Adresse notieren: `https://jjj-fitness.vercel.app`
+- [x] In `index.html` bei `og:image` die volle Adresse eintragen
+- [x] Alle Seiten auf der Live-Adresse durchklicken, besonders direkte Links wie `/uebungen/kreuzheben` neu laden
 - [ ] Feedback-Formular einmal echt testen
 - [ ] Tests auf echten Handys machen und in `TESTPROTOKOLL.md` eintragen
 - [ ] Lighthouse laufen lassen (Anleitung im Testprotokoll)
