@@ -13,6 +13,7 @@ const ExercisesPage = lazy(() => import('./pages/ExercisesPage'))
 const ExerciseDetailPage = lazy(() => import('./pages/ExerciseDetailPage'))
 const PlansPage = lazy(() => import('./pages/PlansPage'))
 const NutritionPage = lazy(() => import('./pages/NutritionPage'))
+const LexiconPage = lazy(() => import('./pages/LexiconPage'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const StyleguidePage = lazy(() => import('./pages/StyleguidePage'))
 
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="uebungen/:slug" element={<ExerciseDetailPage />} />
           <Route path="trainingsplaene" element={<PlansPage />} />
           <Route path="ernaehrung" element={<NutritionPage />} />
+          <Route path="lexikon" element={<LexiconPage />} />
           <Route path="ueber-uns" element={<AboutPage />} />
           <Route path="styleguide" element={<StyleguidePage />} />
           {/* "*" passt auf alle anderen Adressen -> 404-Seite */}

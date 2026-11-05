@@ -14,6 +14,8 @@ export type MuscleId =
   | 'quadrizeps'
   | 'beinbeuger'
   | 'waden'
+  | 'subscapularis'
+  | 'infraspinatus'
 
 export const muscleIds: MuscleId[] = [
   'brust',
@@ -27,6 +29,8 @@ export const muscleIds: MuscleId[] = [
   'quadrizeps',
   'beinbeuger',
   'waden',
+  'subscapularis',
+  'infraspinatus',
 ]
 
 // Prüft, ob ein Text (z.B. aus der URL) eine gültige Muskel-id ist

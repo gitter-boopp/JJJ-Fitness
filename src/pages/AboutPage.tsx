@@ -36,10 +36,12 @@ export default function AboutPage() {
 
       {/* ---------- Team ---------- */}
       <Section className="pt-0 md:pt-0">
-        <SectionHeading eyebrow={t('about.teamEyebrow')} title={t('about.teamTitle')} />
+        <SectionHeading eyebrow={t('about.teamEyebrow')} title={t('about.teamTitle')}>
+          {t('about.teamText')}
+        </SectionHeading>
         <ul className="grid gap-4 md:grid-cols-3">
           {team.map((member, index) => (
-            <li key={member.id}>
+            <li key={member.name}>
               <Reveal delay={index * 0.08} className="h-full rounded-2xl border border-white/5 bg-surface p-6 md:p-8">
                 {/* Initialen statt Foto: schützt unsere Privatsphäre */}
                 <span
@@ -49,8 +51,7 @@ export default function AboutPage() {
                   {initials(member.name)}
                 </span>
                 <h3 className="mt-6 text-2xl">{member.name}</h3>
-                <p className="mt-1 text-sm font-semibold text-accent">{t(`about.team.${member.id}.role`)}</p>
-                <p className="mt-3 text-muted">{t(`about.team.${member.id}.tasks`)}</p>
+                <p className="mt-1 text-sm font-semibold text-accent">{t('about.teamAge', { age: member.age })}</p>
               </Reveal>
             </li>
           ))}

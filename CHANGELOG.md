@@ -5,11 +5,33 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Erweiterung nach Etappe 8 – Mehr Übungen und Lexikon
+
+**Datum:** 06.11.2026
+**Wer:** Leon, Jan, Janosch
+
+### Was wir gemacht haben
+
+- **16 neue Übungen** (jetzt 46), darunter Rotatorenmanschette (Aussen- und Innenrotation) und Spezialübungen wie Nordic Curl, Pendlay-Rudern, Bayesian Curl und Copenhagen Plank
+- **2 neue Muskeln** auf der Muskel-Karte und im Filter: Subscapularis und Infraspinatus
+- **Neue Seite Lexikon** (`/lexikon`) mit 30 Begriffen, Suche und Kategorien, dazu ein Abschnitt zu den unterschätzten Schultermuskeln
+- **Team** mit Vornamen und Alter eingetragen, die erfundenen Rollen entfernt
+- Fach auf der Seite von «Projektmanagement» auf «Pimu» geändert
+
+### Entscheide und warum
+
+| Entscheid | Warum |
+| --- | --- |
+| Ehrlicher Hinweis zur Schulterbreite | Die Breite kommt vor allem vom Deltamuskel. Die Rotatorenmanschette macht die Schulter stabil, wir versprechen nichts Falsches. |
+| Subscapularis auf der Karte nur angedeutet | Er liegt hinter den Rippen und ist von aussen nicht sichtbar. |
+
+---
+
 ## Etappe 8 – Feinschliff, Tests, Deployment
 
 **Datum:** 01.11.2026 bis 06.11.2026
 **Live:** https://jjj-fitness.vercel.app
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 
@@ -42,7 +64,7 @@ Neueste Einträge stehen oben.
 
 - [x] GitHub- und Vercel-Konto erstellen und deployen (siehe `DEPLOYMENT.md`)
 - [ ] Formspree verbinden (Formular ist bis dahin gesperrt)
-- [ ] Vornamen in `src/data/project.ts` und hier im CHANGELOG eintragen
+- [x] Vornamen in `src/data/project.ts` und hier im CHANGELOG eintragen
 - [ ] Tests auf echten Handys und Lighthouse (siehe `TESTPROTOKOLL.md`)
 - [x] Nach dem Deployment Etappe 8 in `src/data/project.ts` auf `done: true` setzen
 
@@ -51,7 +73,7 @@ Neueste Einträge stehen oben.
 ## Etappe 7 – Französisch-Version
 
 **Datum:** 30.10.2026
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 
@@ -91,7 +113,7 @@ Die Übersetzung ist ein Entwurf. Bitte prüfen: Fachbegriffe der Übungen, Schw
 ## Etappe 6 – Über uns und Feedback-Formular
 
 **Datum:** 30.10.2026
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 
@@ -128,7 +150,7 @@ Das Absenden wurde mit einer Test-ID simuliert, ohne dass Daten verschickt wurde
 ## Etappe 5 – Ernährung und Rechner
 
 **Datum:** 30.10.2026
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 
@@ -162,7 +184,7 @@ Das Absenden wurde mit einer Test-ID simuliert, ohne dass Daten verschickt wurde
 ## Etappe 4 – Trainingspläne
 
 **Datum:** 30.10.2026
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 
@@ -193,7 +215,7 @@ Das Absenden wurde mit einer Test-ID simuliert, ohne dass Daten verschickt wurde
 ## Etappe 3 – Übungsbibliothek mit Filter
 
 **Datum:** 30.10.2026
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 
@@ -221,7 +243,7 @@ Das Absenden wurde mit einer Test-ID simuliert, ohne dass Daten verschickt wurde
 ## Etappe 2 – Startseite mit Animationen
 
 **Datum:** 30.10.2026
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 
@@ -253,7 +275,7 @@ Das Absenden wurde mit einer Test-ID simuliert, ohne dass Daten verschickt wurde
 ## Etappe 1 – Setup, Design-System, Navigation
 
 **Datum:** 30.10.2026
-**Wer:** [Namen eintragen]
+**Wer:** Leon, Jan, Janosch
 
 ### Was wir gemacht haben
 

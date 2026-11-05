@@ -11,6 +11,7 @@
     "exercises": "Exercices",
     "plans": "Programmes",
     "nutrition": "Nutrition",
+    "lexicon": "Lexique",
     "about": "À propos",
     "start": "C’est parti",
     "openMenu": "Ouvrir le menu",
@@ -58,7 +59,7 @@
       "more": "Voir",
       "exercises": {
         "title": "Exercices",
-        "text": "Une trentaine d’exercices avec instructions, erreurs fréquentes et alternatives. Filtrables par muscle et par matériel."
+        "text": "Plus de 45 exercices avec instructions, erreurs fréquentes et alternatives. Filtrables par muscle et par matériel."
       },
       "plans": {
         "title": "Programmes",
@@ -326,7 +327,7 @@
     "title": "À propos",
     "eyebrow": "À propos",
     "heading": "Qui se cache derrière JJJ Fitness",
-    "intro": "Nous sommes des apprenti·e·s employé·e·s de commerce de Bâle et nous créons ce site dans le cadre du cours de gestion de projet. Notre objectif : que les débutant·e·s trouvent au même endroit tout ce dont ils ont besoin pour prendre du muscle, clairement et sans publicité.",
+    "intro": "Nous sommes des apprenti·e·s employé·e·s de commerce de Bâle et nous créons ce site dans le cadre du cours de Pimu. Notre objectif : que les débutant·e·s trouvent au même endroit tout ce dont ils ont besoin pour prendre du muscle, clairement et sans publicité.",
     "teamEyebrow": "Équipe",
     "teamTitle": "C’est nous",
     "projectEyebrow": "Le projet",
@@ -341,20 +342,6 @@
     "feedbackText": "Ton avis nous aide à améliorer le site et compte pour l’évaluation de notre projet. Ça prend moins d’une minute.",
     "creditsEyebrow": "Sources",
     "creditsTitle": "Sources et technique",
-    "team": {
-      "p1": {
-        "role": "Gestion de projet",
-        "tasks": "Planification, délais, communication avec l’enseignant·e"
-      },
-      "p2": {
-        "role": "Contenus",
-        "tasks": "Rechercher et vérifier les exercices, les programmes et les recettes"
-      },
-      "p3": {
-        "role": "Design & tests",
-        "tasks": "Design, images, tests sur mobile, textes en français"
-      }
-    },
     "facts": [
       {
         "label": "École",
@@ -362,7 +349,7 @@
       },
       {
         "label": "Cours",
-        "value": "Gestion de projet"
+        "value": "Pimu"
       },
       {
         "label": "Public cible",
@@ -416,7 +403,9 @@
           "Recommandation de 1,6–2,2 g/kg de protéines : méta-analyse de Morton et al., British Journal of Sports Medicine (2018)"
         ]
       }
-    ]
+    ],
+    "teamText": "Trois apprenti·e·s de Bâle, vraiment fans de Pimu, le cours dans lequel ce projet voit le jour.",
+    "teamAge": "{age} ans"
   },
   "feedback": {
     "notConnected": "Note pour l’équipe : le formulaire n’est pas encore relié à Formspree. La marche à suivre se trouve dans le README, sous « Feedback-Formular ».",
@@ -534,6 +523,14 @@
     "waden": {
       "name": "Mollets",
       "description": "Les mollets soulèvent le talon, p. ex. lors des élévations sur pointe de pieds ou des sauts."
+    },
+    "subscapularis": {
+      "name": "Subscapulaire",
+      "description": "Le plus grand muscle de la coiffe des rotateurs. Caché entre l’omoplate et les côtes, il fait tourner le bras vers l’intérieur et maintient la tête de l’humérus dans l’articulation."
+    },
+    "infraspinatus": {
+      "name": "Infra-épineux",
+      "description": "Il recouvre une grande partie de l’arrière de l’omoplate. Il fait tourner le bras vers l’extérieur et stabilise l’épaule dans chaque exercice de poussée."
     }
   },
   "equipment": {
@@ -997,6 +994,230 @@
         "Lever seulement les jambes sans enrouler le bassin.",
         "Redescendre trop vite."
       ]
+    },
+    "aussenrotation-kabel": {
+      "name": "Rotation externe à la poulie",
+      "description": "Cible l’infra-épineux et le petit rond, les rotateurs externes de l’épaule.",
+      "steps": [
+        "Règle la poulie à hauteur de coude et place-toi de côté.",
+        "Saisis la poignée avec le bras extérieur, le coude plié à 90 degrés contre le corps.",
+        "Tourne lentement l’avant-bras vers l’extérieur, le coude reste contre le corps.",
+        "Reviens de manière contrôlée. Après toutes les répétitions, change de côté."
+      ],
+      "mistakes": [
+        "Un poids trop lourd. Ce petit mouvement demande peu de charge.",
+        "Le buste tourne au lieu de l’avant-bras seul."
+      ]
+    },
+    "innenrotation-kabel": {
+      "name": "Rotation interne à la poulie",
+      "description": "Entraîne le subscapulaire, le plus grand muscle de la coiffe des rotateurs.",
+      "steps": [
+        "Règle la poulie à hauteur de coude et place-toi de côté.",
+        "Saisis la poignée avec le bras intérieur, le coude plié à 90 degrés contre le corps.",
+        "Tourne lentement l’avant-bras vers le ventre.",
+        "Reviens de manière contrôlée. Après toutes les répétitions, change de côté."
+      ],
+      "mistakes": [
+        "Le coude s’éloigne du corps.",
+        "Prendre de l’élan avec le buste."
+      ]
+    },
+    "aussenrotation-seitlage": {
+      "name": "Rotation externe couché sur le côté",
+      "description": "Exercice simple aux haltères pour l’infra-épineux, faisable aussi à la maison.",
+      "steps": [
+        "Couche-toi sur le côté, le coude du dessus plié à 90 degrés contre le corps.",
+        "Tiens un haltère léger, l’avant-bras devant le ventre.",
+        "Tourne lentement l’avant-bras vers le haut, le coude ne bouge pas.",
+        "Redescends de manière contrôlée. Après toutes les répétitions, change de côté."
+      ],
+      "mistakes": [
+        "Un haltère trop lourd. 1 à 3 kg suffisent le plus souvent.",
+        "Le buste bascule vers l’arrière."
+      ]
+    },
+    "y-raises": {
+      "name": "Y-raises sur banc incliné",
+      "description": "Renforce l’arrière des épaules et le bas des trapèzes pour une épaule stable.",
+      "steps": [
+        "Allonge-toi sur le ventre sur un banc incliné, des haltères légers dans les mains.",
+        "Les pouces pointent vers le haut.",
+        "Lève les bras en diagonale vers l’avant pour former un Y.",
+        "Tiens brièvement et redescends lentement."
+      ],
+      "mistakes": [
+        "Un poids trop lourd et de l’élan.",
+        "Les épaules remontent vers les oreilles."
+      ]
+    },
+    "landmine-press": {
+      "name": "Landmine press",
+      "description": "Poussée en diagonale avec une barre, souvent agréable pour les épaules sensibles.",
+      "steps": [
+        "Place une extrémité de la barre dans un coin ou un support landmine.",
+        "Tiens l’autre extrémité d’une main à hauteur d’épaule.",
+        "Pousse la barre en diagonale vers le haut jusqu’à ce que le bras soit presque tendu.",
+        "Reviens lentement. Après toutes les répétitions, change de côté."
+      ],
+      "mistakes": [
+        "Se cambrer.",
+        "Le coude part loin sur le côté."
+      ]
+    },
+    "scapula-pullups": {
+      "name": "Tractions scapulaires",
+      "description": "Mini-traction avec les omoplates seulement, bonne préparation à la traction.",
+      "steps": [
+        "Suspends-toi à la barre, les bras restent tendus.",
+        "Tire les omoplates vers le bas, le corps monte de quelques centimètres.",
+        "Tiens brièvement.",
+        "Redescends lentement en suspension."
+      ],
+      "mistakes": [
+        "Plier les bras. Cela devient alors une traction normale.",
+        "Prendre de l’élan avec les jambes."
+      ]
+    },
+    "pendlay-rudern": {
+      "name": "Rowing Pendlay",
+      "description": "Rowing explosif où la barre repart du sol à chaque répétition.",
+      "steps": [
+        "La barre est au sol. Penche-toi jusqu’à ce que le buste soit presque horizontal, le dos droit.",
+        "Saisis la barre à largeur d’épaules.",
+        "Tire la barre de manière explosive vers le bas de la poitrine.",
+        "Repose-la au sol de manière contrôlée et relâche brièvement."
+      ],
+      "mistakes": [
+        "Le buste se redresse pendant le tirage.",
+        "Un dos rond."
+      ]
+    },
+    "brustgestuetztes-rudern": {
+      "name": "Rowing poitrine appuyée",
+      "description": "Rowing sans charge pour le bas du dos, car le banc soutient le buste.",
+      "steps": [
+        "Allonge-toi sur le ventre sur un banc légèrement incliné, les haltères pendent.",
+        "La poitrine reste sur le coussin.",
+        "Tire les haltères vers les hanches et serre les omoplates.",
+        "Redescends lentement jusqu’à ce que les bras soient tendus."
+      ],
+      "mistakes": [
+        "La poitrine décolle du coussin.",
+        "Ne faire que des demi-mouvements."
+      ]
+    },
+    "bayesian-curl": {
+      "name": "Curl bayésien",
+      "description": "Curl à la poulie avec le bras derrière le corps, ce qui étire fortement le biceps.",
+      "steps": [
+        "Tourne le dos à la poulie basse et fais un pas en avant.",
+        "La poignée tire le bras légèrement derrière le corps.",
+        "Fléchis le coude, le haut du bras reste aussi immobile que possible.",
+        "Tends lentement. Après toutes les répétitions, change de côté."
+      ],
+      "mistakes": [
+        "Le coude part loin vers l’avant.",
+        "Un poids trop lourd qui tire l’épaule vers l’avant."
+      ]
+    },
+    "ueberkopf-trizeps": {
+      "name": "Extension triceps au-dessus de la tête",
+      "description": "Entraîne le triceps en position étirée, surtout son long chef.",
+      "steps": [
+        "Assis ou debout, tiens un haltère à deux mains au-dessus de la tête.",
+        "Les bras restent près de la tête.",
+        "Descends lentement l’haltère derrière la tête.",
+        "Tends à nouveau les bras."
+      ],
+      "mistakes": [
+        "Les coudes s’écartent beaucoup.",
+        "Se cambrer."
+      ]
+    },
+    "nordic-curl": {
+      "name": "Nordic curl",
+      "description": "Exercice très dur pour les ischio-jambiers, sans matériel. Il faut juste bloquer les pieds.",
+      "steps": [
+        "Mets-toi à genoux sur un tapis et bloque les talons, p. ex. sous un meuble stable ou avec l’aide de quelqu’un.",
+        "Le corps forme une ligne des genoux à la tête.",
+        "Descends vers l’avant aussi lentement que possible.",
+        "Rattrape-toi avec les mains et repousse légèrement avec les bras."
+      ],
+      "mistakes": [
+        "Plier les hanches.",
+        "Se laisser tomber au lieu de freiner la descente."
+      ]
+    },
+    "sissy-squat": {
+      "name": "Sissy squat",
+      "description": "Isole l’avant de la cuisse. Très exigeant pour les genoux, alors vas-y progressivement.",
+      "steps": [
+        "Tiens-toi droit en te tenant à une barre ou à un mur.",
+        "Monte sur l’avant des pieds et avance les genoux.",
+        "Penche le corps en ligne vers l’arrière et descends aussi loin que possible sans douleur.",
+        "Remonte avec les cuisses."
+      ],
+      "mistakes": [
+        "Continuer alors que le genou fait mal.",
+        "Plier les hanches."
+      ]
+    },
+    "sitzendes-wadenheben": {
+      "name": "Élévations des mollets assis",
+      "description": "Avec les genoux fléchis, c’est surtout le soléaire, le mollet profond, qui travaille.",
+      "steps": [
+        "Assieds-toi à la machine, le coussin sur les cuisses.",
+        "Place l’avant des pieds sur la plateforme.",
+        "Monte les talons le plus haut possible.",
+        "Redescends lentement jusqu’à sentir un étirement."
+      ],
+      "mistakes": [
+        "Rebondir au lieu de bouger de manière contrôlée.",
+        "Un mouvement trop petit."
+      ]
+    },
+    "dead-bug": {
+      "name": "Dead bug",
+      "description": "Exercice calme qui apprend à garder le tronc stable pendant que les bras et les jambes bougent.",
+      "steps": [
+        "Allonge-toi sur le dos, bras vers le haut, hanches et genoux pliés à 90 degrés.",
+        "Appuie doucement le bas du dos contre le sol.",
+        "Descends lentement un bras et la jambe opposée.",
+        "Reviens et change de côté."
+      ],
+      "mistakes": [
+        "Le bas du dos décolle du sol.",
+        "Aller trop vite."
+      ]
+    },
+    "pallof-press": {
+      "name": "Pallof press",
+      "description": "Le tronc doit empêcher la poulie de te faire tourner sur le côté.",
+      "steps": [
+        "Place-toi de côté par rapport à la poulie à hauteur de poitrine et tiens la poignée à deux mains contre la poitrine.",
+        "Contracte les abdos.",
+        "Tends les bras droit devant toi sans que le buste tourne.",
+        "Tiens brièvement et reviens à la poitrine. Après toutes les répétitions, change de côté."
+      ],
+      "mistakes": [
+        "Le buste tourne vers la poulie.",
+        "Se tenir trop près de la poulie."
+      ]
+    },
+    "copenhagen-plank": {
+      "name": "Copenhagen plank",
+      "description": "Gainage latéral avec la jambe du dessus sur un banc. Sollicite le côté du tronc et l’intérieur de la cuisse.",
+      "steps": [
+        "Couche-toi sur le côté près d’un banc et appuie-toi sur l’avant-bras.",
+        "Pose la jambe du dessus sur le banc : d’abord le genou, plus tard le pied.",
+        "Monte les hanches jusqu’à ce que le corps forme une ligne.",
+        "Tiens, redescends et change de côté."
+      ],
+      "mistakes": [
+        "Les hanches s’affaissent.",
+        "Commencer trop tôt avec le pied sur le banc."
+      ]
     }
   },
   "plans": {
@@ -1183,5 +1404,180 @@
         "Ajoute les baies et les flocons d’avoine et sucre avec le miel."
       ]
     }
+  },
+  "lexicon": {
+    "title": "Lexique",
+    "eyebrow": "Lexique",
+    "heading": "Les termes du fitness, expliqués simplement",
+    "intro": "Du RIR à la coiffe des rotateurs : les mots que tu croises à la salle et sur Internet.",
+    "searchLabel": "Rechercher un terme",
+    "searchPlaceholder": "Rechercher, p. ex. deload",
+    "empty": "Aucun terme trouvé.",
+    "categories": {
+      "training": "Entraînement",
+      "anatomy": "Anatomie",
+      "nutrition": "Nutrition"
+    },
+    "spotlight": {
+      "eyebrow": "Sous-estimés",
+      "title": "Les muscles de l’épaule que tu ne vois pas",
+      "text": "Sous le deltoïde se trouve la coiffe des rotateurs. Deux de ses muscles sont plus grands que ce que la plupart des gens pensent : ils recouvrent presque tout l’avant et une grande partie de l’arrière de l’omoplate.",
+      "subscapularis": "Le plus grand et le plus puissant muscle de la coiffe des rotateurs. Il remplit presque tout l’avant de l’omoplate. Tu ne peux jamais le voir, car il se trouve entre l’omoplate et les côtes.",
+      "infraspinatus": "Le deuxième plus grand muscle de la coiffe des rotateurs. Il se trouve à l’arrière de l’omoplate et devient même visible avec peu de masse grasse.",
+      "cta": "Exercices adaptés",
+      "note": "Pour être honnête : la largeur des épaules vient surtout du deltoïde. Ces muscles rendent l’épaule stable et résistante, pour pousser plus lourd et en meilleure santé. Commence léger : 2 séries en fin de séance suffisent."
+    },
+    "terms": [
+      {
+        "term": "1RM",
+        "category": "training",
+        "text": "One-rep max : le poids que tu peux soulever proprement une seule fois."
+      },
+      {
+        "term": "RIR",
+        "category": "training",
+        "text": "Reps in reserve : le nombre de répétitions que tu aurais encore pu faire en fin de série. RIR 2 : il en restait deux."
+      },
+      {
+        "term": "RPE",
+        "category": "training",
+        "text": "Rate of perceived exertion : la difficulté d’une série sur une échelle de 1 à 10. RPE 8 correspond environ à RIR 2."
+      },
+      {
+        "term": "Hypertrophie",
+        "category": "training",
+        "text": "La croissance des fibres musculaires, le terme technique pour la prise de muscle."
+      },
+      {
+        "term": "Surcharge progressive",
+        "category": "training",
+        "text": "Solliciter le muscle toujours plus avec le temps, p. ex. avec plus de poids ou de répétitions."
+      },
+      {
+        "term": "Volume d’entraînement",
+        "category": "training",
+        "text": "La quantité d’entraînement, souvent comptée en séries difficiles par muscle et par semaine."
+      },
+      {
+        "term": "Fréquence d’entraînement",
+        "category": "training",
+        "text": "Le nombre de fois par semaine où tu entraînes un muscle."
+      },
+      {
+        "term": "Time under tension",
+        "category": "training",
+        "text": "Le temps pendant lequel un muscle reste sous tension durant une série."
+      },
+      {
+        "term": "Excentrique",
+        "category": "training",
+        "text": "Le muscle s’allonge sous la charge, p. ex. à la descente du développé couché. L’inverse est concentrique : le muscle se raccourcit à la montée."
+      },
+      {
+        "term": "Superset",
+        "category": "training",
+        "text": "Deux exercices à la suite, sans pause. Cela fait gagner du temps."
+      },
+      {
+        "term": "Drop set",
+        "category": "training",
+        "text": "En fin de série, réduire le poids et continuer sans pause."
+      },
+      {
+        "term": "Deload",
+        "category": "training",
+        "text": "Une semaine plus légère et planifiée pour que le corps récupère."
+      },
+      {
+        "term": "Échec musculaire",
+        "category": "training",
+        "text": "Le moment où plus aucune répétition propre n’est possible."
+      },
+      {
+        "term": "Exercice de base",
+        "category": "training",
+        "text": "Exercice qui fait travailler plusieurs articulations et muscles, p. ex. le squat. L’inverse est l’exercice d’isolation, p. ex. le curl."
+      },
+      {
+        "term": "Amplitude de mouvement",
+        "category": "training",
+        "text": "L’étendue d’un mouvement, autrement dit jusqu’où tu bouges."
+      },
+      {
+        "term": "Courbatures (DOMS)",
+        "category": "training",
+        "text": "Douleurs un à deux jours après un effort inhabituel. Elles ne prouvent pas que l’entraînement était bon."
+      },
+      {
+        "term": "Coiffe des rotateurs",
+        "category": "anatomy",
+        "text": "Quatre muscles autour de l’épaule : subscapulaire, supra-épineux, infra-épineux et petit rond. Ils maintiennent la tête de l’humérus dans l’articulation."
+      },
+      {
+        "term": "Subscapulaire",
+        "category": "anatomy",
+        "text": "Le plus grand muscle de la coiffe des rotateurs, à l’avant de l’omoplate. Il tourne le bras vers l’intérieur."
+      },
+      {
+        "term": "Infra-épineux",
+        "category": "anatomy",
+        "text": "Muscle à l’arrière de l’omoplate. Il tourne le bras vers l’extérieur."
+      },
+      {
+        "term": "Supra-épineux",
+        "category": "anatomy",
+        "text": "Muscle au-dessus de l’omoplate. Il aide à lever le bras sur le côté."
+      },
+      {
+        "term": "Petit rond",
+        "category": "anatomy",
+        "text": "Petit muscle juste sous l’infra-épineux. Il tourne lui aussi le bras vers l’extérieur."
+      },
+      {
+        "term": "Omoplate",
+        "category": "anatomy",
+        "text": "En latin scapula. Beaucoup d’exercices pour les épaules et le dos dépendent de son bon mouvement."
+      },
+      {
+        "term": "Grand dorsal",
+        "category": "anatomy",
+        "text": "Le large muscle du dos. Il tire les bras vers le corps et donne un dos large."
+      },
+      {
+        "term": "Dentelé antérieur",
+        "category": "anatomy",
+        "text": "Muscle sur les côtes. Il amène l’omoplate vers l’avant et la stabilise."
+      },
+      {
+        "term": "Soléaire",
+        "category": "anatomy",
+        "text": "Muscle profond du mollet, sous le gastrocnémien. Il travaille surtout genou fléchi."
+      },
+      {
+        "term": "Adducteurs",
+        "category": "anatomy",
+        "text": "Muscles à l’intérieur de la cuisse. Ils ramènent la jambe vers le centre du corps."
+      },
+      {
+        "term": "Synthèse des protéines musculaires",
+        "category": "nutrition",
+        "text": "La fabrication de nouvelles protéines musculaires. La musculation et les protéines la stimulent."
+      },
+      {
+        "term": "Macronutriments",
+        "category": "nutrition",
+        "text": "Protéines, glucides et lipides : les trois nutriments qui fournissent de l’énergie."
+      },
+      {
+        "term": "Bulk",
+        "category": "nutrition",
+        "text": "Phase de prise de masse où l’on mange volontairement un peu plus que ce que l’on dépense."
+      },
+      {
+        "term": "Valeur PAL",
+        "category": "nutrition",
+        "text": "Physical activity level : un chiffre qui indique ton niveau d’activité. Métabolisme de base × PAL donne environ ta dépense totale."
+      }
+    ]
   }
 }

@@ -3,7 +3,7 @@
 // Der Text kommt aus der Übersetzung: "nav.<key>"
 
 export type NavItem = {
-  key: 'exercises' | 'plans' | 'nutrition' | 'about'
+  key: 'exercises' | 'plans' | 'nutrition' | 'lexicon' | 'about'
   path: string // Adresse der Seite
 }
 
@@ -11,5 +11,6 @@ export const navItems: NavItem[] = [
   { key: 'exercises', path: '/uebungen' },
   { key: 'plans', path: '/trainingsplaene' },
   { key: 'nutrition', path: '/ernaehrung' },
+  { key: 'lexicon', path: '/lexikon' },
   { key: 'about', path: '/ueber-uns' },
 ]

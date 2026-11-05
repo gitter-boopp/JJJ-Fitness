@@ -1,15 +1,13 @@
 // Infos über uns und das Projekt (Seite "Über uns").
-// Rollen, Aufgaben, Eckdaten, Etappen-Titel und Quellen stehen in den
+// Eckdaten, Etappen-Titel und Quellen stehen in den
 // Übersetzungsdateien unter "about".
 
 // ---------- Team ----------
-// TODO: Eure echten Vornamen eintragen. Rolle und Aufgaben stehen in de.json/fr.json
-// unter "about.team.<id>".
 // Aus Datenschutzgründen zeigen wir keine Fotos und keine Nachnamen, nur die Initialen.
-export const team: { id: string; name: string }[] = [
-  { id: 'p1', name: '[Vorname 1]' },
-  { id: 'p2', name: '[Vorname 2]' },
-  { id: 'p3', name: '[Vorname 3]' },
+export const team: { name: string; age: number }[] = [
+  { name: 'Leon', age: 18 },
+  { name: 'Jan', age: 19 },
+  { name: 'Janosch', age: 18 },
 ]
 
 // ---------- Projektverlauf ----------

@@ -55,7 +55,7 @@ Wir sind eine Gruppe von KV-Lernenden (KV Basel) und bauen im Fach Projektmanage
 - Kurzer Abschnitt "Die 5 Grundregeln für Muskelaufbau" (progressive Steigerung, genug Protein, leichter Kalorienüberschuss, Schlaf, Konstanz)
 
 **Übungen** (`/uebungen`)
-- Übungsbibliothek mit ca. 30 Übungen zum Start
+- Übungsbibliothek, aktuell 46 Übungen
 - Filter: Muskelgruppe, Equipment (Körpergewicht, Kurzhantel, Langhantel, Maschine), Level (Anfänger / Fortgeschritten)
 - Suchfeld
 - Jede Übung hat eine Detailseite mit: Bild oder GIF, Schritt-für-Schritt-Ausführung, häufige Fehler, empfohlene Sätze und Wiederholungen, Alternativen
@@ -71,6 +71,9 @@ Wir sind eine Gruppe von KV-Lernenden (KV Basel) und bauen im Fach Projektmanage
 - Proteinrechner (ca. 1,6–2,2 g pro kg Körpergewicht)
 - Einige günstige, einfache Rezepte mit viel Protein (Rezeptkarten mit Makros)
 - Beim Rechner ein ruhiger Hinweis: Werte sind Richtwerte, bei gesundheitlichen Fragen Fachperson fragen. Keine Diät-Extreme, kein Fokus auf Abnehmen.
+
+**Lexikon** (`/lexikon`)
+- Fitness-Begriffe mit Suche und Kategorien, dazu Abschnitt zu Subscapularis und Infraspinatus
 
 **Über uns** (`/ueber-uns`)
 - Wer wir sind, warum wir das Projekt machen (Schulprojekt KV Basel)

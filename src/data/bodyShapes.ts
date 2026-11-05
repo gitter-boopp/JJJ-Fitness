@@ -70,6 +70,12 @@ export const frontShapes: BodyShape[] = [
     d: 'M74 330 C80 334 90 334 94 330 C96 350 94 376 90 396 C86 402 80 402 78 396 C72 376 70 350 74 330 Z',
   },
 
+  {
+    muscle: 'subscapularis', // liegt eigentlich versteckt hinter den Rippen, darum nur angedeutet
+    mirror: true,
+    d: 'M71 92 C67 97 67 105 71 110 C75 105 75 97 71 92 Z',
+  },
+
   // Sixpack-Linien
   { decor: true, d: 'M100 121 L100 200 M81 140 L119 140 M80 162 L120 162 M81 182 L119 182' },
 ]
@@ -117,12 +123,18 @@ export const backShapes: BodyShape[] = [
     d: 'M74 330 C82 325 92 327 95 335 C97 351 94 369 90 381 C86 398 80 400 78 394 C72 376 68 346 74 330 Z',
   },
 
+  {
+    muscle: 'infraspinatus', // auf der Rückseite des Schulterblatts
+    mirror: true,
+    d: 'M68 88 C75 91 83 99 88 110 C82 120 72 122 66 116 C64 106 65 96 68 88 Z',
+  },
+
   // Wirbelsäulen-Linie
   { decor: true, d: 'M100 126 L100 200' },
 ]
 
 // Muskeln, die man nur von hinten sieht. Hilft zu entscheiden, welche Seite wir zeigen.
-const BACK_MUSCLES: MuscleId[] = ['ruecken', 'nacken', 'trizeps', 'gesaess', 'beinbeuger']
+const BACK_MUSCLES: MuscleId[] = ['ruecken', 'nacken', 'trizeps', 'gesaess', 'beinbeuger', 'infraspinatus']
 
 // Gibt 'back' zurück, wenn der erste Hauptmuskel hinten liegt, sonst 'front'
 export function sideForMuscles(muscles: MuscleId[]): 'front' | 'back' {

@@ -11,6 +11,7 @@
     "exercises": "Übungen",
     "plans": "Trainingspläne",
     "nutrition": "Ernährung",
+    "lexicon": "Lexikon",
     "about": "Über uns",
     "start": "Jetzt starten",
     "openMenu": "Menü öffnen",
@@ -58,7 +59,7 @@
       "more": "Ansehen",
       "exercises": {
         "title": "Übungen",
-        "text": "Rund 30 Übungen mit Anleitung, häufigen Fehlern und Alternativen. Filterbar nach Muskel und Equipment."
+        "text": "Über 45 Übungen mit Anleitung, häufigen Fehlern und Alternativen. Filterbar nach Muskel und Equipment."
       },
       "plans": {
         "title": "Trainingspläne",
@@ -326,7 +327,7 @@
     "title": "Über uns",
     "eyebrow": "Über uns",
     "heading": "Wer hinter JJJ Fitness steckt",
-    "intro": "Wir sind KV-Lernende aus Basel und bauen diese Seite im Fach Projektmanagement. Unser Ziel: Einsteigerinnen und Einsteiger finden an einem Ort alles, was sie für den Muskelaufbau brauchen, verständlich und ohne Werbung.",
+    "intro": "Wir sind KV-Lernende aus Basel und bauen diese Seite im Fach Pimu. Unser Ziel: Einsteigerinnen und Einsteiger finden an einem Ort alles, was sie für den Muskelaufbau brauchen, verständlich und ohne Werbung.",
     "teamEyebrow": "Team",
     "teamTitle": "Das sind wir",
     "projectEyebrow": "Das Projekt",
@@ -341,20 +342,6 @@
     "feedbackText": "Dein Feedback hilft uns, die Seite zu verbessern, und fliesst in unsere Projektauswertung ein. Es dauert weniger als eine Minute.",
     "creditsEyebrow": "Quellen",
     "creditsTitle": "Quellen und Technik",
-    "team": {
-      "p1": {
-        "role": "Projektleitung",
-        "tasks": "Planung, Termine, Kommunikation mit der Lehrperson"
-      },
-      "p2": {
-        "role": "Inhalte",
-        "tasks": "Übungen, Trainingspläne und Rezepte recherchieren und prüfen"
-      },
-      "p3": {
-        "role": "Design & Tests",
-        "tasks": "Design, Bilder, Tests auf dem Handy, französische Texte"
-      }
-    },
     "facts": [
       {
         "label": "Schule",
@@ -362,7 +349,7 @@
       },
       {
         "label": "Fach",
-        "value": "Projektmanagement"
+        "value": "Pimu"
       },
       {
         "label": "Zielpublikum",
@@ -416,7 +403,9 @@
           "Proteinempfehlung 1,6–2,2 g/kg: Meta-Analyse von Morton et al., British Journal of Sports Medicine (2018)"
         ]
       }
-    ]
+    ],
+    "teamText": "Drei Lernende aus Basel und grosse Fans von Pimu, dem Schulfach, in dem dieses Projekt entsteht.",
+    "teamAge": "{age} Jahre"
   },
   "feedback": {
     "notConnected": "Hinweis fürs Team: Das Formular ist noch nicht mit Formspree verbunden. Wie das geht, steht im README unter «Feedback-Formular».",
@@ -534,6 +523,14 @@
     "waden": {
       "name": "Waden",
       "description": "Die Wadenmuskeln heben die Ferse, z.B. beim Wadenheben oder Springen."
+    },
+    "subscapularis": {
+      "name": "Subscapularis",
+      "description": "Der grösste Muskel der Rotatorenmanschette. Er liegt versteckt zwischen Schulterblatt und Rippen, dreht den Arm nach innen und hält den Oberarmkopf in der Pfanne."
+    },
+    "infraspinatus": {
+      "name": "Infraspinatus",
+      "description": "Bedeckt einen grossen Teil der Schulterblatt-Rückseite. Er dreht den Arm nach aussen und stabilisiert das Schultergelenk bei jeder Druckübung."
     }
   },
   "equipment": {
@@ -997,6 +994,230 @@
         "Nur die Beine heben, ohne das Becken einzurollen.",
         "Zu schnell absenken."
       ]
+    },
+    "aussenrotation-kabel": {
+      "name": "Aussenrotation am Kabel",
+      "description": "Gezielt für Infraspinatus und Teres minor, die Aussendreher der Schulter.",
+      "steps": [
+        "Den Kabelzug auf Ellbogenhöhe einstellen und seitlich dazu stehen.",
+        "Den Griff mit dem äusseren Arm fassen, der Ellbogen liegt 90 Grad gebeugt am Körper.",
+        "Den Unterarm langsam nach aussen drehen, der Ellbogen bleibt am Körper.",
+        "Kontrolliert zurück. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "mistakes": [
+        "Zu schweres Gewicht. Diese kleine Bewegung braucht wenig Last.",
+        "Der Oberkörper dreht mit, statt nur der Unterarm."
+      ]
+    },
+    "innenrotation-kabel": {
+      "name": "Innenrotation am Kabel",
+      "description": "Trainiert den Subscapularis, den grössten Muskel der Rotatorenmanschette.",
+      "steps": [
+        "Den Kabelzug auf Ellbogenhöhe einstellen und seitlich dazu stehen.",
+        "Den Griff mit dem inneren Arm fassen, der Ellbogen liegt 90 Grad gebeugt am Körper.",
+        "Den Unterarm langsam zum Bauch drehen.",
+        "Kontrolliert zurück. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "mistakes": [
+        "Der Ellbogen löst sich vom Körper.",
+        "Mit Schwung aus dem Oberkörper arbeiten."
+      ]
+    },
+    "aussenrotation-seitlage": {
+      "name": "Aussenrotation in Seitlage",
+      "description": "Einfache Kurzhantel-Übung für den Infraspinatus, geht auch zu Hause.",
+      "steps": [
+        "Auf die Seite legen, der obere Ellbogen liegt 90 Grad gebeugt am Körper.",
+        "Eine leichte Kurzhantel halten, der Unterarm liegt vor dem Bauch.",
+        "Den Unterarm langsam nach oben drehen, der Ellbogen bleibt liegen.",
+        "Kontrolliert absenken. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "mistakes": [
+        "Zu schwere Hantel. Meist reichen 1 bis 3 kg.",
+        "Der Oberkörper kippt nach hinten."
+      ]
+    },
+    "y-raises": {
+      "name": "Y-Raises auf der Schrägbank",
+      "description": "Stärkt hintere Schulter und unteren Trapez für eine stabile Schulterposition.",
+      "steps": [
+        "Bauchlings auf eine Schrägbank legen, leichte Kurzhanteln hängen lassen.",
+        "Die Daumen zeigen nach oben.",
+        "Die Arme schräg nach vorne oben heben, sodass ein Y entsteht.",
+        "Kurz halten und langsam absenken."
+      ],
+      "mistakes": [
+        "Zu schweres Gewicht und Schwung.",
+        "Die Schultern ziehen zu den Ohren hoch."
+      ]
+    },
+    "landmine-press": {
+      "name": "Landmine Press",
+      "description": "Schräges Drücken mit der Langhantel, oft angenehm für empfindliche Schultern.",
+      "steps": [
+        "Ein Stangenende in eine Ecke oder Landmine-Halterung stecken.",
+        "Das andere Ende mit einer Hand auf Schulterhöhe halten.",
+        "Die Stange schräg nach vorne oben drücken, bis der Arm fast gestreckt ist.",
+        "Langsam zurück. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "mistakes": [
+        "Ins Hohlkreuz ausweichen.",
+        "Der Ellbogen zeigt weit zur Seite."
+      ]
+    },
+    "scapula-pullups": {
+      "name": "Scapula Pull-ups",
+      "description": "Mini-Klimmzug nur aus den Schulterblättern, gute Vorübung für den Klimmzug.",
+      "steps": [
+        "An die Klimmzugstange hängen, die Arme bleiben gestreckt.",
+        "Die Schulterblätter nach unten ziehen, der Körper hebt sich ein paar Zentimeter.",
+        "Kurz halten.",
+        "Langsam wieder in den Hang lassen."
+      ],
+      "mistakes": [
+        "Die Arme beugen. Dann ist es ein normaler Klimmzug.",
+        "Mit den Beinen Schwung holen."
+      ]
+    },
+    "pendlay-rudern": {
+      "name": "Pendlay-Rudern",
+      "description": "Explosives Rudern, bei dem die Stange bei jeder Wiederholung am Boden startet.",
+      "steps": [
+        "Die Stange liegt am Boden. Nach vorne beugen, bis der Oberkörper fast waagrecht und der Rücken gerade ist.",
+        "Die Stange schulterbreit greifen.",
+        "Die Stange explosiv zum unteren Brustbereich ziehen.",
+        "Kontrolliert zurück auf den Boden legen und kurz lösen."
+      ],
+      "mistakes": [
+        "Der Oberkörper richtet sich beim Ziehen auf.",
+        "Ein runder Rücken."
+      ]
+    },
+    "brustgestuetztes-rudern": {
+      "name": "Brustgestütztes Rudern",
+      "description": "Rudern ohne Belastung für den unteren Rücken, weil die Bank den Oberkörper stützt.",
+      "steps": [
+        "Bauchlings auf eine leicht schräge Bank legen, die Hanteln hängen nach unten.",
+        "Die Brust bleibt auf dem Polster.",
+        "Die Hanteln zur Hüfte ziehen und die Schulterblätter zusammendrücken.",
+        "Langsam absenken, bis die Arme gestreckt sind."
+      ],
+      "mistakes": [
+        "Die Brust hebt vom Polster ab.",
+        "Nur halbe Bewegungen machen."
+      ]
+    },
+    "bayesian-curl": {
+      "name": "Bayesian Curl",
+      "description": "Curl am Kabel mit dem Arm hinter dem Körper. So wird der Bizeps stark gedehnt.",
+      "steps": [
+        "Mit dem Rücken zum tief eingestellten Kabelzug stehen und einen Schritt nach vorne gehen.",
+        "Der Griff zieht den Arm leicht hinter den Körper.",
+        "Den Ellbogen beugen, der Oberarm bleibt möglichst ruhig.",
+        "Langsam strecken. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "mistakes": [
+        "Der Ellbogen wandert weit nach vorne.",
+        "Zu schweres Gewicht, das die Schulter nach vorne zieht."
+      ]
+    },
+    "ueberkopf-trizeps": {
+      "name": "Überkopf-Trizepsstrecken",
+      "description": "Trainiert den Trizeps in gedehnter Position, besonders seinen langen Kopf.",
+      "steps": [
+        "Sitzen oder stehen und eine Kurzhantel mit beiden Händen über den Kopf halten.",
+        "Die Oberarme bleiben nah am Kopf.",
+        "Die Hantel langsam hinter den Kopf senken.",
+        "Die Arme wieder strecken."
+      ],
+      "mistakes": [
+        "Die Ellbogen gehen weit auseinander.",
+        "Ins Hohlkreuz ausweichen."
+      ]
+    },
+    "nordic-curl": {
+      "name": "Nordic Curl",
+      "description": "Sehr harte Übung für die Beinbeuger, ganz ohne Geräte. Nur die Füsse müssen fixiert sein.",
+      "steps": [
+        "Auf eine Matte knien und die Fersen fixieren, z.B. unter einem stabilen Möbel oder mit einer Person.",
+        "Der Körper bildet von Knie bis Kopf eine Linie.",
+        "So langsam wie möglich nach vorne sinken.",
+        "Mit den Händen abfangen und mit den Armen leicht zurückdrücken."
+      ],
+      "mistakes": [
+        "In der Hüfte abknicken.",
+        "Sich fallen lassen, statt das Absinken zu bremsen."
+      ]
+    },
+    "sissy-squat": {
+      "name": "Sissy Squat",
+      "description": "Isoliert den vorderen Oberschenkel. Fordert die Knie stark, also langsam herantasten.",
+      "steps": [
+        "Aufrecht stehen und an einer Stange oder Wand festhalten.",
+        "Auf die Fussballen gehen und die Knie nach vorne schieben.",
+        "Den Körper als Linie nach hinten neigen und absenken, so weit es ohne Schmerzen geht.",
+        "Mit den Oberschenkeln wieder hochdrücken."
+      ],
+      "mistakes": [
+        "Weitermachen, obwohl das Knie schmerzt.",
+        "In der Hüfte abknicken."
+      ]
+    },
+    "sitzendes-wadenheben": {
+      "name": "Sitzendes Wadenheben",
+      "description": "Mit gebeugten Knien arbeitet vor allem der Soleus, der tiefe Wadenmuskel.",
+      "steps": [
+        "An die Maschine setzen, das Polster liegt auf den Oberschenkeln.",
+        "Die Fussballen auf die Plattform stellen.",
+        "Die Fersen so hoch wie möglich anheben.",
+        "Langsam absenken, bis du eine Dehnung spürst."
+      ],
+      "mistakes": [
+        "Wippen statt kontrolliert bewegen.",
+        "Die Bewegung ist zu klein."
+      ]
+    },
+    "dead-bug": {
+      "name": "Dead Bug",
+      "description": "Ruhige Bauchübung, die lehrt, den Rumpf stabil zu halten, während Arme und Beine sich bewegen.",
+      "steps": [
+        "Auf den Rücken legen, die Arme zeigen nach oben, Hüfte und Knie sind 90 Grad gebeugt.",
+        "Den unteren Rücken sanft in den Boden drücken.",
+        "Gegengleich einen Arm und ein Bein langsam absenken.",
+        "Zurück und die Seite wechseln."
+      ],
+      "mistakes": [
+        "Der untere Rücken hebt vom Boden ab.",
+        "Zu schnell arbeiten."
+      ]
+    },
+    "pallof-press": {
+      "name": "Pallof Press",
+      "description": "Der Rumpf muss verhindern, dass der Kabelzug dich zur Seite dreht.",
+      "steps": [
+        "Seitlich zum Kabelzug auf Brusthöhe stehen und den Griff mit beiden Händen an die Brust nehmen.",
+        "Bauch anspannen.",
+        "Die Arme gerade nach vorne strecken, ohne dass der Oberkörper mitdreht.",
+        "Kurz halten und zurück zur Brust. Nach allen Wiederholungen die Seite wechseln."
+      ],
+      "mistakes": [
+        "Der Oberkörper dreht sich zum Kabel.",
+        "Zu nah am Kabelzug stehen."
+      ]
+    },
+    "copenhagen-plank": {
+      "name": "Copenhagen Plank",
+      "description": "Seitstütz mit dem oberen Bein auf einer Bank. Fordert seitlichen Rumpf und Oberschenkel-Innenseite.",
+      "steps": [
+        "Seitlich neben eine Bank legen und auf den Unterarm stützen.",
+        "Das obere Bein auf die Bank legen, zum Einstieg das Knie, später den Fuss.",
+        "Die Hüfte anheben, bis der Körper eine Linie bildet.",
+        "Halten, ablegen und die Seite wechseln."
+      ],
+      "mistakes": [
+        "Die Hüfte sinkt ab.",
+        "Zu früh mit dem langen Hebel starten."
+      ]
     }
   },
   "plans": {
@@ -1183,5 +1404,180 @@
         "Beeren und Haferflocken darübergeben und mit Honig süssen."
       ]
     }
+  },
+  "lexicon": {
+    "title": "Lexikon",
+    "eyebrow": "Lexikon",
+    "heading": "Fitness-Begriffe, einfach erklärt",
+    "intro": "Von RIR bis Rotatorenmanschette: die Wörter, die dir im Gym und im Internet begegnen.",
+    "searchLabel": "Begriff suchen",
+    "searchPlaceholder": "Begriff suchen, z.B. Deload",
+    "empty": "Kein Begriff gefunden.",
+    "categories": {
+      "training": "Training",
+      "anatomy": "Anatomie",
+      "nutrition": "Ernährung"
+    },
+    "spotlight": {
+      "eyebrow": "Unterschätzt",
+      "title": "Die Schultermuskeln, die du nicht siehst",
+      "text": "Unter dem Deltamuskel liegt die Rotatorenmanschette. Zwei ihrer Muskeln sind grösser, als die meisten denken: Sie bedecken fast die ganze Vorder- und einen grossen Teil der Rückseite des Schulterblatts.",
+      "subscapularis": "Der grösste und kräftigste Muskel der Rotatorenmanschette. Er füllt fast die ganze Vorderseite des Schulterblatts aus. Sehen kannst du ihn nie, weil er zwischen Schulterblatt und Rippen liegt.",
+      "infraspinatus": "Der zweitgrösste Muskel der Rotatorenmanschette. Er liegt auf der Rückseite des Schulterblatts und ist bei wenig Körperfett sogar sichtbar.",
+      "cta": "Passende Übungen",
+      "note": "Ehrlich gesagt: Die Breite der Schultern kommt vor allem vom Deltamuskel. Diese Muskeln machen die Schulter stabil und belastbar, damit du beim Drücken schwerer und gesünder trainieren kannst. Fang leicht an: 2 Sätze am Ende des Trainings reichen."
+    },
+    "terms": [
+      {
+        "term": "1RM",
+        "category": "training",
+        "text": "One-Rep-Max: das Gewicht, das du bei einer Übung genau einmal sauber schaffst."
+      },
+      {
+        "term": "RIR",
+        "category": "training",
+        "text": "Reps in Reserve: wie viele Wiederholungen du am Satzende noch geschafft hättest. RIR 2 heisst: zwei wären noch gegangen."
+      },
+      {
+        "term": "RPE",
+        "category": "training",
+        "text": "Rate of Perceived Exertion: wie streng ein Satz war, auf einer Skala von 1 bis 10. RPE 8 entspricht etwa RIR 2."
+      },
+      {
+        "term": "Hypertrophie",
+        "category": "training",
+        "text": "Das Wachstum der Muskelfasern, also der Fachbegriff für Muskelaufbau."
+      },
+      {
+        "term": "Progressive Überladung",
+        "category": "training",
+        "text": "Den Muskel mit der Zeit stärker fordern, z.B. mit mehr Gewicht oder mehr Wiederholungen."
+      },
+      {
+        "term": "Trainingsvolumen",
+        "category": "training",
+        "text": "Wie viel du trainierst, meist gezählt als harte Sätze pro Muskel und Woche."
+      },
+      {
+        "term": "Trainingsfrequenz",
+        "category": "training",
+        "text": "Wie oft pro Woche du einen Muskel trainierst."
+      },
+      {
+        "term": "Time under Tension",
+        "category": "training",
+        "text": "Wie lange ein Muskel während eines Satzes unter Spannung steht."
+      },
+      {
+        "term": "Exzentrisch",
+        "category": "training",
+        "text": "Der Muskel wird unter Last länger, z.B. beim Absenken im Bankdrücken. Das Gegenteil ist konzentrisch: Der Muskel verkürzt sich beim Hochdrücken."
+      },
+      {
+        "term": "Supersatz",
+        "category": "training",
+        "text": "Zwei Übungen direkt nacheinander ohne Pause. Das spart Zeit."
+      },
+      {
+        "term": "Drop Set",
+        "category": "training",
+        "text": "Am Satzende das Gewicht reduzieren und ohne Pause weitermachen."
+      },
+      {
+        "term": "Deload",
+        "category": "training",
+        "text": "Eine geplante, leichtere Trainingswoche, damit sich der Körper erholt."
+      },
+      {
+        "term": "Muskelversagen",
+        "category": "training",
+        "text": "Der Punkt, an dem keine weitere saubere Wiederholung mehr möglich ist."
+      },
+      {
+        "term": "Grundübung",
+        "category": "training",
+        "text": "Übung über mehrere Gelenke und Muskeln, z.B. Kniebeuge. Das Gegenteil ist die Isolationsübung, z.B. Curl."
+      },
+      {
+        "term": "Range of Motion",
+        "category": "training",
+        "text": "Der Bewegungsumfang einer Übung, also wie weit du dich bewegst."
+      },
+      {
+        "term": "Muskelkater (DOMS)",
+        "category": "training",
+        "text": "Schmerz ein bis zwei Tage nach ungewohnter Belastung. Er ist kein Beweis für gutes Training."
+      },
+      {
+        "term": "Rotatorenmanschette",
+        "category": "anatomy",
+        "text": "Vier Muskeln um das Schultergelenk: Subscapularis, Supraspinatus, Infraspinatus und Teres minor. Sie halten den Oberarmkopf in der Pfanne."
+      },
+      {
+        "term": "Subscapularis",
+        "category": "anatomy",
+        "text": "Grösster Muskel der Rotatorenmanschette, auf der Vorderseite des Schulterblatts. Dreht den Arm nach innen."
+      },
+      {
+        "term": "Infraspinatus",
+        "category": "anatomy",
+        "text": "Muskel auf der Rückseite des Schulterblatts. Dreht den Arm nach aussen."
+      },
+      {
+        "term": "Supraspinatus",
+        "category": "anatomy",
+        "text": "Muskel oben auf dem Schulterblatt. Hilft, den Arm zur Seite zu heben."
+      },
+      {
+        "term": "Teres minor",
+        "category": "anatomy",
+        "text": "Kleiner Muskel direkt unter dem Infraspinatus. Dreht den Arm ebenfalls nach aussen."
+      },
+      {
+        "term": "Scapula",
+        "category": "anatomy",
+        "text": "Das Schulterblatt. Viele Schulter- und Rückenübungen hängen davon ab, dass es sich richtig bewegt."
+      },
+      {
+        "term": "Latissimus",
+        "category": "anatomy",
+        "text": "Der breite Rückenmuskel. Er zieht die Arme zum Körper und sorgt für einen breiten Rücken."
+      },
+      {
+        "term": "Serratus anterior",
+        "category": "anatomy",
+        "text": "Sägemuskel an den Rippen. Er führt das Schulterblatt nach vorne und stabilisiert es."
+      },
+      {
+        "term": "Soleus",
+        "category": "anatomy",
+        "text": "Tiefer Wadenmuskel unter dem Gastrocnemius. Er arbeitet besonders bei gebeugtem Knie."
+      },
+      {
+        "term": "Adduktoren",
+        "category": "anatomy",
+        "text": "Muskeln an der Oberschenkel-Innenseite. Sie ziehen das Bein zur Körpermitte."
+      },
+      {
+        "term": "Muskelproteinsynthese",
+        "category": "nutrition",
+        "text": "Der Aufbau neuer Muskelproteine. Krafttraining und Protein regen sie an."
+      },
+      {
+        "term": "Makronährstoffe",
+        "category": "nutrition",
+        "text": "Protein, Kohlenhydrate und Fett: die drei Nährstoffe, die Energie liefern."
+      },
+      {
+        "term": "Bulk",
+        "category": "nutrition",
+        "text": "Aufbauphase, in der man bewusst etwas mehr isst, als man verbraucht."
+      },
+      {
+        "term": "PAL-Wert",
+        "category": "nutrition",
+        "text": "Physical Activity Level: Zahl dafür, wie aktiv du bist. Grundumsatz × PAL ergibt ungefähr deinen Gesamtumsatz."
+      }
+    ]
   }
 }

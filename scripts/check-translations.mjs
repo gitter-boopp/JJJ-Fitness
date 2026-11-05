@@ -39,6 +39,7 @@ function compare(a, b, path) {
     return
   }
   if (typeof b !== 'string') return problems.push(`FEHLT   ${path}`)
+  if (path.endsWith('.category')) return // Kategorien sind technische Werte, keine Texte
   if (b.trim() === '') problems.push(`LEER    ${path}`)
   else if (a === b && !allowedSame.test(a) && /[a-zäöü]{3}/i.test(a)) sameText.push(`GLEICH  ${path}: "${a}"`)
   // Platzhalter wie {count} müssen in beiden Sprachen vorkommen
