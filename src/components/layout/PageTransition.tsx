@@ -20,8 +20,8 @@ export default function PageTransition() {
 
   return (
     // mode="wait": erst wenn die alte Seite weg ist, kommt die neue
-    // initial={false}: beim allerersten Laden keine Übergangs-Animation
-    <AnimatePresence mode="wait" initial={false} onExitComplete={scrollToTop}>
+    // Kein initial={false}: Das würde beim ersten Laden auch alle Animationen IN der Seite abschalten
+    <AnimatePresence mode="wait" onExitComplete={scrollToTop}>
       <motion.div
         key={location.pathname}
         initial={{ opacity: 0, y: 12 }}

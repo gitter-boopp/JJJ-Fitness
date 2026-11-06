@@ -135,7 +135,8 @@
     "alternatives": "Alternativen",
     "primary": "Hauptmuskel",
     "secondary": "hilft mit",
-    "imageCredit": "Bild: {credit}"
+    "imageCredit": "Bild: {credit}",
+    "animation": "Bewegungsablauf, vereinfacht"
   },
   "plansPage": {
     "title": "Trainingspläne",

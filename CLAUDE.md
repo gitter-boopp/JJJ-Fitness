@@ -118,11 +118,11 @@ src/
   App.tsx                Alle Routen (welche URL zeigt welche Seite)
   index.css              Tailwind + Design-System (@theme)
   i18n/                  Übersetzungen: de.json, fr.json, i18n.ts (t-Funktion), I18nProvider
-  data/                  Daten ohne Texte: navigation, muscles, exercises, plans, recipes, project, bodyShapes
+  data/                  Daten ohne Texte: navigation, muscles, exercises, plans, recipes, project, bodyShapes, exerciseAnimations
   utils/                 Hilfsfunktionen: filterExercises (Suche/Filter), nutrition (Kalorienrechner), formatReps
   components/layout/     Layout, Navbar, LanguageSwitch, Footer, Logo, SmoothScroll, PageTransition
   components/ui/         Button, Card, Chip, Tabs, BodyFigure, Container, Section, PageHeader, SectionHeading, Icons
-  components/exercises/  ExerciseCard, FilterGroup
+  components/exercises/  ExerciseCard, FilterGroup, ExerciseAnimation
   components/plans/      PlanDetails, WeekOverview, DayTable, PlanPrintView (Druckansicht)
   components/nutrition/  Calculator, NumberField, MacroBar, RecipeCard
   components/about/      FeedbackForm (Formspree), Timeline (Projektverlauf)

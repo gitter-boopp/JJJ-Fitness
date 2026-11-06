@@ -5,6 +5,18 @@ Neueste Einträge stehen oben.
 
 ---
 
+## Animierte Übungen
+
+**Datum:** 06.11.2026
+**Wer:** Leon, Jan, Janosch
+
+- 12 Übungen zeigen auf der Detailseite jetzt eine animierte Strichfigur (`ExerciseAnimation`, Daten in `src/data/exerciseAnimations.ts`).
+- Die Figur ist selbst berechnet statt ein GIF: keine Bildrechte-Probleme, kleine Datei, und Arme und Beine bleiben immer gleich lang.
+- Bei «Bewegung reduzieren» steht die Figur still in der Endposition.
+- **Fehler behoben:** Eine Einstellung im Seitenübergang (`initial={false}`) hat beim ersten Laden alle Start-Animationen abgeschaltet, auch die Hero-Überschrift. Sie fährt jetzt wirklich Wort für Wort rein.
+
+---
+
 ## Erweiterung nach Etappe 8 – Mehr Übungen und Lexikon
 
 **Datum:** 06.11.2026

@@ -5,7 +5,9 @@ import type { Exercise } from '../data/exercises'
 import type { MuscleId } from '../data/muscles'
 import { useI18n } from '../i18n/i18n'
 import { formatReps } from '../utils/formatReps'
+import ExerciseAnimation from '../components/exercises/ExerciseAnimation'
 import ExerciseCard from '../components/exercises/ExerciseCard'
+import { exerciseAnimations } from '../data/exerciseAnimations'
 import Reveal from '../components/motion/Reveal'
 import BodyFigure from '../components/ui/BodyFigure'
 import { ArrowLeftIcon, CloseIcon } from '../components/ui/Icons'
@@ -121,6 +123,13 @@ export default function ExerciseDetailPage() {
         <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_1.4fr] lg:gap-10">
           {/* ---------- Links: Grafik und Empfehlung ---------- */}
           <div className="space-y-6">
+            {/* Nur manche Übungen haben eine Animation (siehe data/exerciseAnimations.ts) */}
+            {exerciseAnimations[exercise.slug] && (
+              <Reveal className="rounded-2xl border border-white/5 bg-surface p-6">
+                <ExerciseAnimation slug={exercise.slug} />
+              </Reveal>
+            )}
+
             <Reveal className="rounded-2xl border border-white/5 bg-surface p-6">
               <ExerciseVisual exercise={exercise} />
             </Reveal>

@@ -135,7 +135,8 @@
     "alternatives": "Alternatives",
     "primary": "Muscle principal",
     "secondary": "aide aussi",
-    "imageCredit": "Image : {credit}"
+    "imageCredit": "Image : {credit}",
+    "animation": "Mouvement, schéma simplifié"
   },
   "plansPage": {
     "title": "Programmes",
