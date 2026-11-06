@@ -89,18 +89,40 @@ export default function ExerciseAnimation({ slug }: { slug: string }) {
     ['shoulder', 'elbow'],
     ['elbow', 'wrist'],
   ]
+  // Zweites Bein, z.B. beim Ausfallschritt
+  if (animation.rear) {
+    limbs.push(['hip', 'rearKnee'], ['rearKnee', 'rearAnkle'])
+  }
 
   return (
     <figure className="flex flex-col items-center">
       {/* aria-hidden: Die Grafik ist Deko, die Ausführung steht daneben als Text */}
       <svg viewBox="-8 -42 216 246" className="h-auto w-full max-w-[260px]" aria-hidden>
-        {/* Boden oder Klimmzugstange */}
-        {animation.scene === 'pullup' ? (
-          <line x1="55" y1="12" x2="145" y2="12" className="stroke-muted" strokeWidth="5" strokeLinecap="round" />
-        ) : (
+        {/* Boden, falls die Figur nicht an einer Stange hängt */}
+        {animation.ground !== false && (
           <line x1="0" y1="172" x2="200" y2="172" className="stroke-white/20" strokeWidth="3" strokeLinecap="round" />
         )}
-        {animation.scene === 'bench' && <rect x="90" y="148" width="85" height="8" rx="2" className="fill-muscle" />}
+
+        {/* Geräte: Bank, Sitz, Stange ... */}
+        {animation.props?.map(([x1, y1, x2, y2]) => (
+          <line
+            key={`${x1}-${y1}-${x2}-${y2}`}
+            x1={x1}
+            y1={y1}
+            x2={x2}
+            y2={y2}
+            className="stroke-muted"
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+        ))}
+
+        {/* Kabel oder Stange von einem festen Punkt bis zur Hand */}
+        {animation.cable && (
+          <g className="stroke-muted" strokeWidth="2">
+            <Limb frames={frames} from="anchor" to="wrist" animate={animate} />
+          </g>
+        )}
 
         <g className="stroke-text" strokeWidth="7" strokeLinecap="round">
           {limbs.map(([from, to]) => (

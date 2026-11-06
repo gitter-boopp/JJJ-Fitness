@@ -10,8 +10,9 @@ Neueste Einträge stehen oben.
 **Datum:** 06.11.2026
 **Wer:** Leon, Jan, Janosch
 
-- 12 Übungen zeigen auf der Detailseite jetzt eine animierte Strichfigur (`ExerciseAnimation`, Daten in `src/data/exerciseAnimations.ts`).
+- Alle 46 Übungen zeigen auf der Detailseite jetzt eine animierte Strichfigur (`ExerciseAnimation`, Daten in `src/data/exerciseAnimations.ts`).
 - Die Figur ist selbst berechnet statt ein GIF: keine Bildrechte-Probleme, kleine Datei, und Arme und Beine bleiben immer gleich lang.
+- Die Figur zeigt die Bewegung von der Seite und ist vereinfacht. Drehbewegungen wie die Aussenrotation sind von der Seite nur angedeutet.
 - Bei «Bewegung reduzieren» steht die Figur still in der Endposition.
 - **Fehler behoben:** Eine Einstellung im Seitenübergang (`initial={false}`) hat beim ersten Laden alle Start-Animationen abgeschaltet, auch die Hero-Überschrift. Sie fährt jetzt wirklich Wort für Wort rein.
 
